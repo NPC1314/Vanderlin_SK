@@ -150,3 +150,56 @@
 /obj/machinery/light/rogue/torchholder
 	brightness = 7
 
+// braziers, magic fire, lamps etc are rain resistant, standing fires and torch holders are not
+/obj/machinery/light/rogue/torchholder/Initialize()
+	. = ..()
+	GLOB.weather_act_upon_list += src
+
+/obj/machinery/light/rogue/torchholder/Destroy()
+	GLOB.weather_act_upon_list -= src
+	. = ..()
+
+
+/obj/machinery/light/rogue/firebowl/standing/Initialize()
+	. = ..()
+	GLOB.weather_act_upon_list += src
+/obj/machinery/light/rogue/firebowl/standing/Destroy()
+	GLOB.weather_act_upon_list -= src
+	. = ..()
+
+/obj/machinery/light/rogue/firebowl/standing/blue/Initialize()
+	. = ..()
+	GLOB.weather_act_upon_list -= src
+/obj/machinery/light/rogue/firebowl/standing/lamp/Initialize()
+	. = ..()
+	GLOB.weather_act_upon_list -= src
+
+
+
+// =================================================================================
+/*---------------\
+| Weather tweaks |
+\---------------*/
+/obj/item/flashlight/flare/torch/Initialize()
+	. = ..()
+	GLOB.weather_act_upon_list += src
+
+/obj/item/flashlight/flare/torch/Destroy()
+	GLOB.weather_act_upon_list -= src
+	. = ..()
+
+/obj/item/flashlight/flare/torch/weather_act_on(weather_trait, severity)
+	if(weather_trait != PARTICLEWEATHER_RAIN)
+		return
+	extinguish()
+
+
+/datum/particle_weather/rain_gentle/weather_act(mob/living/L)
+	L.adjust_bodytemperature(-rand(1,3))
+	L.adjust_fire_stacks(-1)
+	L.SoakMob(FULL_BODY)
+
+/datum/particle_weather/rain_storm/weather_act(mob/living/L)
+	L.adjust_bodytemperature(-rand(3,5))
+	L.adjust_fire_stacks(-1)
+	L.SoakMob(FULL_BODY)

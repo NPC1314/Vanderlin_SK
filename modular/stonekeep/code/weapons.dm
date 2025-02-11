@@ -70,8 +70,26 @@
 /obj/item/rogueweapon/hammer/sledgehammer
 	icon = 'modular/stonekeep/icons/weapons.dmi'
 
-/obj/item/rogueweapon/mace/copperbludgeon
-	icon = 'modular/stonekeep/icons/weapons.dmi'
-
 /obj/item/rogueweapon/flail/sflail
 	icon = 'modular/stonekeep/icons/weapons.dmi'
+
+
+/obj/item/rogueweapon/mace/copperbludgeon
+	name = "studded club"
+	desc = "A simple wooden club reinforced with some metal bits."
+	icon = 'modular/stonekeep/icons/weapons.dmi'
+	icon_state = "bludgeon"
+
+/obj/item/rogueweapon/mace/cudgel/carpenter
+	name = "studded club"
+	desc = "A simple wooden club reinforced with some metal bits."
+	icon = 'modular/stonekeep/icons/weapons.dmi'
+	icon_state = "bludgeon"
+
+/obj/item/rogueweapon/flail/militia
+	desc = "A lucky hit from such a flail can squash a cheap helmet along with the wearer's skull."
+	icon_state = "iflail_old"
+
+/obj/item/rogueweapon/flail/towner
+	desc = "A lucky hit from such a flail can squash a cheap helmet along with the wearer's skull."
+	icon_state = "iflail_old"
