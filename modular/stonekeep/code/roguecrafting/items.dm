@@ -87,7 +87,7 @@
 	reqs = list(/obj/item/grown/log/tree/small = 1,
 		/obj/item/natural/fibers = 2)
 	tools = list(/obj/item/rogueweapon/knife)
-	craftdiff = 0
+	craftdiff = 1
 
 /datum/crafting_recipe/roguetown/bait
 	name = "bait"
@@ -128,6 +128,62 @@
 	result = /obj/item/clothing/neck/roguetown/elfears
 	reqs = list(/obj/item/organ/ears = 4,
 				/obj/item/rope = 1)
+
+/*========= FISHING ==========*/
+/datum/crafting_recipe/roguetown/fishbait
+	name = "fishbait (red)"
+	result = list(/obj/item/fishing/bait/meat,
+				/obj/item/fishing/bait/meat)
+	reqs = list(/obj/item/reagent_containers/food/snacks/rogue/meat/mince = 1)
+	subtype_reqs = TRUE
+	verbage = "starts rolling some bait"
+	verbage_tp = "starts rolling some bait"
+
+/datum/crafting_recipe/roguetown/fishbait/dough
+	name = "fishbait (dough)"
+	result = list(/obj/item/fishing/bait/dough,
+				/obj/item/fishing/bait/dough)
+	reqs = list(/obj/item/reagent_containers/food/snacks/rogue/doughslice = 1)
+
+/datum/crafting_recipe/roguetown/fishreel
+	name = "fishing line (fibre)"
+	result = /obj/item/fishing/reel/twine
+	reqs = list(/obj/item/natural/fibers = 2, /obj/item/grown/log/tree/stick = 1)
+	verbage ="starts weaving a reel"
+	verbage_tp ="starts weaving a reel"
+
+/datum/crafting_recipe/roguetown/fishreel/silk
+	name = "fishing line (silk)"
+	result = /obj/item/fishing/reel/silk
+	reqs = list(/obj/item/natural/silk = 1, /obj/item/grown/log/tree/stick = 1)
+
+/datum/crafting_recipe/roguetown/fishreel/leather
+	name = "fishing line (leather)"
+	result = /obj/item/fishing/reel/leather
+	reqs = list(/obj/item/natural/hide = 1, /obj/item/grown/log/tree/stick = 1)
+
+/datum/crafting_recipe/roguetown/fishbobber
+	name = "fishing bobber (wood)"
+	result = /obj/item/fishing/line/bobber
+	reqs = list(/obj/item/natural/fibers = 1, /obj/item/grown/log/tree/stick = 1)
+
+/datum/crafting_recipe/roguetown/fishsinker
+	name = "fishing sinker (stone)"
+	result = /obj/item/fishing/line/sinker
+	reqs = list(/obj/item/natural/fibers = 1, /obj/item/natural/stone = 1)
+
+/datum/crafting_recipe/roguetown/fishhook
+	name = "fishing hook (wood)"
+	result = /obj/item/fishing/line/sinker
+	reqs = list(/obj/item/grown/log/tree/stick = 2)
+
+/datum/crafting_recipe/roguetown/fishhook/thorn
+	name = "fishing hook (thorn)"
+	result = /obj/item/fishing/line/sinker
+	reqs = list(/obj/item/natural/thorn = 1)
+
+
+
 
 /*========= SKILL LEVEL: 1 REQUIRED ==========*/
 /datum/crafting_recipe/roguetown/candle
@@ -413,6 +469,11 @@
 	result = list(/obj/item/cooking/platter,
 				/obj/item/cooking/platter)
 	reqs = list(/obj/item/grown/log/tree/small = 1)
+
+/datum/crafting_recipe/roguetown/pot_stone
+	name = "cooking pot (stone)"
+	result = list(/obj/item/reagent_containers/glass/bucket/pot/stone)
+	reqs = list(/obj/item/natural/stone = 2)
 
 
 

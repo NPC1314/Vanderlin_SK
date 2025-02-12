@@ -2,7 +2,6 @@
 	force = 10
 	name = "pot"
 	desc = "The peasants friend, when filled with boiling water it will turn the driest oats to filling oatmeal."
-
 	icon = 'modular/Neu_Food/icons/cooking.dmi'
 	icon_state = "pote"
 
@@ -14,6 +13,9 @@
 	var/list/in_progress_recipes = list() //these are unique creations only ever used
 
 	var/static/list/checker_recipes = list()
+
+/obj/item/reagent_containers/glass/bucket/pot/stone
+	icon_state = "pote_stone"
 
 /obj/item/reagent_containers/glass/bucket/pot/Destroy()
 	. = ..()

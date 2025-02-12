@@ -1894,6 +1894,7 @@
 #include "modular\stonekeep\code\drakon.dm"
 #include "modular\stonekeep\code\general.dm"
 #include "modular\stonekeep\code\gods.dm"
+#include "modular\stonekeep\code\handsaw_chisel.dm"
 #include "modular\stonekeep\code\race.dm"
 #include "modular\stonekeep\code\slapcraft_disabler.dm"
 #include "modular\stonekeep\code\structures.dm"

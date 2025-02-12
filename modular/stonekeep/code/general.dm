@@ -134,6 +134,34 @@
 /obj/item/clothing/head/peaceflower
 	icon = 'modular/stonekeep/icons/misc.dmi'
 
+/obj/item/reagent_containers/glass/bucket/pot/copper
+	icon = 'modular/stonekeep/icons/cooking.dmi'
+
+/obj/item/reagent_containers/glass/bucket/pot/stone
+	icon = 'modular/stonekeep/icons/cooking.dmi'
+	icon_state = "pote_stone"
+	drop_sound = 'modular/stonekeep/sound/stone_scrape.ogg'
+
+
+/obj/item/grown/log/tree
+	lefthand_file = 'modular/stonekeep/icons/onmob/lefthand.dmi'
+	righthand_file = 'modular/stonekeep/icons/onmob/righthand.dmi'
+	experimental_inhand = FALSE
+/obj/item/grown/log/tree/small
+	icon_state = "logsmall"
+/obj/item/grown/log/tree/stake
+/obj/item/grown/log/tree/stick
+	item_state = "stick"
+/obj/item/natural/wood/plank
+	lefthand_file = 'modular/stonekeep/icons/onmob/lefthand.dmi'
+	righthand_file = 'modular/stonekeep/icons/onmob/righthand.dmi'
+	experimental_inhand = FALSE
+/obj/item/natural/bundle/plank
+	lefthand_file = 'modular/stonekeep/icons/onmob/lefthand.dmi'
+	righthand_file = 'modular/stonekeep/icons/onmob/righthand.dmi'
+	experimental_inhand = FALSE
+
+
 
 // =================================================================================
 /*----------------\
@@ -213,4 +241,3 @@
 			L.adjust_fire_stacks(-1)
 
 
-/obj/item/natural/stoneblock // ROGTODO placeholder
