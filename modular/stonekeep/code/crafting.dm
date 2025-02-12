@@ -116,7 +116,7 @@
 /datum/crafting_recipe/roguetown/militia_flail
 	name = "militia flail"
 	skillcraft = /datum/skill/craft/carpentry
-	reqs = list(/obj/item/rogueweapon/flail/towner = 1, /obj/item/ingot/iron = 10
+	reqs = list(/obj/item/rogueweapon/flail/towner = 1, /obj/item/ingot/iron = 10)
 	tools = list(/obj/item/rogueweapon/hammer)
 	req_table = TRUE
 	craftdiff = 3

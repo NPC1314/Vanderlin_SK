@@ -193,13 +193,24 @@
 		return
 	extinguish()
 
+/obj/machinery/light/rogue/firebowl/standing/weather_act_on(weather_trait, severity)
+	if(weather_trait != PARTICLEWEATHER_RAIN)
+		return
+	extinguish()
 
 /datum/particle_weather/rain_gentle/weather_act(mob/living/L)
 	L.adjust_bodytemperature(-rand(1,3))
-	L.adjust_fire_stacks(-1)
 	L.SoakMob(FULL_BODY)
+	if(L.fire_stacks > 0)
+		if(prob(1))
+			L.adjust_fire_stacks(-1)
 
 /datum/particle_weather/rain_storm/weather_act(mob/living/L)
 	L.adjust_bodytemperature(-rand(3,5))
-	L.adjust_fire_stacks(-1)
 	L.SoakMob(FULL_BODY)
+	if(L.fire_stacks > 0)
+		if(prob(1))
+			L.adjust_fire_stacks(-1)
+
+
+/obj/item/natural/stoneblock // ROGTODO placeholder

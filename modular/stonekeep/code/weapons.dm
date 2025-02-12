@@ -21,6 +21,7 @@
 /obj/item/rogueweapon/polearm/halberd/bardiche/warcutter
 	name = "war axe"
 	desc = "Favored by common folk looking to cut a noble whoreson down to size."
+	smeltresult = /obj/item/ingot/iron
 
 /obj/item/rogueweapon/mace/goden
 	icon = 'modular/stonekeep/icons/weapons_64.dmi'
@@ -46,9 +47,6 @@
 
 
 //................ Onehanders ............... //
-/obj/item/rogueweapon/mace/goden/shillelagh
-	icon = 'modular/stonekeep/icons/weapons.dmi'
-
 /obj/item/rogueweapon/mace/steel
 	icon = 'modular/stonekeep/icons/weapons.dmi'
 
