@@ -144,7 +144,7 @@
 	craftdiff = 2
 
 /datum/crafting_recipe/roguetown/structure/carpentry/mannequin
-	name = "masculine mannequin"
+	name = "mannequin (male)"
 	result = /obj/structure/mannequin/male
 	reqs = list(/obj/item/grown/log/tree/small = 1,
 				/obj/item/natural/cloth = 1,
@@ -154,7 +154,7 @@
 	craftdiff = 2
 
 /datum/crafting_recipe/roguetown/structure/carpentry/mannequin_f
-	name = "feminine mannequin"
+	name = "mannequin (female)"
 	result = /obj/structure/mannequin/male/female
 	reqs = list(/obj/item/grown/log/tree/small = 1,
 				/obj/item/natural/cloth = 1,
@@ -236,7 +236,7 @@
 	return ..()
 
 /datum/crafting_recipe/roguetown/structure/carpentry/easel
-	name = "easel"
+	name = "painting (easel)"
 	result = /obj/structure/easel
 	reqs = list(/obj/item/grown/log/tree/stick = 3)
 	verbage = "construct"
