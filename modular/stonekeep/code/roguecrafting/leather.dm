@@ -68,13 +68,13 @@
 
 /*========= CONTAINERS ==========*/
 /datum/crafting_recipe/roguetown/leather/satchel
-	name = "leather satchel"
+	name = "storage (satchel)"
 	result = /obj/item/storage/backpack/rogue/satchel
 	reqs = list(/obj/item/natural/hide/cured = 2)
 	craftdiff = 1
 
 /datum/crafting_recipe/roguetown/leather/meatbag
-	name = "game satchel"
+	name = "storage (game satchel)"
 	result = /obj/item/storage/meatbag
 	reqs = list(/obj/item/natural/hide/cured = 2)
 	craftdiff = 1
@@ -89,7 +89,7 @@
 	reqs = list(/obj/item/natural/hide = 2)
 
 /datum/crafting_recipe/roguetown/leather/belt
-	name = "leather belt"
+	name = "belt (leather)"
 	result = list(/obj/item/storage/belt/rogue/leather)
 
 /datum/crafting_recipe/roguetown/leather/pouch
@@ -97,7 +97,7 @@
 	result = list(/obj/item/storage/belt/rogue/pouch)
 
 /datum/crafting_recipe/roguetown/leather/backpack
-	name = "leather backpack"
+	name = "storage (backpack)"
 	result = /obj/item/storage/backpack/rogue/backpack
 	reqs = list(/obj/item/natural/hide = 4)
 	craftdiff = 2
@@ -106,7 +106,7 @@
 /*=========		ARMOR	==========*/
 /datum/crafting_recipe/roguetown/leather/armor
 	name = "armor (leather)"
-	result = /obj/item/clothing/suit/roguetown/armor/leather
+	result = /obj/item/clothing/suit/roguetown/armor/leather/basic
 	reqs = list(/obj/item/natural/hide/cured = 2)
 	craftdiff = 1
 //	req_imperial = TRUE
@@ -148,16 +148,16 @@
 //	req_imperial = TRUE
 
 /datum/crafting_recipe/roguetown/leather/armor_hardened
-	name = "armor (hardened leather coat)"
-	result = /obj/item/clothing/suit/roguetown/armor/leather/advanced
+	name = "armor (heavy leather armor)"
+	result = /obj/item/clothing/suit/roguetown/armor/leather/heavy
 	reqs = list(/obj/item/natural/hide/cured = 3)
 	craftdiff = 4
 //	req_imperial = TRUE
 
 /datum/crafting_recipe/roguetown/leather/armor_masterwork
-	name = "armor (masterwork leather coat"
-	result = /obj/item/clothing/suit/roguetown/armor/leather/masterwork
-	reqs = 	list(/obj/item/natural/hide/cured = 2, /obj/item/natural/cured/essence = 1)
+	name = "armor (heavy leather coat"
+	result = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
+	reqs = 	list(/obj/item/natural/hide/cured = 4, /obj/item/reagent_containers/food/snacks/fat = 1)
 	craftdiff = 5
 
 

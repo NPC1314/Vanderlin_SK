@@ -120,3 +120,20 @@
 	tools = list(/obj/item/rogueweapon/hammer)
 	req_table = TRUE
 	craftdiff = 3
+
+
+
+/datum/anvil_recipe/tools/iron/handsaw
+	name = "Handsaw (+1 Stick)"
+	recipe_name = "a saw for woodworking"
+	req_bar = /obj/item/ingot/iron
+	additional_items = list(/obj/item/grown/log/tree/stick)
+	created_item = /obj/item/rogueweapon/handsaw
+	i_type = "Tools"
+
+/datum/anvil_recipe/tools/iron/chisel
+	name = "Chisel"
+	recipe_name = "a chisel for stoneworking"
+	req_bar = /obj/item/ingot/iron
+	created_item = /obj/item/rogueweapon/chisel
+	i_type = "Tools"

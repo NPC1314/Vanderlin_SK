@@ -91,3 +91,114 @@
 /obj/item/rogueweapon/flail/towner
 	desc = "A lucky hit from such a flail can squash a cheap helmet along with the wearer's skull."
 	icon_state = "iflail_old"
+
+
+/obj/item/clothing/suit/roguetown/armor/leather/basic
+	mob_overlay_icon = 'modular/stonekeep/icons/onmob/clothes.dmi'
+	sleeved = 'modular/stonekeep/icons/onmob/sleeves.dmi'
+
+/obj/item/clothing/suit/roguetown/armor/leather/heavy
+	name = "heavy leather armor"
+	desc = "A heavy steerhide jerkin with enough body to stand on its own. It forms a stiff, protective mantle \
+	for its wearer, shielding from blows and weather alike."
+	icon = 'modular/stonekeep/icons/clothing.dmi'
+	mob_overlay_icon = 'modular/stonekeep/icons/onmob/clothes.dmi'
+	sleeved = 'modular/stonekeep/icons/onmob/sleeves.dmi'
+	icon_state = "roguearmor"
+	item_state = "roguearmor"
+	armor = ARMOR_LEATHER_GOOD
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_BLUNT, BCLASS_CHOP)
+	max_integrity = 300
+	sellprice = 25
+/obj/item/clothing/suit/roguetown/armor/leather/heavy/New()
+	. = ..()
+	if(icon_state == "roguearmo")
+		if(prob(30))
+			icon_state = "roguearmor_belt"
+			item_state = "roguearmor_belt"
+
+/obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
+	name = "armored leather coat"
+	desc = "A heavy steerhide jerkin that reaches past the hips and better protects the vitals."
+	icon_state = "roguearmor_coat"
+	item_state = "roguearmor_coat"
+	body_parts_covered = CHEST|GROIN|VITALS|LEGS
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_BLUNT, BCLASS_CHOP)
+	max_integrity = 200
+	sellprice = 25
+
+
+/obj/item/clothing/suit/roguetown/armor/plate/scale/inqcoat
+	name = "inquisitorial duster"
+	desc = "Metal plates reinforce this heavy coat, only the finest for the inquisition."
+	body_parts_covered = CHEST|VITALS|GROIN|LEGS|ARMS
+	allowed_sex = list(MALE, FEMALE)
+	icon = 'modular/stonekeep/icons/clothing.dmi'
+	mob_overlay_icon = 'modular/stonekeep/icons/onmob/clothes.dmi'
+	sleeved = 'modular/stonekeep/icons/onmob/sleeves.dmi'
+	icon_state = "inqcoat"
+	item_state = "inqcoat"
+	sleevetype = "shirt"
+	max_integrity = 200
+	anvilrepair = /datum/skill/craft/armorsmithing
+	smeltresult = /obj/item/ingot/steel
+	equip_delay_self = 4 SECONDS
+	armor_class = ARMOR_CLASS_MEDIUM
+	blocksound = SOFTHIT
+
+
+/obj/item/clothing/suit/roguetown/armor/brigandine/coat
+	name = "coat of the commander"
+	desc = "A thick boiled leather surcoat with plates concealed in it's many great folds. It weighs a ton and takes a great man to wear."
+	icon = 'modular/stonekeep/icons/clothing.dmi'
+	mob_overlay_icon = 'modular/stonekeep/icons/onmob/clothes.dmi'
+	sleeved = 'modular/stonekeep/icons/onmob/sleeves.dmi'
+	icon_state = "leathercoat"
+	item_state = "leathercoat"
+	var/picked = FALSE
+	sleeved_detail = TRUE
+	boobed_detail = TRUE
+	armor = ARMOR_MAILLE_GOOD
+
+/obj/item/clothing/suit/roguetown/armor/brigandine/sheriff/coat/attack_right(mob/user)
+	if(picked)
+		return
+	var/the_time = world.time
+	var/pickedvalue = input(user, "Select a color", "KINGSLAYER'S GARB") as null|anything in list("Khaki", "Black")
+	if(!pickedvalue)
+		return
+	if(world.time > (the_time + 30 SECONDS))
+		return
+	if(pickedvalue == "Khaki")
+		picked = TRUE
+	else if(pickedvalue == "Black")
+		picked = TRUE
+		icon_state = "bleathercoat"
+		item_state = "bleathercoat"
+		update_icon()
+		if(ismob(loc))
+			var/mob/L = loc
+			L.update_inv_armor()
+
+
+/obj/item/clothing/suit/roguetown/shirt/robe/hierophant
+	name = "hierophant's kandys"
+	desc = "A thin piece of fabric worn under a robe to stop chafing and keep ones dignity if a harsh blow of wind comes through."
+	icon = 'modular/stonekeep/icons/clothing.dmi'
+	mob_overlay_icon = 'modular/stonekeep/icons/onmob/clothes.dmi'
+	sleeved = 'modular/stonekeep/icons/onmob/sleeves.dmi'
+	icon_state = "desertgown"
+	item_state = "desertgown"
+	color = null
+
+/obj/item/clothing/suit/roguetown/shirt/robe/pointfex
+	name = "pointfex's qaba"
+	desc = "A slimmed down, tighter fitting robe made of fine silks and fabrics. Somehow you feel more mobile in it than in the nude."
+	icon = 'modular/stonekeep/icons/clothing.dmi'
+	mob_overlay_icon = 'modular/stonekeep/icons/onmob/clothes.dmi'
+	sleeved = 'modular/stonekeep/icons/onmob/sleeves.dmi'
+	icon_state = "monkcloth"
+	item_state = "monkcloth"
+	color = null
+	r_sleeve_status = SLEEVE_NOMOD
+	l_sleeve_status = SLEEVE_NOMOD
