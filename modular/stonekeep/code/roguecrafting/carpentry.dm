@@ -14,7 +14,7 @@
 	reqs = list(/obj/item/grown/log/tree/small = 1)
 
 /datum/crafting_recipe/roguetown/carpentry/spoon
-	name = "wooden spoon"
+	name = "spoon"
 	result = list(/obj/item/kitchen/spoon,
 				/obj/item/kitchen/spoon)
 	reqs = list(/obj/item/grown/log/tree/small = 1)
@@ -58,7 +58,7 @@
 	craftdiff = 1
 
 /datum/crafting_recipe/roguetown/carpentry/quarterstaff//elaborated quarterstaff only carpenters can do
-	name = "wooden quarterstaff"
+	name = "quarterstaff"
 	result = list(/obj/item/rogueweapon/polearm/woodstaff/quarterstaff,
 	/obj/item/rogueweapon/polearm/woodstaff/quarterstaff)
 	reqs = list(/obj/item/grown/log/tree = 1)
@@ -67,7 +67,7 @@
 	craftdiff = 2
 
 /datum/crafting_recipe/roguetown/woodspade
-	name = "wood spade"
+	name = "spade"
 	result = /obj/item/rogueweapon/shovel/small
 	reqs = list(/obj/item/grown/log/tree/small = 1,
 			/obj/item/grown/log/tree/stick = 1)
@@ -76,14 +76,33 @@
 /obj/item/rogueweapon/shovel/small/crafted
 	sellprice = 5
 
-/datum/crafting_recipe/roguetown/carpentry/recurve
-	name = "recurve bow"
-	result = list(/obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve)
-	reqs = list(/obj/item/grown/log/tree/small = 1,
-	/obj/item/natural/fibers = 4)
-	craftdiff = 1
 
 /*========= SKILL LEVEL: 2 REQUIRED ==========*/
+
+
+/datum/crafting_recipe/roguetown/carpentry/recurve
+	name = "bow (recurve)"
+	result = list(/obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve)
+	reqs = list(/obj/item/grown/log/tree/small = 1,
+	/obj/item/reagent_containers/food/snacks/fat = 1
+	/obj/item/natural/fibers = 4)
+	craftdiff = 2
+
+/datum/crafting_recipe/roguetown/carpentry/handmadebow
+	name = "bow"
+	result = list(/obj/item/gun/ballistic/revolver/grenadelauncher/bow)
+	reqs = list(/obj/item/grown/log/tree/small = 1,
+	/obj/item/natural/fibers = 5)
+	craftdiff = 2
+
+/datum/crafting_recipe/roguetown/carpentry/longbow
+	name = "bow (longbow)"
+	result = list(/obj/item/gun/ballistic/revolver/grenadelauncher/bow/long)
+	reqs = list(/obj/item/grown/log/tree/small = 2,
+	/obj/item/natural/fibers = 6,
+	/obj/item/reagent_containers/food/snacks/fat = 1)
+	craftdiff = 3
+
 
 /datum/crafting_recipe/roguetown/carpentry/woodshield
 	name = "wooden shield"
@@ -95,13 +114,6 @@
 
 /obj/item/rogueweapon/shield/wood/crafted
 	sellprice = 6
-
-/datum/crafting_recipe/roguetown/carpentry/handmadebow
-	name = "wooden bow"
-	result = list(/obj/item/gun/ballistic/revolver/grenadelauncher/bow)
-	reqs = list(/obj/item/grown/log/tree/small = 1,
-	/obj/item/natural/fibers = 6)
-	craftdiff = 2
 
 /datum/crafting_recipe/roguetown/structure/plough
 	name = "plough"
@@ -127,12 +139,5 @@
 	/obj/item/roguegear = 1)
 	craftdiff = 3
 */
-/datum/crafting_recipe/roguetown/carpentry/longbow
-	name = "longbow"
-	result = list(/obj/item/gun/ballistic/revolver/grenadelauncher/bow/long)
-	reqs = list(/obj/item/grown/log/tree/small = 1,
-	/obj/item/natural/fibers = 8,
-	/obj/item/reagent_containers/food/snacks/fat)
-	structurecraft = /obj/machinery/light/rogue/campfire
-	craftdiff = 3
+
 

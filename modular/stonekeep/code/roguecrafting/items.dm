@@ -52,17 +52,7 @@
 	verbage = "roll"
 	verbage_tp = "rolls"
 
-/datum/crafting_recipe/roguetown/dart
-	name = "dart"
-	result = /obj/item/ammo_casing/caseless/rogue/dart
-	reqs = list(/obj/item/natural/thorn = 1,
-				/obj/item/grown/log/tree/stick = 1)
 
-/datum/crafting_recipe/roguetown/blowgun
-	name = "blowgun"
-	result = /obj/item/gun/ballistic/revolver/grenadelauncher/blowgun
-	reqs = list(/obj/item/grown/log/tree/stick = 1)
-	craftdiff = 3
 
 /datum/crafting_recipe/roguetown/rope
 	name = "rope"
@@ -243,7 +233,7 @@
 
 /*========= AMMO CRAFTING ==========*/
 /datum/crafting_recipe/roguetown/stonearrow
-	name = "stone arrow (x2)"
+	name = "arrows (x2 stone)"
 	result = list(/obj/item/ammo_casing/caseless/rogue/arrow/stone,
 				/obj/item/ammo_casing/caseless/rogue/arrow/stone)
 	reqs = list(/obj/item/grown/log/tree/stick = 1,
@@ -251,7 +241,7 @@
 	req_table = TRUE
 
 /datum/crafting_recipe/roguetown/stonearrow_five
-	name = "stone arrow (x10)"
+	name = "arrows (x10 stone)"
 	result = list(
 				/obj/item/ammo_casing/caseless/rogue/arrow/stone,
 				/obj/item/ammo_casing/caseless/rogue/arrow/stone,
@@ -267,7 +257,7 @@
 				/obj/item/natural/stone = 5)
 
 /datum/crafting_recipe/roguetown/poisonarrow
-	name = "poison arrow"
+	name = "arrow (poison)"
 	result = /obj/item/ammo_casing/caseless/rogue/arrow/poison
 	reqs = list(/obj/item/ammo_casing/caseless/rogue/arrow = 1,
 				/obj/item/reagent_containers/food/snacks/produce/jacksberry/poison = 1)
@@ -278,13 +268,13 @@
 				/datum/reagent/berrypoison = 5)
 
 /datum/crafting_recipe/roguetown/poisonarrow/potent
-	name = "poison arrow (potent)"
+	name = "arrow (potent poison)"
 	result = /obj/item/ammo_casing/caseless/rogue/arrow/poison/potent
 	reqs = list(/obj/item/ammo_casing/caseless/rogue/arrow = 1,
 				/datum/reagent/strongpoison = 5)
 
 /datum/crafting_recipe/roguetown/poisonbolt
-	name = "poison bolt"
+	name = "bolt (poison)"
 	result = /obj/item/ammo_casing/caseless/rogue/bolt/poison
 	reqs = list(/obj/item/ammo_casing/caseless/rogue/bolt = 1,
 				/obj/item/reagent_containers/food/snacks/produce/jacksberry/poison = 1)
@@ -295,7 +285,7 @@
 				/datum/reagent/berrypoison = 5)
 
 /datum/crafting_recipe/roguetown/poisonbolt/potent
-	name = "poison bolt (potent)"
+	name = "bolt (potent poison)"
 	result = /obj/item/ammo_casing/caseless/rogue/bolt/poison/potent
 	reqs = list(/obj/item/ammo_casing/caseless/rogue/bolt = 1,
 				/datum/reagent/strongpoison = 5)
@@ -448,33 +438,6 @@
 
 
 // ---------	WEAPONS		-------------
-/datum/crafting_recipe/roguetown/recurve
-	name = "recurve bow"
-	result = list(/obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve)
-	reqs = list(/obj/item/grown/log/tree/small = 1,
-	/obj/item/natural/fibers = 4)
-	craftdiff = 1
-	skillcraft = /datum/skill/craft/carpentry
-
-/datum/crafting_recipe/roguetown/handmadebow
-	name = "wooden bow"
-	result = list(/obj/item/gun/ballistic/revolver/grenadelauncher/bow)
-	reqs = list(/obj/item/grown/log/tree/small = 1,
-	/obj/item/natural/fibers = 6)
-	craftdiff = 2
-	skillcraft = /datum/skill/craft/carpentry
-
-/datum/crafting_recipe/roguetown/longbow
-	name = "longbow"
-	result = list(/obj/item/gun/ballistic/revolver/grenadelauncher/bow/long)
-	reqs = list(/obj/item/grown/log/tree/small = 1,
-	/obj/item/natural/fibers = 8,
-	/obj/item/reagent_containers/food/snacks/fat = 1)
-	skillcraft = /datum/skill/craft/carpentry
-	structurecraft = /obj/machinery/light/rogue/campfire
-	craftdiff = 3
-
-
 /datum/crafting_recipe/roguetown/woodstaff//this is the simple staff anyone can make
 	name = "wood staff"
 	result = list(/obj/item/rogueweapon/polearm/woodstaff,
@@ -505,15 +468,6 @@
 	name = "wood club"
 	result = /obj/item/rogueweapon/mace/woodclub
 	reqs = list(/obj/item/grown/log/tree/small = 1)
-
-/datum/crafting_recipe/roguetown/quarterstaff
-	name = "quarterstaff"
-	result = list(/obj/item/rogueweapon/polearm/woodstaff/quarterstaff,
-	/obj/item/rogueweapon/polearm/woodstaff/quarterstaff)
-	reqs = list(/obj/item/grown/log/tree = 1)
-	req_table = TRUE
-	tools = list(/obj/item/rogueweapon/knife/hunting)
-	skillcraft = /datum/skill/craft/carpentry
 
 /datum/crafting_recipe/roguetown/steelstaff
 	name = "quarterstaff (steel)"
@@ -568,7 +522,18 @@
 				/obj/item/natural/fibers = 1)
 	craftdiff = 3
 
+/datum/crafting_recipe/roguetown/dart
+	name = "dart"
+	result = /obj/item/ammo_casing/caseless/rogue/dart
+	reqs = list(/obj/item/natural/thorn = 1,
+				/obj/item/grown/log/tree/stick = 1)
+	craftdiff = 1
 
+/datum/crafting_recipe/roguetown/blowgun
+	name = "blowgun"
+	result = /obj/item/gun/ballistic/revolver/grenadelauncher/blowgun
+	reqs = list(/obj/item/grown/log/tree/stick = 1)
+	craftdiff = 3
 
 
 // ---------	CLOTHING		-------------
