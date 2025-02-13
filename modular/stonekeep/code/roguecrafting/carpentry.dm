@@ -21,7 +21,7 @@
 
 /datum/crafting_recipe/roguetown/carpentry/rollingpin
 	name = "wooden rollingpin"
-	result = /obj/item/rogueweapon/mace/woodclub/rollingpin
+	result = /obj/item/kitchen/rollingpin
 	reqs = list(/obj/item/grown/log/tree/small = 1)
 
 /datum/crafting_recipe/roguetown/carpentry/woodbowl
@@ -111,7 +111,7 @@
 	craftdiff = 2
 
 /*========= SKILL LEVEL: 3 REQUIRED ==========*/
-
+/*
 /datum/crafting_recipe/roguetown/carpentry/rproesthetic
 	name = "wood arm (L)"
 	result = list(/obj/item/bodypart/l_arm/rproesthetic)
@@ -125,7 +125,7 @@
 	reqs = list(/obj/item/grown/log/tree/small = 1,
 	/obj/item/roguegear = 1)
 	craftdiff = 3
-
+*/
 /datum/crafting_recipe/roguetown/carpentry/longbow
 	name = "longbow"
 	result = list(/obj/item/gun/ballistic/revolver/grenadelauncher/bow/long)

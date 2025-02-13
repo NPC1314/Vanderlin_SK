@@ -297,7 +297,7 @@
 	result = /obj/item/ammo_casing/caseless/rogue/bolt/poison/potent
 	reqs = list(/obj/item/ammo_casing/caseless/rogue/bolt = 1,
 				/datum/reagent/strongpoison = 5)
-
+/* kaizoku ROGTODO
 /datum/crafting_recipe/roguetown/shinobiarrow
 	name = "shinobi arrow(5)"
 	result = list(/obj/item/ammo_casing/caseless/rogue/arrow/poison/fog,
@@ -320,6 +320,13 @@
 				/obj/item/reagent_containers/food/snacks/fogdart = 1)
 	craftdiff = 1
 
+/datum/crafting_recipe/roguetown/kusaripeasant
+	name = "handmade kusarigama"
+	result = /obj/item/rogueweapon/flail/kusarigama/peasant
+	reqs = list(/obj/item/rogueweapon/sickle/kama = 1,
+				/obj/item/rope/chain = 1)
+	craftdiff = 1
+*/
 /*========= ENGINEEERING CRAFTING ==========*/
 /datum/crafting_recipe/roguetown/mantrap
 	name = "mantrap"
@@ -380,7 +387,7 @@
 	reqs = list(/obj/item/grown/log/tree/small = 1,
 	/datum/reagent/water = 50)
 	tools = list(/obj/item/rogueweapon/knife/hunting)
-	structurecraft = /obj/structure/fluff/dryingrack
+	structurecraft = /obj/machinery/tanningrack
 	craftdiff = 1
 
 /datum/crafting_recipe/roguetown/readingscroll
@@ -595,12 +602,7 @@
 				/obj/item/natural/fibers = 1)
 	craftdiff = 3
 
-/datum/crafting_recipe/roguetown/kusaripeasant
-	name = "handmade kusarigama"
-	result = /obj/item/rogueweapon/flail/kusarigama/peasant
-	reqs = list(/obj/item/rogueweapon/sickle/kama = 1,
-				/obj/item/rope/chain = 1)
-	craftdiff = 1
+
 
 
 // ---------	CLOTHING		-------------

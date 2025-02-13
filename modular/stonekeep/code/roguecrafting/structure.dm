@@ -30,8 +30,8 @@
 
 /datum/crafting_recipe/roguetown/structure/carpentry/chair
 	name = "chair (wood)"
-	result = /obj/item/chair/rogue/crafted
-	reqs = list(/obj/item/natural/plank = 2)
+	result = /obj/item/chair/rogue
+	reqs = list(/obj/item/grown/log/tree/small = 2)
 	craftdiff = 1
 
 /datum/crafting_recipe/roguetown/structure/carpentry/composter
@@ -50,7 +50,7 @@
 /datum/crafting_recipe/roguetown/structure/carpentry/table
 	name = "table (wood)"
 	result = /obj/structure/table/wood/crafted
-	reqs = list(/obj/item/natural/plank = 2)
+	reqs = list(/obj/item/grown/log/tree/small = 2)
 	verbage = "carpent"
 	verbage_tp = "carpents"
 	craftdiff = 1
@@ -63,7 +63,7 @@
 	verbage_tp = "carpents"
 	wallcraft = TRUE
 	craftdiff = 1
-/datum/crafting_recipe/roguetown/structure/carpentry/wallladder/check_craft_requirements(mob/user, turf/T)
+/datum/crafting_recipe/roguetown/structure/carpentry/wallladder/TurfCheck(mob/user, turf/T)
 	var/turf/check_turf = get_step(T, user.dir)
 	if(!isclosedturf(check_turf))
 		return FALSE
@@ -94,7 +94,7 @@
 /datum/crafting_recipe/roguetown/structure/carpentry/closet
 	name = "closet"
 	result = /obj/structure/closet/crate/roguecloset/crafted
-	reqs = list(/obj/item/natural/plank = 2)
+	reqs = list(/obj/item/grown/log/tree/small = 2)
 	verbage = "construct"
 	verbage_tp = "constructs"
 	craftdiff = 1
@@ -102,7 +102,7 @@
 /datum/crafting_recipe/roguetown/structure/carpentry/coffin
 	name = "coffin"
 	result = /obj/structure/closet/crate/coffin
-	reqs = list(/obj/item/natural/plank=3)
+	reqs = list(/obj/item/grown/log/tree/small=3)
 	verbage = "construct"
 	verbage_tp = "constructs"
 	craftdiff = 1
@@ -173,7 +173,7 @@
 /datum/crafting_recipe/roguetown/structure/carpentry/barrel
 	name = "barrel"
 	result = /obj/structure/fermenting_barrel/crafted
-	reqs = list(/obj/item/natural/plank=2)
+	reqs = list(/obj/item/grown/log/tree/small=2)
 	verbage = "construct"
 	verbage_tp = "makes"
 	craftdiff = 2
@@ -212,7 +212,7 @@
 /datum/crafting_recipe/roguetown/structure/carpentry/nicebed
 	name = "bed (good)"
 	result = /obj/structure/bed/rogue
-	reqs = list(/obj/item/natural/plank=2,
+	reqs = list(/obj/item/grown/log/tree/small=2,
 				/obj/item/natural/cloth = 1)
 	tools = list(/obj/item/needle)
 	craftdiff = 2
@@ -220,20 +220,19 @@
 /datum/crafting_recipe/roguetown/structure/carpentry/door
 	name = "door (wood)"
 	result = /obj/structure/mineral_door/wood/deadbolt
-	reqs = list(/obj/item/natural/plank=2)
+	reqs = list(/obj/item/grown/log/tree/small=2)
 	craftdiff = 2
 
 /datum/crafting_recipe/roguetown/structure/carpentry/railing
 	name = "railing"
 	result = /obj/structure/fluff/railing/wood
-	reqs = list(/obj/item/natural/plank=2)
+	reqs = list(/obj/item/grown/log/tree/small=2)
 	craftdiff = 2
-/datum/crafting_recipe/roguetown/structure/carpentry/railing/check_craft_requirements(mob/user, turf/T)
+/datum/crafting_recipe/roguetown/structure/carpentry/railing/TurfCheck(mob/user, turf/T)
 	for(var/obj/structure/S in T)
 		if(istype(S, /obj/structure/fluff/railing))
 			if(user.dir == S.dir)
 				return FALSE
-	return ..()
 
 /datum/crafting_recipe/roguetown/structure/carpentry/easel
 	name = "painting (easel)"
@@ -247,7 +246,7 @@
 /datum/crafting_recipe/roguetown/structure/carpentry/optable
 	name = "feldsher table"
 	result = /obj/structure/table/optable
-	reqs = list(/obj/item/natural/plank=2)
+	reqs = list(/obj/item/grown/log/tree/small=2)
 	verbage = "construct"
 	verbage_tp = "makes"
 	craftdiff = 3
@@ -255,7 +254,7 @@
 /datum/crafting_recipe/roguetown/structure/carpentry/meathook
 	name = "meathook"
 	result = /obj/structure/meathook
-	reqs = list(/obj/item/natural/plank=2, /obj/item/rope/chain = 1)
+	reqs = list(/obj/item/grown/log/tree/small=2, /obj/item/rope/chain = 1)
 	verbage = "construct"
 	verbage_tp = "makes"
 	craftdiff = 3
@@ -298,14 +297,14 @@
 /datum/crafting_recipe/roguetown/structure/masonry/window
 	name = "window (fixed)"
 	result = /obj/structure/roguewindow/solid
-	reqs = list(/obj/item/natural/plank = 1,
+	reqs = list(/obj/item/grown/log/tree/small = 1,
 				/obj/item/natural/glass = 1)
 	craftdiff = 1
 
 /datum/crafting_recipe/roguetown/structure/masonry/windowopen
 	name = "window (openable)"
 	result = /obj/structure/roguewindow/openclose
-	reqs = list(/obj/item/natural/plank = 1,
+	reqs = list(/obj/item/grown/log/tree/small = 1,
 				/obj/item/natural/glass = 1,
 				/obj/item/ingot/iron = 1)
 	craftdiff = 1
@@ -368,12 +367,11 @@
 /datum/crafting_recipe/roguetown/structure/fence/alt
 	name = "palisade (l)"
 	reqs = list(/obj/item/grown/log/tree/small = 1)
-/datum/crafting_recipe/roguetown/structure/fence/check_craft_requirements(mob/user, turf/T)
+/datum/crafting_recipe/roguetown/structure/fence/TurfCheck(mob/user, turf/T)
 	for(var/obj/structure/S in T)
 		if(istype(S, /obj/structure/fluff/railing))
 			if(user.dir == S.dir)
 				return FALSE
-	return ..()
 
 /datum/crafting_recipe/roguetown/structure/bed // This one's not in carpentry because it's just a shitty pile of sticks and cloth.
 	name = "bed (terrible)"
@@ -417,8 +415,8 @@
 
 /datum/crafting_recipe/roguetown/structure/dryingrack
 	name = "drying rack"
-	result = /obj/structure/fluff/dryingrack
-	reqs = list(/obj/item/grown/log/tree/stick = 3)
+	result = /obj/machinery/tanningrack
+	reqs = list(/obj/item/grown/log/tree/stick = 4)
 	verbage = "construct"
 	verbage_tp = "constructs"
 	craftsound = 'sound/foley/Building-01.ogg'

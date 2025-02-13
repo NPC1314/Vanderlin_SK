@@ -31,7 +31,7 @@
 /datum/crafting_recipe/roguetown/turfs/woodwall
 	name = "wooden wall"
 	result = /turf/closed/wall/mineral/rogue/wood
-	reqs = list(/obj/item/natural/plank = 2)
+	reqs = list(/obj/item/grown/log/tree/small = 2)
 	skillcraft = /datum/skill/craft/carpentry
 	craftdiff = 1
 
@@ -45,7 +45,7 @@
 /datum/crafting_recipe/roguetown/turfs/woodwindow
 	name = "wooden murder hole"
 	result = /turf/closed/wall/mineral/rogue/wood/window
-	reqs = list(/obj/item/natural/plank = 2)
+	reqs = list(/obj/item/grown/log/tree/small = 2)
 	skillcraft = /datum/skill/craft/carpentry
 	craftdiff = 1
 
@@ -59,7 +59,7 @@
 /datum/crafting_recipe/roguetown/turfs/woodfloorplank
 	name = "wooden floor"
 	result = /turf/open/floor/rogue/ruinedwood/spiral
-	reqs = list(/obj/item/natural/plank = 1)
+	reqs = list(/obj/item/grown/log/tree/small = 1)
 	skillcraft = /datum/skill/craft/carpentry
 	craftdiff = 2
 
@@ -75,7 +75,7 @@
 /datum/crafting_recipe/roguetown/turfs/woodfloorchevron
 	name = "patterned wooden floor"
 	result = /turf/open/floor/rogue/ruinedwood/spiral
-	reqs = list(/obj/item/natural/plankshort = 2)
+	reqs = list(/obj/item/grown/log/tree/small = 2)
 	skillcraft = /datum/skill/craft/carpentry
 	craftdiff = 2
 
@@ -240,21 +240,21 @@
 	if(!istype(T, /turf/open/floor/rogue))
 		return
 	return ..()
-
+/* kaizoku ROGTODO
 //Abyssariad Walls.
 //Tier 'Plank' Abyssariad wall. Making a rough counterpart later.
 
 /datum/crafting_recipe/roguetown/turfs/woodwall/abyssal
 	name = "wagoya joinwall"
 	result = /turf/closed/wall/mineral/rogue/wood/abyssal
-	reqs = list(/obj/item/natural/plank = 2)
+	reqs = list(/obj/item/grown/log/tree/small = 2)
 	skillcraft = /datum/skill/craft/carpentry
 	craftdiff = 1
 
 /datum/crafting_recipe/roguetown/turfs/woodwindow/abyssal
 	name = "wagoya murderhole"
 	result = /turf/closed/wall/mineral/rogue/wood/abyssal/window
-	reqs = list(/obj/item/natural/plank = 2)
+	reqs = list(/obj/item/grown/log/tree/small = 2)
 	skillcraft = /datum/skill/craft/carpentry
 	craftdiff = 1
 
@@ -274,3 +274,4 @@
 	reqs = list(/obj/item/natural/stoneblock = 2)
 	skillcraft = /datum/skill/craft/masonry
 	craftdiff = 1
+*/
