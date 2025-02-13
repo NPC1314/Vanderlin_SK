@@ -440,47 +440,11 @@
 
 
 /*========= COOKING ==========*/
-/datum/crafting_recipe/roguetown/rollingpin
-	name = "rollingpin"
-	result = /obj/item/kitchen/rollingpin
-	reqs = list(/obj/item/grown/log/tree/small = 1)
-
-/datum/crafting_recipe/roguetown/woodbucket
-	name = "bucket"
-	result = /obj/item/reagent_containers/glass/bucket/wooden
-	reqs = list(/obj/item/grown/log/tree/small = 1)
-
-/datum/crafting_recipe/roguetown/woodbowl
-	name = "bowls (x3 wooden)"
-	result = list(/obj/item/reagent_containers/glass/bowl,
-				/obj/item/reagent_containers/glass/bowl,
-				/obj/item/reagent_containers/glass/bowl)
-	reqs = list(/obj/item/grown/log/tree/small = 1)
-
-/datum/crafting_recipe/roguetown/woodcup
-	name = "mugs (x3 wooden)"
-	result = list(/obj/item/reagent_containers/glass/cup/wooden/crafted,
-				/obj/item/reagent_containers/glass/cup/wooden/crafted,
-				/obj/item/reagent_containers/glass/cup/wooden/crafted)
-	reqs = list(/obj/item/grown/log/tree/small = 1)
-
-/datum/crafting_recipe/roguetown/woodtray
-	name = "wooden trays (x2)"
-	result = list(/obj/item/storage/bag/tray,
-				/obj/item/storage/bag/tray)
-	reqs = list(/obj/item/grown/log/tree/small = 1)
-
-/datum/crafting_recipe/roguetown/woodplatter
-	name = "platters (x2 wooden)"
-	result = list(/obj/item/cooking/platter,
-				/obj/item/cooking/platter)
-	reqs = list(/obj/item/grown/log/tree/small = 1)
-
 /datum/crafting_recipe/roguetown/pot_stone
 	name = "cooking pot (stone)"
 	result = list(/obj/item/reagent_containers/glass/bucket/pot/stone)
 	reqs = list(/obj/item/natural/stone = 2)
-
+	skillcraft = /datum/skill/craft/masonry
 
 
 // ---------	WEAPONS		-------------

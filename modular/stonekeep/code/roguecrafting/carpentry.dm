@@ -9,7 +9,7 @@
 /*========= NO SKILL LEVEL REQUIRED ==========*/
 
 /datum/crafting_recipe/roguetown/carpentry/woodbucket
-	name = "wooden bucket"
+	name = "bucket"
 	result = /obj/item/reagent_containers/glass/bucket/wooden
 	reqs = list(/obj/item/grown/log/tree/small = 1)
 
@@ -20,18 +20,19 @@
 	reqs = list(/obj/item/grown/log/tree/small = 1)
 
 /datum/crafting_recipe/roguetown/carpentry/rollingpin
-	name = "wooden rollingpin"
+	name = "rollingpin"
 	result = /obj/item/kitchen/rollingpin
 	reqs = list(/obj/item/grown/log/tree/small = 1)
 
 /datum/crafting_recipe/roguetown/carpentry/woodbowl
-	name = "wooden bowl"
+	name = "bowls (x3 wooden)"
 	result = list(/obj/item/reagent_containers/glass/bowl,
+				/obj/item/reagent_containers/glass/bowl,
 				/obj/item/reagent_containers/glass/bowl)
 	reqs = list(/obj/item/grown/log/tree/small = 1)
 
 /datum/crafting_recipe/roguetown/carpentry/woodcup
-	name = "wooden cups"
+	name = "mugs (x3 wooden)"
 	result = list(/obj/item/reagent_containers/glass/cup/wooden/crafted,
 				/obj/item/reagent_containers/glass/cup/wooden/crafted,
 				/obj/item/reagent_containers/glass/cup/wooden/crafted)
@@ -41,9 +42,9 @@
 	sellprice = 3
 
 /datum/crafting_recipe/roguetown/carpentry/woodplatter
-	name = "wood platters (x2)"
-	result = list(/obj/item/cooking/platter,
-				/obj/item/cooking/platter)
+	name = "platters (x2 wooden)"
+	result = list(/obj/item/kitchen/platter,
+				/obj/item/kitchen/platter)
 	reqs = list(/obj/item/grown/log/tree/small = 1)
 
 /*========= SKILL LEVEL: 1 REQUIRED ==========*/
