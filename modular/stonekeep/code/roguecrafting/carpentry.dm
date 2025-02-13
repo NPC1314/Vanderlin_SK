@@ -84,7 +84,7 @@
 	name = "bow (recurve)"
 	result = list(/obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve)
 	reqs = list(/obj/item/grown/log/tree/small = 1,
-	/obj/item/reagent_containers/food/snacks/fat = 1
+	/obj/item/reagent_containers/food/snacks/fat = 1,
 	/obj/item/natural/fibers = 4)
 	craftdiff = 2
 
