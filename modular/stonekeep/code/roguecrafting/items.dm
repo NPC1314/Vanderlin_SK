@@ -142,7 +142,7 @@
 	name = "fishbait (dough)"
 	result = list(/obj/item/fishing/bait/dough,
 				/obj/item/fishing/bait/dough)
-	reqs = list(/obj/item/reagent_containers/food/snacks/rogue/doughslice = 1)
+	reqs = list(/obj/item/reagent_containers/food/snacks/dough_slice = 1)
 
 /datum/crafting_recipe/roguetown/fishreel
 	name = "fishing line (fibre)"
