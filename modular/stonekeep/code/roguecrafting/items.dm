@@ -86,6 +86,8 @@
 	tools = list(/obj/item/rogueweapon/knife)
 	craftdiff = 1
 
+/obj/item/fishingrod/crafted
+
 /datum/crafting_recipe/roguetown/bait
 	name = "bait"
 	result = /obj/item/bait
