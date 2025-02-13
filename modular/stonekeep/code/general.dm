@@ -161,6 +161,11 @@
 	righthand_file = 'modular/stonekeep/icons/onmob/righthand.dmi'
 	experimental_inhand = FALSE
 
+/obj/item/grown/log/tree/small/essence	// disabled in this shitty way, its a literal powerup icon coin for mario to bop head on, very gamey ROGTODO
+	name = ""
+	desc = ""
+	icon_state = ""
+
 
 
 // =================================================================================
