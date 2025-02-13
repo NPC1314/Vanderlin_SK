@@ -313,33 +313,6 @@
 	w_class = WEIGHT_CLASS_SMALL
 	bundletype = /obj/item/natural/bundle/stoneblock
 	sellprice = 2
-/obj/item/natural/stoneblock/attackby(obj/item, mob/living/user)
-	if(item_flags & IN_STORAGE)
-		return
-	. = ..()
-/obj/item/natural/stoneblock/attack_right(mob/user)
-	. = ..()
-	if(user.get_active_held_item())
-		return
-	to_chat(user, span_warning("I start to collect [src]..."))
-	if(move_after(user, 4 SECONDS, target = src))
-		var/stackcount = 0
-		for(var/obj/item/natural/stoneblock/F in get_turf(src))
-			stackcount++
-		while(stackcount > 0)
-			if(stackcount == 1)
-				var/obj/item/natural/stoneblock/S = new(get_turf(user))
-				user.put_in_hands(S)
-				stackcount--
-			else if(stackcount >= 2)
-				var/obj/item/natural/bundle/stoneblock/B = new(get_turf(user))
-				B.amount = clamp(stackcount, 2, 4)
-				B.update_bundle()
-				stackcount -= clamp(stackcount, 2, 4)
-				user.put_in_hands(B)
-		for(var/obj/item/natural/stoneblock/F in get_turf(src))
-			playsound(get_turf(user.loc), 'modular/stonekeep/sound/stone_scrape.ogg', 100)
-			qdel(F)
 
 //................ Stone block stack	............... //
 /obj/item/natural/bundle/stoneblock
