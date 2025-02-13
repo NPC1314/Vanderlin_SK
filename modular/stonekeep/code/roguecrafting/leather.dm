@@ -31,6 +31,12 @@
 	reqs = list(/obj/item/natural/hide = 2)
 	craftdiff = 1
 
+/datum/crafting_recipe/roguetown/leather/whip
+	name = "shirt (tribal)"
+	result = /obj/item/clothing/suit/roguetown/shirt/tribalrag
+	reqs = list(/obj/item/natural/hide = 2)
+	craftdiff = 0
+
 
 /*=========		CLOAKS	==========*/
 /datum/crafting_recipe/roguetown/leather/volfmantle
