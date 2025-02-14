@@ -146,7 +146,7 @@
 	armor_class = ARMOR_CLASS_MEDIUM
 	blocksound = SOFTHIT
 
-
+/* needs some edits in update icon for sleeved detail, ROGTODO
 /obj/item/clothing/suit/roguetown/armor/brigandine/coat
 	name = "coat of the commander"
 	desc = "A thick boiled leather surcoat with plates concealed in it's many great folds. It weighs a ton and takes a great man to wear."
@@ -179,7 +179,7 @@
 		if(ismob(loc))
 			var/mob/L = loc
 			L.update_inv_armor()
-
+*/
 
 /obj/item/clothing/suit/roguetown/shirt/robe/hierophant
 	name = "hierophant's kandys"
