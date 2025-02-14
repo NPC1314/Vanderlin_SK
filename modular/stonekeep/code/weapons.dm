@@ -204,6 +204,11 @@
 	l_sleeve_status = SLEEVE_NOMOD
 
 // ===========	PANTS	============
+/obj/item/clothing/under/roguetown/platelegs/vampire
+	icon = 'icons/roguetown/clothing/pants.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/onmob/pants.dmi'
+	sleeved = 'icons/roguetown/clothing/onmob/helpers/sleeves_pants.dmi'
+
 /obj/item/clothing/under/roguetown/trou/baggy
 	name = "baggy pants"
 	desc = "A pair of baggy, comfortable pants. They end in a tight stocking around the calf, ballooning out around the thigh."
