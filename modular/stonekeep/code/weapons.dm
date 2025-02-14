@@ -143,7 +143,7 @@
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
 	equip_delay_self = 4 SECONDS
-	armor_class = ARMOR_CLASS_MEDIUM
+	armor_class = AC_MEDIUM
 	blocksound = SOFTHIT
 
 /* needs some edits in update icon for sleeved detail, ROGTODO
@@ -202,3 +202,148 @@
 	color = null
 	r_sleeve_status = SLEEVE_NOMOD
 	l_sleeve_status = SLEEVE_NOMOD
+
+/obj/item/clothing/under/roguetown/splintlegs
+	name = "brigandine chausses"
+	desc = "Splint mail and brigandine chausses, designed to protect the legs while still providing almost complete free range of movement."
+	icon = 'modular/stonekeep/icons/clothing.dmi'
+	mob_overlay_icon = 'modular/stonekeep/icons/onmob/clothes.dmi'
+	sleeved = 'modular/stonekeep/icons/onmob/sleeves.dmi'
+	icon_state = "splintlegs"
+	item_state = "splintlegs"
+	max_integrity = 250
+	armor = list("blunt" = 60, "slash" = 70, "stab" = 70, "piercing" = 60, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
+	blocksound = SOFTHIT
+	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
+	anvilrepair = /datum/skill/craft/blacksmithing
+	smeltresult = /obj/item/ingot/iron
+	r_sleeve_status = SLEEVE_NOMOD
+	l_sleeve_status = SLEEVE_NOMOD
+	armor_class = AC_MEDIUM
+	w_class = WEIGHT_CLASS_NORMAL
+	resistance_flags = FIRE_PROOF
+	sewrepair = FALSE
+
+
+/obj/item/clothing/under/roguetown/trou/otavan
+	name = "otavan leather trousers"
+	desc = "padded leather armor made by Otavan tailors, its quality is remarkable."
+	icon = 'modular/stonekeep/icons/clothing.dmi'
+	mob_overlay_icon = 'modular/stonekeep/icons/onmob/clothes.dmi'
+	sleeved = 'modular/stonekeep/icons/onmob/sleeves.dmi'
+	icon_state = "fencerpants"
+	resistance_flags = FIRE_PROOF
+	armor = list("blunt" = 85, "slash" = 75, "stab" = 70, "piercing" = 20, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
+	blocksound = SOFTHIT
+	max_integrity = 300
+	blade_dulling = DULLING_BASHCHOP
+	sewrepair = TRUE
+
+/obj/item/clothing/under/roguetown/heavy_leather_pants
+	name = "heavy leather trousers"
+	desc = "Thick hide cut and sewn into a pair of very protective trousers. The dense leather can \
+	turn away errant chops."
+	gender = PLURAL
+	icon = 'modular/stonekeep/icons/clothing.dmi'
+	mob_overlay_icon = 'modular/stonekeep/icons/onmob/clothes.dmi'
+	sleeved = 'modular/stonekeep/icons/onmob/sleeves.dmi'
+	icon_state = "roguepants"
+	item_state = "roguepants"
+	sewrepair = TRUE
+	armor = list("blunt" = 75, "slash" = 70, "stab" = 60, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
+	blocksound = SOFTHIT
+	max_integrity = 250
+	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	r_sleeve_status = SLEEVE_NOMOD
+	l_sleeve_status = SLEEVE_NOMOD
+	resistance_flags = FIRE_PROOF
+	armor_class = AC_LIGHT
+
+
+/obj/item/clothing/under/roguetown/platelegs
+	name = "steel plate chausses"
+	desc = "Reinforced armor to protect the legs."
+	gender = PLURAL
+	icon = 'modular/stonekeep/icons/clothing.dmi'
+	mob_overlay_icon = 'modular/stonekeep/icons/onmob/clothes.dmi'
+	sleeved = 'modular/stonekeep/icons/onmob/sleeves.dmi'
+	icon_state = "plate_legs"
+	item_state = "plate_legs"
+//	adjustable = CAN_CADJUST
+	sewrepair = FALSE
+	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
+	blocksound = PLATEHIT
+	max_integrity = 400
+	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	anvilrepair = /datum/skill/craft/armorsmithing
+	smeltresult = /obj/item/ingot/steel
+	r_sleeve_status = SLEEVE_NOMOD
+	l_sleeve_status = SLEEVE_NOMOD
+	resistance_flags = FIRE_PROOF
+	armor_class = AC_HEAVY
+
+
+/obj/item/clothing/shoes/roguetown/boots/psydonboots
+	name = "psydonian boots"
+	desc = "Blacksteel-heeled boots. The leather refuses to be worn down, no matter how far you march through these lands."
+	icon = 'modular/stonekeep/icons/clothing.dmi'
+	mob_overlay_icon = 'modular/stonekeep/icons/onmob/clothes.dmi'
+	sleeved = 'modular/stonekeep/icons/onmob/sleeves.dmi'
+	icon_state = "psydonboots"
+	item_state = "psydonboots"
+	sewrepair = TRUE
+	armor = list("blunt" = 30, "slash" = 10, "stab" = 20, "fire" = 0, "acid" = 0)
+
+
+/obj/item/clothing/under/roguetown/trou/leather/pontifex
+	name = "pontifex's chaqchur"
+	desc = "A handmade pair of baggy, thin leather pants. They end in a tight stocking around the calf, ballooning out around the thigh."
+	icon = 'modular/stonekeep/icons/clothing.dmi'
+	mob_overlay_icon = 'modular/stonekeep/icons/onmob/clothes.dmi'
+	sleeved = 'modular/stonekeep/icons/onmob/sleeves.dmi'
+	icon_state = "monkpants"
+	item_state = "monkpants"
+
+/obj/item/clothing/shoes/roguetown/otavan
+	name = "otavan leather boots"
+	desc = "Boots of outstanding craft, your fragile feet has never felt so protected and comfortable before."
+	body_parts_covered = FEET
+	icon = 'modular/stonekeep/icons/clothing.dmi'
+	mob_overlay_icon = 'modular/stonekeep/icons/onmob/clothes.dmi'
+	sleeved = 'modular/stonekeep/icons/onmob/sleeves.dmi'
+	icon_state = "fencerboots"
+	item_state = "fencerboots"
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
+	blocksound = SOFTHIT
+	max_integrity = 200
+	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "piercing" = 100, "fire" = 0, "acid" = 0)
+
+/obj/item/clothing/shoes/roguetown/boots/armor/iron
+	name = "iron plated boots"
+	desc = "Boots with iron for added protection."
+	body_parts_covered = FEET
+	icon = 'modular/stonekeep/icons/clothing.dmi'
+	mob_overlay_icon = 'modular/stonekeep/icons/onmob/clothes.dmi'
+	sleeved = 'modular/stonekeep/icons/onmob/sleeves.dmi'
+	icon_state = "armorironboots"
+	item_state = "armorironboots"
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
+	color = null
+	blocksound = PLATEHIT
+	max_integrity = 200
+	armor = list("blunt" = 80, "slash" = 100, "stab" = 70, "fire" = 0, "acid" = 0)
+	anvilrepair = /datum/skill/craft/armorsmithing
+	smeltresult = /obj/item/ingot/iron
+
+/obj/item/clothing/shoes/roguetown/otavan/inqboots
+	name = "inquisitorial boots"
+	desc = "Finely crafted boots, made to stomp out darkness."
+	icon = 'modular/stonekeep/icons/clothing.dmi'
+	mob_overlay_icon = 'modular/stonekeep/icons/onmob/clothes.dmi'
+	sleeved = 'modular/stonekeep/icons/onmob/sleeves.dmi'
+	icon_state = "inqboots"
+	item_state = "inqboots"
