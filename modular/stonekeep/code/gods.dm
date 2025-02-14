@@ -25,7 +25,7 @@
 	desc = "The Firstborn of the Forgotten God, twin of Astrata, gifted mankind divine wisdom."
 	flaws = "Cynical, Isolationist, Unfiltered Honesty"
 	worshippers = "Magic Practitioners, Scholars, Scribes"
-	sins = "Suppressing Truth, Indulging Lust, Burning Books"
+	sins = "Suppressing Truth, Indulging Lust, Destroying Books"
 	boons = "You learn and teach apprentices slightly better."
 	added_traits = list(TRAIT_TUTELAGE)
 	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
@@ -210,7 +210,7 @@
 	flaws = "Secretive, Judgemental, Self-Sacrificing"
 	worshippers = "Grenzelhofters, Inquisitors, Heroes"
 	sins = "Apostasy, Demon Worship, Betraying thy Father"
-	boons = "None. True strength comes for within."
+	boons = "None. True strength comes from within."
 	associated_faith = /datum/faith/psydon
 	confess_lines = list(
 		"THERE IS ONLY ONE GOD!",
