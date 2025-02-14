@@ -256,17 +256,12 @@
 				/obj/item/natural/fur = 1)
 	craftdiff = 2
 
-/datum/crafting_recipe/roguetown/leather/gloves_hardened
-	name = "gloves (hardened leather)"
-	result = /obj/item/clothing/gloves/roguetown/leather/advanced
-	reqs = 	list(/obj/item/natural/hide/cured = 2)
-	craftdiff = 2
-
-/datum/crafting_recipe/roguetown/leather/gloves_masterwork
-	name = "gloves (masterwork leather)"
-	result = /obj/item/clothing/gloves/roguetown/leather/masterwork
+/datum/crafting_recipe/roguetown/leather/gloves_fencing
+	name = "gloves (fencing)"
+	result = /obj/item/clothing/gloves/roguetown/fencer
 	reqs = 	list(/obj/item/natural/hide/cured = 2, /obj/item/reagent_containers/food/snacks/fat = 1)
-	craftdiff = 2
+	craftdiff = 4
+
 
 
 /*=========		PANTS	==========*/
@@ -295,11 +290,11 @@
 	result = /obj/item/clothing/wrists/roguetown/bracers/leather
 //	req_imperial = TRUE
 
-/datum/crafting_recipe/roguetown/leather/bracers_masterwork
+/datum/crafting_recipe/roguetown/leather/bracers_hardened
 	name = "bracers (masterwork leather)"
-	result =/obj/item/clothing/wrists/roguetown/bracers/leather/masterwork
+	result = /obj/item/clothing/wrists/roguetown/bracers/leather/hardened
 	reqs = 	list(/obj/item/natural/hide/cured = 2, /obj/item/reagent_containers/food/snacks/fat = 1)
-	craftdiff = 5
+	craftdiff = 4
 
 
 /*=========		HEAD & NECK	==========*/

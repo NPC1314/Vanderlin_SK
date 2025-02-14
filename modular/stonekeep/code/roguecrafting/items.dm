@@ -590,6 +590,14 @@
 	verbage = "untie"
 	verbage_tp  = "unties"
 
+/datum/crafting_recipe/roguetown/reinforce_gloves
+	name = "reinforce gloves"
+	result = /obj/item/clothing/gloves/roguetown/reinforced
+	reqs = list(/obj/item/clothing/gloves/roguetown/leather = 1, /obj/item/ingot/iron = 1)
+	verbage = "modifies"
+	verbage_tp  = "modifies"
+
+
 // ---------	LUMBERJACKING RECIPE		-------------
 /datum/crafting_recipe/roguetown/lumberjacking
 	skillcraft = /datum/skill/labor/lumberjacking
