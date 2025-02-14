@@ -86,21 +86,21 @@
 	subtype_reqs = TRUE
 
 /datum/crafting_recipe/roguetown/sbaita
-	name = "sweetbait (apple)"
+	name = "bait (sweetbait apple)"
 	result = /obj/item/bait/sweet
 	reqs = list(/obj/item/storage/roguebag = 1,
 				/obj/item/reagent_containers/food/snacks/produce/apple = 2)
 	subtype_reqs = TRUE
 
 /datum/crafting_recipe/roguetown/sbait
-	name = "sweetbait (berry)"
+	name = "bait (sweetbait berry)"
 	result = /obj/item/bait/sweet
 	reqs = list(/obj/item/storage/roguebag = 1,
 				/obj/item/reagent_containers/food/snacks/produce/jacksberry = 2)
 	subtype_reqs = TRUE
 
 /datum/crafting_recipe/roguetown/bloodbait
-	name = "bloodbait"
+	name = "bait (bloodbait)"
 	result = /obj/item/bait/bloody
 	reqs = list(/obj/item/storage/roguebag = 1,
 				/obj/item/reagent_containers/food/snacks/rogue/meat = 1)

@@ -547,7 +547,6 @@
 	max_integrity = 300
 	smeltresult = /obj/item/ingot/steel
 
-
 /obj/item/clothing/head/roguetown/helmet/heavy/knight/AdjustClothes(mob/user)
 	if(loc == user)
 		playsound(user, "sound/items/visor.ogg", 100, TRUE, -1)
