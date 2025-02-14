@@ -137,3 +137,31 @@
 	req_bar = /obj/item/ingot/iron
 	created_item = /obj/item/rogueweapon/chisel
 	i_type = "Tools"
+
+
+/datum/anvil_recipe/armor/iron/splint_legs
+	name = "Splint Chausses (+ 2 hide)"
+	recipe_name = "a pair of Splint Chausses"
+	req_bar = /obj/item/ingot/iron
+	additional_items = list(/obj/item/ingot/iron, /obj/item/natural/hide, /obj/item/natural/hide)
+	created_item = /obj/item/clothing/under/roguetown/splintlegs
+	craftdiff = 2
+
+
+/datum/anvil_recipe/armor/iron/splint_arms
+	name = "Splint Vambraces (+ 2 hide)"
+	recipe_name = "a pair of Splint Vambraces"
+	req_bar = /obj/item/ingot/iron
+	additional_items = list(/obj/item/ingot/iron, /obj/item/natural/hide, /obj/item/natural/hide)
+	created_item = /obj/item/clothing/wrists/roguetown/bracers/splint
+	craftdiff = 2
+
+
+/datum/anvil_recipe/armor/steel/brigadine
+	name = "Platemail Chausses (+Bar)"
+	recipe_name = "a pair of Platemail Chausses"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/steel, /obj/item/ingot/steel)
+	created_item = /obj/item/clothing/under/roguetown/chainlegs/reinforced
+	craftdiff = 3
+

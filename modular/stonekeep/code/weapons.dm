@@ -109,11 +109,11 @@
 	item_state = "roguearmor"
 	armor = ARMOR_LEATHER_GOOD
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_BLUNT, BCLASS_CHOP)
-	max_integrity = 300
+	max_integrity = INTEGRITY_STANDARD
 	sellprice = 25
 /obj/item/clothing/suit/roguetown/armor/leather/heavy/New()
 	. = ..()
-	if(icon_state == "roguearmo")
+	if(icon_state == "roguearmor")
 		if(prob(30))
 			icon_state = "roguearmor_belt"
 			item_state = "roguearmor_belt"
@@ -123,19 +123,18 @@
 	desc = "A heavy steerhide jerkin that reaches past the hips and better protects the vitals."
 	icon_state = "roguearmor_coat"
 	item_state = "roguearmor_coat"
-	body_parts_covered = CHEST|GROIN|VITALS|LEGS
+	body_parts_covered = COVERAGE_ALL_BUT_ARMS
 	sellprice = 40
 
 /obj/item/clothing/suit/roguetown/armor/medium/scale/inquisitor
 	name = "inquisitorial duster"
 	desc = "Metal plates reinforce this heavy coat, only the finest for the inquisition."
-	body_parts_covered = CHEST|VITALS|GROIN|LEGS|ARMS
+	body_parts_covered = COVERAGE_FULL
 	icon = 'modular/stonekeep/icons/clothing.dmi'
 	mob_overlay_icon = 'modular/stonekeep/icons/onmob/clothes.dmi'
 	sleeved = 'modular/stonekeep/icons/onmob/sleeves.dmi'
 	icon_state = "inqcoat"
 	item_state = "inqcoat"
-	sleevetype = "shirt"
 	max_integrity = INTEGRITY_STRONG
 	blocksound = SOFTHIT
 
@@ -182,7 +181,6 @@
 	sleeved = 'modular/stonekeep/icons/onmob/sleeves.dmi'
 	icon_state = "desertgown"
 	item_state = "desertgown"
-	color = null
 
 /obj/item/clothing/suit/roguetown/shirt/robe/monkcloth
 	name = "monks robes"
@@ -192,7 +190,6 @@
 	sleeved = 'modular/stonekeep/icons/onmob/sleeves.dmi'
 	icon_state = "monkcloth"
 	item_state = "monkcloth"
-	color = null
 	r_sleeve_status = SLEEVE_NOMOD
 	l_sleeve_status = SLEEVE_NOMOD
 
@@ -216,7 +213,8 @@
 	salvage_result = /obj/item/natural/hide/cured
 	armor =  ARMOR_LEATHER_BAD
 
-/obj/item/clothing/under/roguetown/trou/leather/advanced
+
+/obj/item/clothing/under/roguetown/leather/heavy
 	name = "heavy leather trousers"
 	desc = "Thick hide cut and sewn into a pair of very protective trousers. The dense leather can \
 	turn away errant chops."
@@ -228,13 +226,13 @@
 	item_state = "roguepants"
 	armor =  ARMOR_LEATHER
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
-	max_integrity = 250
+	max_integrity = INTEGRITY_STANDARD
 	r_sleeve_status = SLEEVE_NOMOD
 	l_sleeve_status = SLEEVE_NOMOD
 	resistance_flags = FIRE_PROOF
 	armor_class = AC_LIGHT
 
-/obj/item/clothing/under/roguetown/trou/leather/masterwork
+/obj/item/clothing/under/roguetown/leather/padded
 	name = "padded leather trousers"
 	desc = "Protects your legs from minor cuts and slashes well enough."
 	icon = 'modular/stonekeep/icons/clothing.dmi'
@@ -243,30 +241,30 @@
 	icon_state = "fencerpants"
 	resistance_flags = FIRE_PROOF
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
-	max_integrity = 300
 	armor = 	ARMOR_LEATHER_GOOD
 
 /obj/item/clothing/under/roguetown/splintlegs
-	name = "brigandine chausses"
-	desc = "Splint mail and brigandine chausses, designed to protect the legs while still providing almost complete free range of movement."
+	name = "splint chausses"
+	desc = "Worn by many a wandering warrior."
 	icon = 'modular/stonekeep/icons/clothing.dmi'
 	mob_overlay_icon = 'modular/stonekeep/icons/onmob/clothes.dmi'
 	sleeved = 'modular/stonekeep/icons/onmob/sleeves.dmi'
 	icon_state = "splintlegs"
 	item_state = "splintlegs"
-	max_integrity = 250
-	armor = ARMOR_SCALE
-	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
 	blocksound = SOFTHIT
 	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
 	anvilrepair = /datum/skill/craft/blacksmithing
 	smeltresult = /obj/item/ingot/iron
 	r_sleeve_status = SLEEVE_NOMOD
 	l_sleeve_status = SLEEVE_NOMOD
-	armor_class = AC_MEDIUM
+	armor_class = AC_LIGHT
 	w_class = WEIGHT_CLASS_NORMAL
 	resistance_flags = FIRE_PROOF
 	sewrepair = FALSE
+
+	armor = ARMOR_LEATHER_GOOD
+	prevent_crits = ALL_EXCEPT_STAB
+	max_integrity = INTEGRITY_STRONG
 
 /obj/item/clothing/under/roguetown/chainlegs/reinforced
 	name = "platemail chausses"
@@ -322,7 +320,7 @@
 
 /obj/item/clothing/shoes/roguetown/grenzelhoft
 	armor = ARMOR_PADDED
-/obj/item/clothing/shoes/roguetown/boots/leather/advanced
+/obj/item/clothing/shoes/roguetown/boots/leather/hardened
 	name = "hardened leather boots"
 	desc = "Well-heeled boots. The leather thick enough to resist wear and tear."
 	icon = 'modular/stonekeep/icons/clothing.dmi'
@@ -330,12 +328,11 @@
 	sleeved = 'modular/stonekeep/icons/onmob/sleeves.dmi'
 	icon_state = "psydonboots"
 	item_state = "psydonboots"
-	sewrepair = TRUE
 	max_integrity = 200
 	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT, BCLASS_TWIST)
 	armor = ARMOR_LEATHER
 
-/obj/item/clothing/shoes/roguetown/boots/leather/masterwork
+/obj/item/clothing/shoes/roguetown/boots/leather/fencing
 	name = "fencing boots"
 	desc = "Boots of outstanding craft, your fragile feet has never felt so protected and comfortable before."
 	icon = 'modular/stonekeep/icons/clothing.dmi'
@@ -375,5 +372,20 @@
 	armor = ARMOR_LEATHER_GOOD
 
 
-
-
+/obj/item/clothing/wrists/roguetown/bracers/splint
+	name = "splint vambraces"
+	desc = ""
+	icon = 'modular/stonekeep/icons/clothing.dmi'
+	mob_overlay_icon = 'modular/stonekeep/icons/onmob/clothes.dmi'
+	sleeved = 'modular/stonekeep/icons/onmob/sleeves.dmi'
+	icon_state = "splintarms"
+	item_state = "splintarms"
+	armor = ARMOR_LEATHER_GOOD
+	blocksound = SOFTHIT
+	resistance_flags = FIRE_PROOF
+	anvilrepair = /datum/skill/craft/armorsmithing
+	sewrepair = FALSE
+	smeltresult = /obj/item/ingot/iron
+	armor = ARMOR_LEATHER_GOOD
+	prevent_crits = ALL_EXCEPT_STAB
+	max_integrity = INTEGRITY_STRONG

@@ -233,14 +233,14 @@
 
 /datum/crafting_recipe/roguetown/leather/boots_hardened
 	name = "shoes (hardened leather boots)"
-	result = /obj/item/clothing/shoes/roguetown/boots/leather/advanced
+	result = /obj/item/clothing/shoes/roguetown/boots/leather/hardened
 	reqs = 	list(/obj/item/natural/hide/cured = 2)
 	craftdiff = 4
 
-/datum/crafting_recipe/roguetown/leather/masterwork
-	name = "shoes (masterwork leather boots)"
-	result = /obj/item/clothing/shoes/roguetown/boots/leather/masterwork
-	reqs = 	list(/obj/item/natural/hide/cured = 2, /obj/item/natural/cured/essence = 1)
+/datum/crafting_recipe/roguetown/leather/boots_fencing
+	name = "shoes (fencing boots)"
+	result = /obj/item/clothing/shoes/roguetown/boots/leather/fencing
+	reqs = 	list(/obj/item/natural/hide/cured = 2, /obj/item/reagent_containers/food/snacks/fat = 1)
 	craftdiff = 5
 
 
@@ -265,7 +265,7 @@
 /datum/crafting_recipe/roguetown/leather/gloves_masterwork
 	name = "gloves (masterwork leather)"
 	result = /obj/item/clothing/gloves/roguetown/leather/masterwork
-	reqs = 	list(/obj/item/natural/hide/cured = 2, /obj/item/natural/cured/essence = 1)
+	reqs = 	list(/obj/item/natural/hide/cured = 2, /obj/item/reagent_containers/food/snacks/fat = 1)
 	craftdiff = 2
 
 
@@ -276,16 +276,16 @@
 	reqs = list(/obj/item/natural/hide/cured = 2)
 //	req_imperial = TRUE
 
-/datum/crafting_recipe/roguetown/leather/pants_hardened
-	name = "pants (hardened leather chausses)"
-	result =/obj/item/clothing/wrists/roguetown/bracers/leather/masterwork
+/datum/crafting_recipe/roguetown/leather/pants_heavy
+	name = "pants (heavy leather)"
+	result = /obj/item/clothing/under/roguetown/leather/heavy
 	reqs = 	list(/obj/item/natural/hide/cured = 3)
 	craftdiff = 4
 
-/datum/crafting_recipe/roguetown/leather/pants_masterwork
-	name = "bracers (masterwork leather chausses)"
-	result = /obj/item/clothing/under/roguetown/trou/leather/masterwork
-	reqs = 	list(/obj/item/natural/hide/cured = 2, /obj/item/natural/cured/essence = 1)
+/datum/crafting_recipe/roguetown/leather/pants_padded
+	name = "pants (padded leather)"
+	result = /obj/item/clothing/under/roguetown/leather/padded
+	reqs = 	list(/obj/item/natural/hide/cured = 2, /obj/item/reagent_containers/food/snacks/fat = 1)
 	craftdiff = 5
 
 
@@ -298,7 +298,7 @@
 /datum/crafting_recipe/roguetown/leather/bracers_masterwork
 	name = "bracers (masterwork leather)"
 	result =/obj/item/clothing/wrists/roguetown/bracers/leather/masterwork
-	reqs = 	list(/obj/item/natural/hide/cured = 2, /obj/item/natural/cured/essence = 1)
+	reqs = 	list(/obj/item/natural/hide/cured = 2, /obj/item/reagent_containers/food/snacks/fat = 1)
 	craftdiff = 5
 
 
@@ -346,7 +346,7 @@
 /datum/crafting_recipe/roguetown/leather/helmet_masterwork
 	name = "helmet (masterwork leather)"
 	result = /obj/item/clothing/head/roguetown/helmet/leather/masterwork
-	reqs = 	list(/obj/item/natural/hide/cured = 2, /obj/item/natural/cured/essence = 1)
+	reqs = 	list(/obj/item/natural/hide/cured = 2, /obj/item/reagent_containers/food/snacks/fat = 1)
 	craftdiff = 5
 
 /* UNTIL KAIZOKU ADDED ROGTODO
