@@ -315,7 +315,7 @@
 	name = ""
 	desc = ""
 //	icon = 'icons/obj/atmospherics/pipes/disposal.dmi'
-	icon_state = "pipe"
+//	icon_state = "pipe"
 	mouse_opacity = 0
 	color = "#5a4621"
 	pixel_y = -16
