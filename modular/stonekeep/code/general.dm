@@ -299,22 +299,22 @@
 /obj/item/clothing/suit/roguetown/armor/chainmail/battered
 	desc = "A good quality haubergon, but weakened by many blows."
 	max_integrity = INTEGRITY_STANDARD
-
+/*
 /obj/structure/roguethrone/statues
 	icon = 'modular/Mapping/icons/96x96.dmi
-
+*/
 
 /*	..................   Misc   ................... */
 /obj/item/roguestatue/gnome
 	name = "petrified gnome"
 	desc = "A literal gnome, turned to stone by powerful magicks. Rather unsettling, or a fascinating experiment, depending on your point of view."
-	icon_state = "gnome_petrified"
+//	icon_state = "gnome_petrified"
 	smeltresult = null
 
 /obj/structure/fluff/shipssprote
 	name = ""
 	desc = ""
-	icon = 'icons/obj/atmospherics/pipes/disposal.dmi'
+//	icon = 'icons/obj/atmospherics/pipes/disposal.dmi'
 	icon_state = "pipe"
 	mouse_opacity = 0
 	color = "#5a4621"
