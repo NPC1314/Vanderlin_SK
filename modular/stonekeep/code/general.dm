@@ -246,3 +246,164 @@
 			L.adjust_fire_stacks(-1)
 
 
+
+
+/*	..................   For premapped blood skipping timers, diseases etc   ................... */
+/obj/effect/decal/cleanable/blood_neu
+	name = "blood"
+	desc = ""
+	icon = 'icons/effects/blood.dmi'
+	icon_state = "floor1"
+	alpha = 200
+	nomouseover = TRUE
+	nomouseover = TRUE
+	var/wash_precent = 0
+	COOLDOWN_DECLARE(wash_cooldown)
+
+/obj/effect/decal/cleanable/blood_neu/weather_act_on(weather_trait, severity)
+	if(weather_trait != PARTICLEWEATHER_RAIN || !COOLDOWN_FINISHED(src, wash_cooldown))
+		return
+	wash_precent += min(10, severity / 4)
+	alpha = 255 *((100 - wash_precent) * 0.01)
+	if(wash_precent >= 100)
+		qdel(src)
+	COOLDOWN_START(src, wash_cooldown, 15 SECONDS)
+
+/obj/effect/decal/cleanable/blood_neu/Initialize(mapload)
+	. = ..()
+	pixel_x = rand(-5,5)
+	pixel_y = rand(5,5)
+	GLOB.weather_act_upon_list += src
+
+/obj/effect/decal/cleanable/blood_neu/Destroy()
+	GLOB.weather_act_upon_list -= src
+	return ..()
+
+/obj/effect/decal/cleanable/blood_neu/random/Initialize(mapload)
+	. = ..()
+	icon_state = pick("floor1", "floor2", "floor3", "floor4", "floor5", "floor6", "splatter1", "splatter2", "splatter3", "splatter4", "splatter5", "splatter6", "gibl1", "gibl2", "gibl3", "gibl4", "gibl5")
+
+/obj/effect/decal/cleanable/blood_neu/tracks
+	icon_state = "tracks"
+
+
+
+// ==============================================================
+/*	..................   Various mapping aides   ................... */
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/broken
+	desc = "A long shirt of maille, this one is made for a short man it seems."
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/broken/Initialize()
+	. = ..()
+	obj_break()
+
+/obj/item/clothing/suit/roguetown/armor/chainmail/battered
+	desc = "A good quality haubergon, but weakened by many blows."
+	max_integrity = INTEGRITY_STANDARD
+
+/obj/structure/roguethrone/statues
+	icon = 'modular/Mapping/icons/96x96.dmi
+
+
+/*	..................   Misc   ................... */
+/obj/item/roguestatue/gnome
+	name = "petrified gnome"
+	desc = "A literal gnome, turned to stone by powerful magicks. Rather unsettling, or a fascinating experiment, depending on your point of view."
+	icon_state = "gnome_petrified"
+	smeltresult = null
+
+/obj/structure/fluff/shipssprote
+	name = ""
+	desc = ""
+	icon = 'icons/obj/atmospherics/pipes/disposal.dmi'
+	icon_state = "pipe"
+	mouse_opacity = 0
+	color = "#5a4621"
+	pixel_y = -16
+
+
+/obj/effect/decal/miasma
+	name = ""
+	desc = ""
+	icon = 'icons/roguetown/mob/rotten.dmi'
+	icon_state = "deadite"
+	mouse_opacity = 0
+
+/obj/effect/decal/remains/human/old
+	name = "remains"
+	color = "#d6b3a5"
+
+/obj/effect/decal/remains/human/old/small
+	icon_state = "remainslarva"
+
+
+// ======================================================================
+/*	..................   Colony Spider Web   ................... */
+/obj/structure/innocent_web
+	name = ""
+	desc = ""
+	icon = 'icons/roguetown/misc/tallstructure.dmi'
+	icon_state = "innocentweb1"
+	layer = ABOVE_ALL_MOB_LAYER
+	density = FALSE
+	max_integrity = 35
+	climbable = FALSE
+	dir = SOUTH
+	debris = list(/obj/item/natural/silk = 1)
+	var/lucky_escape
+
+/obj/structure/innocent_web/Initialize()
+	. = ..()
+	icon_state = "innocentweb[rand(1,2)]"
+	return ..()
+
+/obj/structure/innocent_web/attack_hand()
+	playsound(src, pick('sound/misc/jumpscare (1).ogg','sound/misc/jumpscare (2).ogg','sound/misc/jumpscare (3).ogg','sound/misc/jumpscare (4).ogg'), 100)
+	new /mob/living/simple_animal/hostile/retaliate/rogue/spider/colony (get_turf(src))
+	qdel(src)
+
+/obj/structure/innocent_web/attackby(obj/item, /mob/user, params)
+	playsound(src, pick('sound/misc/jumpscare (1).ogg','sound/misc/jumpscare (2).ogg','sound/misc/jumpscare (3).ogg','sound/misc/jumpscare (4).ogg'), 100)
+	new /mob/living/simple_animal/hostile/retaliate/rogue/spider/colony (get_turf(src))
+	qdel(src)
+
+/obj/structure/innocent_web/throw_impact(atom/hit_atom, datum/thrownthing/throwingdatum)
+	playsound(src, pick('sound/misc/jumpscare (1).ogg','sound/misc/jumpscare (2).ogg','sound/misc/jumpscare (3).ogg','sound/misc/jumpscare (4).ogg'), 100)
+	new /mob/living/simple_animal/hostile/retaliate/rogue/spider/colony (get_turf(src))
+	qdel(src)
+
+/obj/structure/innocent_web/Crossed(atom/movable/AM)
+	..()
+	if(isliving(AM))
+		var/mob/living/carbon/human/L = AM
+		lucky_escape = ( L.STALUC * 4 )
+		L.Immobilize(5)
+		if(L.m_intent == MOVE_INTENT_WALK)
+			L.Immobilize(10)
+			if(prob(lucky_escape))
+				to_chat(L, "<span class='warning'>The flimsy web breaks.</span>")
+				qdel(src)
+			else
+				playsound(src, pick('sound/misc/jumpscare (1).ogg','sound/misc/jumpscare (2).ogg','sound/misc/jumpscare (3).ogg','sound/misc/jumpscare (4).ogg'), 120)
+				new /mob/living/simple_animal/hostile/retaliate/rogue/spider/colony (get_turf(src))
+				qdel(src)
+		if(L.m_intent == MOVE_INTENT_RUN)
+			to_chat(L, "<span class='warning'>I'm stuck in the web!</span>")
+			L.Immobilize(20)
+			if(prob(lucky_escape))
+				to_chat(L, "<span class='warning'>The flimsy web breaks.</span>")
+				qdel(src)
+			else
+				playsound(src, pick('sound/misc/jumpscare (1).ogg','sound/misc/jumpscare (2).ogg','sound/misc/jumpscare (3).ogg','sound/misc/jumpscare (4).ogg'), 120)
+				new /mob/living/simple_animal/hostile/retaliate/rogue/spider/colony (get_turf(src))
+				qdel(src)
+		else
+			to_chat(L, "<span class='warning'>I'm stuck in the web!</span>")
+			L.Immobilize(5)
+			if(prob(lucky_escape))
+				to_chat(L, "<span class='warning'>The flimsy web breaks.</span>")
+				qdel(src)
+			else
+				playsound(src, pick('sound/misc/jumpscare (1).ogg','sound/misc/jumpscare (2).ogg','sound/misc/jumpscare (3).ogg','sound/misc/jumpscare (4).ogg'), 120)
+				new /mob/living/simple_animal/hostile/retaliate/rogue/spider/colony (get_turf(src))
+				qdel(src)
+
