@@ -335,7 +335,7 @@
 /obj/effect/decal/remains/human/old/small
 	icon_state = "remainslarva"
 
-
+/*
 // ======================================================================
 /*	..................   Colony Spider Web   ................... */
 /obj/structure/innocent_web
@@ -406,4 +406,4 @@
 				playsound(src, pick('sound/misc/jumpscare (1).ogg','sound/misc/jumpscare (2).ogg','sound/misc/jumpscare (3).ogg','sound/misc/jumpscare (4).ogg'), 120)
 				new /mob/living/simple_animal/hostile/retaliate/rogue/spider/colony (get_turf(src))
 				qdel(src)
-
+*/
