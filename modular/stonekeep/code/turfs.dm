@@ -187,3 +187,10 @@
 							/obj/item/grown/log/tree/stick = 3,
 							/obj/structure/flora/rogueflower/fallenleaves = 30)
 
+/area/rogue/indoors/cave/volf
+	name = "volf cave"
+	icon_state = "cave"
+
+/area/rogue/indoors/cave/spider
+	name = "spider cave"
+	icon_state = "cave"
