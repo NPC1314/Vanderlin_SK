@@ -34,6 +34,11 @@
 	desc = "Favored by common folk looking to cut a noble whoreson down to size."
 	smeltresult = /obj/item/ingot/iron
 
+//................ Woodcutter Axe ............... //
+/obj/item/rogueweapon/polearm/halberd/bardiche/woodcutter
+	slot_flags = null
+	icon = 'modular/stonekeep/icons/weapons_64.dmi'
+
 /obj/item/rogueweapon/mace/goden
 	icon = 'modular/stonekeep/icons/weapons_64.dmi'
 
