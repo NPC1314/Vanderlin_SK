@@ -81,15 +81,6 @@
 	. = ..()
 	color = pick(GLOB.peasant_dyes)
 
-/obj/item/clothing/head/roguetown/inqhat
-	name = "inquisitorial hat"
-	desc = "To keep ones vision away from the heavens, and focused on the sin beneath the soil."
-	icon = 'modular/stonekeep/icons/clothing.dmi'
-	mob_overlay_icon = 'modular/stonekeep/icons/onmob/clothes.dmi'
-	icon_state = "inqhat"
-	item_state = "inqhat"
-	sewrepair = TRUE
-
 /obj/item/clothing/head/roguetown/archercap
 	name = "archer's cap"
 	desc = "For the merry men."
@@ -456,18 +447,6 @@
 	item_state = "roguearmor_coat"
 	body_parts_covered = COVERAGE_ALL_BUT_ARMS
 	sellprice = 40
-
-/obj/item/clothing/suit/roguetown/armor/medium/scale/inquisitor
-	name = "inquisitorial duster"
-	desc = "Metal plates reinforce this heavy coat, only the finest for the inquisition."
-	body_parts_covered = COVERAGE_FULL
-	icon = 'modular/stonekeep/icons/clothing.dmi'
-	mob_overlay_icon = 'modular/stonekeep/icons/onmob/clothes.dmi'
-	sleeved = 'modular/stonekeep/icons/onmob/sleeves.dmi'
-	icon_state = "inqcoat"
-	item_state = "inqcoat"
-	max_integrity = INTEGRITY_STRONG
-	blocksound = SOFTHIT
 
 /obj/item/clothing/suit/roguetown/shirt/robe/desertgown
 	name = "desert gown"
