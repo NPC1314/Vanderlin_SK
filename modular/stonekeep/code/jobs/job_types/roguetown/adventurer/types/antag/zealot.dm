@@ -1,6 +1,6 @@
 /datum/advclass/zealot  // matthios cleric
 	name = "Zealot"
-	tutorial = "A true believer, and in return Matthios allows this unhinged individual to channel some power."
+	tutorial = "A true believer."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = ALL_PLAYER_RACES_BY_NAME
 	outfit = /datum/outfit/job/roguetown/bandit/zealot
@@ -11,7 +11,7 @@
 	..()
 	H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/axesmaces, 3, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
@@ -20,7 +20,6 @@
 	H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/medicine, 3, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/magic/holy, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
@@ -54,7 +53,3 @@
 			beltr = /obj/item/rogueweapon/mace/woodclub
 	H.verbs |= /mob/proc/haltyell
 	H.ambushable = FALSE
-
-	var/datum/devotion/cleric_holder/C = new /datum/devotion/cleric_holder(H, H.patron)
-	C.grant_spells_cleric(H)
-	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)

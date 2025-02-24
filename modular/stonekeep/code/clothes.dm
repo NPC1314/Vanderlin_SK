@@ -23,9 +23,12 @@
 	dynamic_hair_suffix = ""
 	body_parts_covered = HEAD | NOSE | EYES
 
-/obj/item/clothing/head/roguetown/roguehood/heavy
-	name = "padded hood"
-
+/obj/item/clothing/head/roguetown/roguehood/random/heavy
+	desc = "Thick leather, with a reinforced cap under it."
+	armor = ARMOR_LEATHER_BAD
+	prevent_crits = CUT_AND_MINOR_CRITS
+	max_integrity = INTEGRITY_STANDARD
+	salvage_result = /obj/item/natural/hide/cured
 
 //................ Crimson Marauder ............... //
 /obj/item/clothing/head/roguetown/helmet/ironpot/marauder
