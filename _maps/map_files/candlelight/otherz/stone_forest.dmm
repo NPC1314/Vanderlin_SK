@@ -2,9 +2,6 @@
 "al" = (
 /turf/open/floor/rogue/cobblerock/red,
 /area/rogue/outdoors/woods)
-"ar" = (
-/turf/open/floor/rogue/sandstone/old,
-/area/rogue/outdoors/woods)
 "aA" = (
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/woods)
@@ -40,13 +37,6 @@
 /area/rogue/outdoors/woods)
 "df" = (
 /turf/open/water/river,
-/area/rogue/outdoors/woods)
-"dy" = (
-/obj/effect/landmark/travel_tile_location,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/outdoors/woods)
-"dG" = (
-/turf/open/floor/rogue/hay,
 /area/rogue/outdoors/woods)
 "dM" = (
 /obj/effect/decal/cleanable/blood_neu/random,
@@ -139,10 +129,6 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors)
-"hz" = (
-/obj/machinery/light/rogue/wallfire/candle/lamp/temple/eora,
-/turf/open/floor/rogue/sandstone/old,
-/area/rogue/outdoors/woods)
 "hM" = (
 /obj/effect/decal/cleanable/blood/old,
 /obj/item/rogueweapon/polearm/halberd/bardiche/woodcutter,
@@ -152,10 +138,6 @@
 /obj/item/storage/roguebag,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors)
-"hT" = (
-/obj/effect/landmark/travel_spawn_point,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/woods)
 "ip" = (
 /obj/structure/flora/rogueflower/random,
 /turf/open/floor/rogue/grass,
@@ -203,10 +185,6 @@
 /obj/structure/fluff/railing/wood,
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/woods)
-"ku" = (
-/obj/machinery/light/rogue/wallfire/candle/lamp/temple/noc,
-/turf/open/floor/rogue/sandstone/old,
-/area/rogue/outdoors/woods)
 "kH" = (
 /turf/open/water/river{
 	dir = 8
@@ -221,10 +199,6 @@
 	on = 0
 	},
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/woods)
-"lj" = (
-/obj/structure/fluff/walldeco/pillar/solomonalt,
-/turf/open/floor/rogue/sandstone,
 /area/rogue/outdoors/woods)
 "lr" = (
 /obj/structure/flora/rock/pile,
@@ -245,21 +219,10 @@
 /obj/item/flint,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors)
-"mo" = (
-/obj/structure/fluff/walldeco/pillar/egypt,
-/turf/open/floor/rogue/sandstone,
-/area/rogue/outdoors/woods)
-"mr" = (
-/turf/closed/wall/mineral/rogue/stonebrick/sandstone,
-/area/rogue/outdoors/woods)
 "mw" = (
 /obj/effect/decal/remains/human/old/small,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/cave/volf)
-"mV" = (
-/obj/structure/fluff/walldeco/pillar/doric,
-/turf/open/floor/rogue/sandstone,
-/area/rogue/outdoors/woods)
 "nf" = (
 /obj/structure/flora/roguegrass/water,
 /turf/open/water/river{
@@ -270,9 +233,6 @@
 /obj/structure/bed/rogue/sleepingbag,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors)
-"nv" = (
-/turf/open/floor/rogue/sandstone,
-/area/rogue/outdoors/woods)
 "nB" = (
 /obj/structure/table/wood/plain/alt,
 /obj/item/reagent_containers/glass/bowl/clay,
@@ -281,14 +241,6 @@
 "nX" = (
 /obj/structure/flora/roguegrass/water,
 /turf/open/water/cleanshallow,
-/area/rogue/outdoors/woods)
-"om" = (
-/obj/structure/fermenting_barrel/distillery,
-/turf/open/floor/rogue/sandstone/temple,
-/area/rogue/outdoors/woods)
-"ow" = (
-/obj/effect/decal/cleanable/blood_neu/random,
-/turf/open/floor/rogue/sandstone/temple,
 /area/rogue/outdoors/woods)
 "oz" = (
 /turf/open/floor/rogue/grass/mixyel/under_tree,
@@ -322,13 +274,6 @@
 /obj/item/alch/bone,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/cave/volf)
-"te" = (
-/obj/machinery/light/rogue/wallfire/candle/lamp/temple/ravox,
-/turf/open/floor/rogue/sandstone/old,
-/area/rogue/outdoors/woods)
-"tS" = (
-/turf/closed,
-/area/rogue/outdoors/woods)
 "tV" = (
 /obj/machinery/light/rogue/campfire/densefire,
 /turf/open/floor/rogue/dirt,
@@ -340,20 +285,12 @@
 /obj/machinery/light/rogue/firebowl/cold,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woods)
-"uD" = (
-/obj/machinery/light/rogue/wallfire/candle/lamp/temple/xylix,
-/turf/open/floor/rogue/sandstone/old,
-/area/rogue/outdoors/woods)
 "uJ" = (
 /obj/effect/decal/cleanable/blood_neu/random,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/cave/volf)
 "uT" = (
 /turf/open/floor/rogue/rooftop/green,
-/area/rogue/outdoors/woods)
-"vl" = (
-/obj/structure/fluff/walldeco/pillar/solomon,
-/turf/open/floor/rogue/sandstone,
 /area/rogue/outdoors/woods)
 "vr" = (
 /obj/effect/decal/cleanable/dirt/cobweb{
@@ -418,24 +355,13 @@
 /obj/machinery/light/rogue/firebowl/cold,
 /turf/open/floor/rogue/grass/mixyel,
 /area/rogue/outdoors/woods)
-"yK" = (
-/obj/machinery/light/rogue/wallfire/candle/lamp/temple/pestra,
-/turf/open/floor/rogue/sandstone/old,
-/area/rogue/outdoors/woods)
 "yZ" = (
 /obj/structure/flora/rogueflower/fallenleaves,
 /turf/open/floor/rogue/grass/mixyel/under_tree,
 /area/rogue/outdoors/woods)
-"zt" = (
-/obj/structure/trellise,
-/turf/open/floor/rogue/sandstone/temple,
-/area/rogue/outdoors/woods)
 "Aa" = (
 /turf/closed/wall/mineral/rogue/tent,
 /area/rogue/indoors)
-"Au" = (
-/turf/open/floor/rogue/sand,
-/area/rogue/outdoors/woods)
 "Ay" = (
 /obj/structure/fluff/traveltile{
 	aportalgoesto = "candlelight-forest";
@@ -457,17 +383,7 @@
 "BE" = (
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/indoors)
-"BG" = (
-/turf/open/floor/rogue/sandstone/temple,
-/area/rogue/outdoors/woods)
-"BX" = (
-/turf/open/floor/rogue/sandstone/shaded,
-/area/rogue/outdoors/woods)
 "CA" = (
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/woods)
-"CK" = (
-/obj/effect/landmark/travel_tile_location,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/woods)
 "CL" = (
@@ -511,10 +427,6 @@
 "EK" = (
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/cave/spider)
-"EZ" = (
-/obj/machinery/light/rogue/firebowl/cold,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/woods)
 "FJ" = (
 /obj/machinery/light/rogue/firebowl/stump,
 /turf/open/floor/rogue/grass,
@@ -603,10 +515,6 @@
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods)
-"Lz" = (
-/obj/structure/fluff/walldeco/pillar/nordic,
-/turf/open/floor/rogue/sandstone,
-/area/rogue/outdoors/woods)
 "LY" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/spider/hairy,
 /turf/open/floor/rogue/naturalstone,
@@ -619,10 +527,6 @@
 /obj/item/natural/rock,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/cave/volf)
-"MG" = (
-/obj/machinery/light/rogue/firebowl/cold,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/outdoors/woods)
 "ML" = (
 /obj/effect/decal/cleanable/blood_neu/tracks{
 	dir = 9
@@ -672,10 +576,6 @@
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woods)
-"PI" = (
-/obj/effect/landmark/travel_spawn_point,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/outdoors/woods)
 "PU" = (
 /obj/machinery/light/rogue/hearth{
 	fueluse = 1
@@ -709,10 +609,6 @@
 /area/rogue/indoors/cave/volf)
 "RB" = (
 /turf/open/floor/rogue/naturalstone,
-/area/rogue/outdoors/woods)
-"Tr" = (
-/obj/machinery/light/rogue/wallfire/candle/lamp/temple/malum,
-/turf/open/floor/rogue/sandstone/old,
 /area/rogue/outdoors/woods)
 "TR" = (
 /turf/open/floor/rogue/rooftop/green{
@@ -768,18 +664,18 @@
 /turf/closed,
 /area/rogue/outdoors/woods)
 "VS" = (
-/obj/structure/fluff/walldeco/pillar,
-/turf/open/floor/rogue/sandstone,
+/obj/effect/landmark/mapGenerator/rogue/forest{
+	endTurfX = 128;
+	endTurfY = 128
+	},
+/obj/effect/landmark/map_load_mark/bandit_traveltile,
+/turf/closed,
 /area/rogue/outdoors/woods)
 "VX" = (
 /obj/effect/landmark/start/adventurerlate{
 	dir = 4
 	},
 /turf/open/floor/rogue/cobblerock/red,
-/area/rogue/outdoors/woods)
-"Wo" = (
-/obj/effect/decal/cleanable/blood_neu/tracks,
-/turf/open/floor/rogue/sandstone/temple,
 /area/rogue/outdoors/woods)
 "Wx" = (
 /obj/structure/flora/newtree,
@@ -830,10 +726,6 @@
 /obj/structure/table/wood/plain/alt,
 /obj/item/rogueweapon/handsaw,
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/woods)
-"Zo" = (
-/obj/structure/fluff/walldeco/pillar/aztec,
-/turf/open/floor/rogue/sandstone,
 /area/rogue/outdoors/woods)
 "Zs" = (
 /obj/structure/fluff/railing/stonehedge{
@@ -982,9 +874,9 @@ ex
 ex
 ex
 ex
-pT
-pT
-pT
+ex
+ex
+ex
 pT
 pT
 pT
@@ -1100,10 +992,10 @@ ex
 ex
 ex
 ex
-Au
-dG
-ar
-nv
+ex
+ex
+ex
+ex
 ex
 "}
 (3,1,1) = {"
@@ -1111,9 +1003,9 @@ ex
 ex
 ex
 ex
-pT
-pT
-pT
+ex
+ex
+ex
 pT
 pT
 iF
@@ -1211,6 +1103,7 @@ al
 GJ
 uu
 uu
+qU
 ex
 ex
 ex
@@ -1230,10 +1123,9 @@ ex
 ex
 ex
 ex
-Au
-Au
-BX
-BG
+ex
+ex
+ex
 ex
 "}
 (4,1,1) = {"
@@ -1241,9 +1133,9 @@ ex
 ex
 ex
 ex
-pT
-pT
-pT
+ex
+ex
+ex
 pT
 uu
 CA
@@ -1341,7 +1233,7 @@ al
 GJ
 uu
 uu
-ex
+qU
 pT
 pT
 qU
@@ -1359,20 +1251,20 @@ ex
 ex
 ex
 ex
-om
-mr
-hz
-mr
-mr
+ex
+ex
+ex
+ex
+ex
 ex
 "}
 (5,1,1) = {"
 ex
 ex
 ex
-pT
-pT
-pT
+ex
+ex
+ex
 pT
 pT
 CA
@@ -1489,11 +1381,11 @@ ex
 ex
 ex
 ex
-BG
-mr
-Tr
-mr
-VS
+ex
+ex
+ex
+ex
+ex
 ex
 "}
 (6,1,1) = {"
@@ -1501,7 +1393,7 @@ ex
 ex
 ex
 ex
-pT
+ex
 pT
 pT
 ww
@@ -1592,7 +1484,7 @@ ex
 ex
 ex
 ex
-ex
+CA
 CA
 uu
 uu
@@ -1619,11 +1511,11 @@ ex
 ex
 ex
 ex
-ow
-mr
-ku
-mr
-Zo
+ex
+ex
+ex
+ex
+ex
 ex
 "}
 (7,1,1) = {"
@@ -1632,7 +1524,7 @@ ex
 ex
 ex
 ex
-pT
+ex
 pT
 pT
 qU
@@ -1722,12 +1614,12 @@ qU
 ex
 ex
 ex
-ex
+CA
 CA
 uu
 uu
-uu
-uu
+iF
+iF
 GJ
 CA
 CA
@@ -1749,11 +1641,11 @@ ex
 ex
 ex
 ex
-Wo
-mr
-yK
-mr
-mV
+ex
+ex
+ex
+ex
+ex
 ex
 "}
 (8,1,1) = {"
@@ -1762,7 +1654,7 @@ ex
 ex
 ex
 ex
-pT
+ex
 pT
 pT
 pT
@@ -1852,12 +1744,12 @@ qU
 pT
 pT
 ex
-ex
+CA
 uu
 uu
 uu
 al
-uu
+iF
 GJ
 uu
 uu
@@ -1879,11 +1771,11 @@ ex
 ex
 ex
 ex
-zt
-mr
-te
-mr
-mo
+ex
+ex
+ex
+ex
+ex
 ex
 "}
 (9,1,1) = {"
@@ -1892,7 +1784,7 @@ ex
 ex
 ex
 ex
-pT
+ex
 pT
 pT
 pT
@@ -1981,8 +1873,8 @@ qU
 qU
 pT
 pT
-ex
-ex
+pT
+CA
 uu
 CA
 CA
@@ -2009,11 +1901,11 @@ ex
 ex
 ex
 ex
-BG
-mr
-uD
-mr
-Lz
+ex
+ex
+ex
+ex
+ex
 ex
 "}
 (10,1,1) = {"
@@ -2022,7 +1914,7 @@ ex
 ex
 ex
 ex
-pT
+ex
 pT
 pT
 vx
@@ -2110,9 +2002,9 @@ uu
 iF
 pT
 pT
-ex
-ex
-ex
+pT
+pT
+pT
 uu
 uu
 CA
@@ -2140,10 +2032,10 @@ ex
 ex
 ex
 ex
-Au
-In
-mr
-vl
+ex
+ex
+ex
+ex
 ex
 "}
 (11,1,1) = {"
@@ -2152,8 +2044,8 @@ ex
 ex
 ex
 ex
-pT
-pT
+ex
+ex
 pT
 qU
 uu
@@ -2240,9 +2132,9 @@ uu
 uu
 uu
 pT
-ex
-ex
-ex
+pT
+pT
+pT
 uu
 uu
 GJ
@@ -2270,10 +2162,10 @@ ex
 ex
 ex
 ex
-Au
-uT
-mr
-lj
+ex
+ex
+ex
+ex
 ex
 "}
 (12,1,1) = {"
@@ -2283,7 +2175,7 @@ ex
 ex
 ex
 ex
-pT
+ex
 pT
 pT
 pT
@@ -2370,9 +2262,9 @@ uu
 uu
 uu
 pT
-ex
-ex
-ex
+pT
+pT
+pT
 uu
 uu
 GJ
@@ -2402,8 +2294,8 @@ ex
 ex
 ex
 ex
-mr
-nv
+ex
+ex
 ex
 "}
 (13,1,1) = {"
@@ -2413,7 +2305,7 @@ ex
 ex
 ex
 ex
-pT
+ex
 pT
 pT
 iF
@@ -2500,14 +2392,14 @@ uu
 CA
 CA
 qU
-ex
-ex
-ex
+pT
+pT
+pT
 uu
 CA
 al
 al
-uu
+iF
 uu
 CA
 uu
@@ -2543,7 +2435,7 @@ ex
 ex
 ex
 ex
-pT
+ex
 pT
 pT
 pT
@@ -2637,7 +2529,7 @@ uu
 CA
 al
 al
-uu
+iF
 uu
 CA
 CA
@@ -2933,7 +2825,7 @@ ex
 ex
 ex
 ex
-pT
+ex
 pT
 pT
 CA
@@ -3024,7 +2916,7 @@ uu
 uu
 uu
 uu
-uu
+iF
 al
 al
 GJ
@@ -3063,7 +2955,7 @@ ex
 ex
 ex
 ex
-pT
+ex
 pT
 pT
 uu
@@ -3154,8 +3046,8 @@ uu
 uu
 uu
 uu
-uu
-uu
+iF
+iF
 al
 CA
 uu
@@ -3193,7 +3085,7 @@ ex
 ex
 ex
 ex
-pT
+ex
 pT
 si
 pT
@@ -3320,10 +3212,10 @@ ex
 ex
 ex
 ex
-pT
-pT
-pT
-pT
+ex
+ex
+ex
+ex
 si
 Pn
 iF
@@ -3450,9 +3342,9 @@ ex
 ex
 ex
 ex
-pT
-pT
-pT
+ex
+ex
+ex
 pT
 pT
 si
@@ -3577,10 +3469,10 @@ ex
 ex
 "}
 (22,1,1) = {"
-pT
-pT
-pT
-pT
+ex
+ex
+ex
+ex
 pT
 pT
 pT
@@ -3707,9 +3599,9 @@ ex
 ex
 "}
 (23,1,1) = {"
-EZ
-uu
-uu
+ex
+ex
+pT
 qU
 pT
 pT
@@ -3802,7 +3694,7 @@ uu
 uu
 GJ
 GJ
-uu
+iF
 al
 al
 CA
@@ -3837,9 +3729,9 @@ ex
 ex
 "}
 (24,1,1) = {"
-CK
-CA
-CA
+ex
+pT
+pT
 uu
 qU
 qU
@@ -3932,7 +3824,7 @@ GJ
 GJ
 GJ
 al
-uu
+iF
 al
 GJ
 uu
@@ -3967,8 +3859,8 @@ ex
 ex
 "}
 (25,1,1) = {"
-CK
-hT
+ex
+pT
 CA
 CA
 CA
@@ -4060,7 +3952,7 @@ GJ
 GJ
 al
 al
-uu
+GJ
 al
 CA
 CA
@@ -4097,8 +3989,8 @@ ex
 ex
 "}
 (26,1,1) = {"
-CK
-CA
+ex
+pT
 CA
 CA
 CA
@@ -4184,14 +4076,14 @@ uu
 uu
 GJ
 uu
-uu
-uu
+iF
+iF
 al
 al
 al
-uu
-uu
-uu
+GJ
+iF
+iF
 CA
 CA
 uu
@@ -4227,9 +4119,9 @@ ex
 ex
 "}
 (27,1,1) = {"
-CA
-CA
-CA
+ex
+pT
+pT
 CA
 CA
 CA
@@ -4314,8 +4206,8 @@ CA
 CA
 GJ
 al
-uu
-uu
+GJ
+GJ
 al
 al
 al
@@ -4357,11 +4249,11 @@ ex
 ex
 "}
 (28,1,1) = {"
+ex
 pT
 pT
-pT
-pT
-qU
+uu
+uu
 uu
 uu
 CA
@@ -4489,10 +4381,10 @@ ex
 (29,1,1) = {"
 ex
 ex
-pT
-pT
-qU
-qU
+uu
+uu
+uu
+uu
 uu
 CA
 qU
@@ -4572,7 +4464,7 @@ GJ
 al
 al
 al
-uu
+iF
 al
 GJ
 GJ
@@ -4620,7 +4512,7 @@ ex
 ex
 ex
 ex
-pT
+uu
 pT
 pT
 uu
@@ -4828,9 +4720,9 @@ uu
 CA
 CA
 al
-uu
-uu
-uu
+GJ
+GJ
+iF
 GJ
 GJ
 uu
@@ -4955,11 +4847,11 @@ uu
 uu
 uu
 uu
-uu
+iF
 al
 al
 al
-uu
+iF
 uu
 uu
 uu
@@ -5085,10 +4977,10 @@ iF
 uu
 uu
 uu
-uu
+iF
 al
 al
-CA
+GJ
 CA
 uu
 Bv
@@ -5215,7 +5107,7 @@ qU
 iF
 uu
 uu
-uu
+GJ
 al
 al
 GJ
@@ -5345,7 +5237,7 @@ qU
 CA
 uu
 CA
-uu
+GJ
 al
 GJ
 GJ
@@ -7296,7 +7188,7 @@ uu
 CA
 GJ
 al
-uu
+GJ
 GJ
 pT
 HZ
@@ -7425,8 +7317,8 @@ pT
 pT
 GJ
 al
-uu
-uu
+GJ
+iF
 CA
 iF
 CA
@@ -7555,8 +7447,8 @@ pT
 Bv
 GJ
 al
-uu
-uu
+iF
+iF
 CA
 iF
 CA
@@ -7813,7 +7705,7 @@ uu
 CA
 uu
 uu
-uu
+iF
 CA
 al
 GJ
@@ -7943,7 +7835,7 @@ uu
 uu
 uu
 uu
-uu
+iF
 al
 al
 GJ
@@ -8073,7 +7965,7 @@ CA
 pT
 uu
 uu
-uu
+iF
 al
 al
 CA
@@ -8464,7 +8356,7 @@ uu
 uu
 CA
 al
-uu
+iF
 uu
 uu
 Bv
@@ -8594,7 +8486,7 @@ qU
 uu
 GJ
 al
-uu
+iF
 uu
 uu
 uu
@@ -8853,7 +8745,7 @@ uu
 uu
 GJ
 al
-uu
+GJ
 al
 uu
 uu
@@ -8983,8 +8875,8 @@ uu
 CA
 GJ
 al
-uu
-uu
+GJ
+iF
 uu
 uu
 uu
@@ -9501,7 +9393,7 @@ CA
 uu
 uu
 uu
-uu
+iF
 al
 GJ
 iF
@@ -10020,7 +9912,7 @@ uu
 uu
 uu
 CA
-uu
+iF
 al
 al
 uu
@@ -10150,8 +10042,8 @@ uu
 uu
 uu
 CA
-uu
-uu
+iF
+iF
 GJ
 GJ
 pT
@@ -10932,7 +10824,7 @@ uu
 uu
 CA
 al
-uu
+iF
 uu
 CA
 CA
@@ -11062,7 +10954,7 @@ uu
 uu
 CA
 al
-uu
+iF
 uu
 uu
 uu
@@ -11970,7 +11862,7 @@ uu
 GJ
 GJ
 CA
-uu
+iF
 GJ
 uu
 uu
@@ -12100,7 +11992,7 @@ uu
 GJ
 CA
 al
-uu
+iF
 uu
 uu
 iF
@@ -12230,7 +12122,7 @@ uu
 GJ
 al
 al
-uu
+iF
 uu
 iF
 uu
@@ -12358,7 +12250,7 @@ uu
 uu
 uu
 GJ
-uu
+GJ
 al
 GJ
 CA
@@ -12488,8 +12380,8 @@ CA
 uu
 uu
 GJ
-uu
-al
+GJ
+GJ
 GJ
 CA
 uu
@@ -13008,7 +12900,7 @@ uu
 uu
 uu
 uu
-uu
+iF
 al
 GJ
 uu
@@ -13400,7 +13292,7 @@ uu
 GJ
 al
 CA
-uu
+iF
 GJ
 uu
 iF
@@ -13919,9 +13811,9 @@ uu
 uu
 uu
 GJ
-uu
+GJ
 al
-uu
+iF
 GJ
 uu
 iF
@@ -14049,7 +13941,7 @@ iF
 uu
 uu
 uu
-uu
+GJ
 al
 al
 GJ
@@ -14704,8 +14596,8 @@ GJ
 GJ
 al
 al
-uu
-uu
+iF
+iF
 GJ
 GJ
 uu
@@ -14834,7 +14726,7 @@ CA
 GJ
 al
 al
-uu
+iF
 al
 al
 GJ
@@ -14970,8 +14862,8 @@ al
 al
 al
 al
-uu
-uu
+iF
+iF
 GJ
 GJ
 Pn
@@ -15100,7 +14992,7 @@ al
 al
 al
 al
-uu
+iF
 al
 al
 GJ
@@ -15493,11 +15385,11 @@ uu
 uu
 GJ
 uu
-uu
+GJ
 CA
 CA
 al
-uu
+iF
 CA
 GJ
 GJ
@@ -15624,7 +15516,7 @@ uu
 Bv
 uu
 uu
-uu
+GJ
 al
 al
 al
@@ -15759,8 +15651,8 @@ CA
 GJ
 al
 al
-uu
-uu
+iF
+iF
 GJ
 CA
 CA
@@ -15890,7 +15782,7 @@ GJ
 GJ
 al
 al
-uu
+iF
 CA
 GJ
 GJ
@@ -16282,13 +16174,13 @@ uu
 uu
 uu
 uu
-uu
+iF
 al
 CA
 CA
 al
 al
-uu
+GJ
 al
 al
 GJ
@@ -16417,13 +16309,13 @@ GJ
 al
 al
 al
-uu
+GJ
 al
 al
 al
 al
 al
-uu
+iF
 GJ
 uu
 uu
@@ -16553,7 +16445,7 @@ al
 al
 al
 al
-uu
+iF
 al
 CA
 CA
@@ -17584,6 +17476,14 @@ ex
 ex
 ex
 ex
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
 ex
 ex
 ex
@@ -17593,29 +17493,21 @@ ex
 ex
 ex
 ex
-tS
-tS
-tS
-tS
-tS
-tS
-tS
-tS
-tS
-tS
-tS
-tS
-tS
-tS
-tS
-tS
-tS
-tS
-tS
-tS
-tS
-tS
-VL
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+VS
 "}
 (2,1,2) = {"
 ex
@@ -17714,18 +17606,6 @@ ex
 ex
 ex
 ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
 Nv
 Nv
 Nv
@@ -17734,7 +17614,19 @@ Nv
 Nv
 Nv
 Nv
-Nv
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
 ex
 ex
 ex
@@ -17776,9 +17668,9 @@ ex
 ex
 ex
 ex
-dy
-dy
-dy
+RB
+RB
+RB
 ex
 ex
 Nv
@@ -17844,17 +17736,6 @@ ex
 ex
 ex
 ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
 Nv
 Nv
 Nv
@@ -17864,7 +17745,18 @@ Nv
 Nv
 Nv
 Nv
-Nv
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
 ex
 ex
 ex
@@ -17905,9 +17797,9 @@ Nv
 Nv
 Nv
 ex
-MG
 RB
-PI
+RB
+RB
 RB
 ex
 Nv
@@ -17968,15 +17860,6 @@ ex
 ex
 Nv
 Nv
-Nv
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
 ex
 ex
 ex
@@ -17995,6 +17878,15 @@ Nv
 Nv
 Nv
 Nv
+Nv
+Nv
+ex
+ex
+ex
+ex
+ex
+ex
+ex
 ex
 ex
 ex
@@ -18098,14 +17990,6 @@ Nv
 Nv
 Nv
 Nv
-Nv
-Nv
-Nv
-Nv
-ex
-ex
-ex
-ex
 ex
 ex
 ex
@@ -18123,6 +18007,14 @@ Nv
 Nv
 Nv
 Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+ex
 ex
 ex
 ex
@@ -18228,14 +18120,6 @@ Nv
 Nv
 Nv
 Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-ex
-ex
-ex
 ex
 ex
 ex
@@ -18253,7 +18137,15 @@ Nv
 Nv
 Nv
 Nv
-ex
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
 ex
 ex
 ex
@@ -18360,13 +18252,6 @@ Nv
 Nv
 Nv
 Nv
-Nv
-Nv
-ex
-ex
-ex
-ex
-ex
 ex
 ex
 ex
@@ -18382,9 +18267,16 @@ Nv
 Nv
 Nv
 Nv
-ex
-ex
-ex
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
 ex
 ex
 ex
@@ -18493,13 +18385,6 @@ Nv
 Nv
 Nv
 ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
 Nv
 Nv
 Nv
@@ -18513,8 +18398,15 @@ Nv
 Nv
 Nv
 Nv
-ex
-ex
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
 ex
 ex
 ex
@@ -18622,13 +18514,6 @@ Nv
 Nv
 Nv
 Nv
-ex
-ex
-ex
-ex
-ex
-ex
-ex
 Nv
 Nv
 Nv
@@ -18644,7 +18529,14 @@ Nv
 Nv
 Nv
 Nv
-ex
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
 ex
 ex
 ex
@@ -18751,13 +18643,13 @@ Nv
 Nv
 Nv
 Nv
-ex
-ex
-ex
-ex
-ex
-ex
-ex
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
 Nv
 Nv
 Nv
@@ -18881,12 +18773,12 @@ Nv
 Nv
 Nv
 Nv
-ex
-ex
-ex
-ex
-ex
-ex
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
 Nv
 Nv
 Nv
@@ -19011,12 +18903,12 @@ Nv
 Nv
 Nv
 Nv
-ex
-ex
-ex
-ex
-ex
-ex
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
 Nv
 Nv
 Nv
@@ -19141,10 +19033,10 @@ Nv
 Nv
 Nv
 Nv
-ex
-ex
-ex
-ex
+Nv
+Nv
+Nv
+Nv
 Nv
 Nv
 Nv
@@ -21129,7 +21021,7 @@ ex
 "}
 (29,1,2) = {"
 ex
-ex
+RB
 Nv
 Nv
 Nv
@@ -21259,8 +21151,8 @@ ex
 "}
 (30,1,2) = {"
 ex
-ex
-ex
+RB
+RB
 Nv
 Nv
 Nv
@@ -21389,9 +21281,9 @@ ex
 "}
 (31,1,2) = {"
 ex
-ex
-ex
-ex
+RB
+RB
+RB
 ex
 Nv
 Nv
@@ -21519,9 +21411,9 @@ ex
 "}
 (32,1,2) = {"
 ex
-ex
-ex
-ex
+RB
+RB
+RB
 ex
 ex
 ex
@@ -21649,9 +21541,9 @@ ex
 "}
 (33,1,2) = {"
 ex
-ex
-ex
-ex
+RB
+RB
+RB
 ex
 ex
 ex
@@ -24893,7 +24785,7 @@ Nv
 Nv
 Nv
 Nv
-MG
+RB
 ex
 ex
 "}
@@ -25023,7 +24915,7 @@ Nv
 Nv
 Nv
 Nv
-dy
+RB
 RB
 ex
 "}
@@ -25153,8 +25045,8 @@ Nv
 Nv
 Nv
 Nv
-dy
-PI
+RB
+RB
 ex
 "}
 (60,1,2) = {"
@@ -25283,7 +25175,7 @@ Nv
 Nv
 Nv
 Nv
-dy
+RB
 RB
 ex
 "}
@@ -34225,14 +34117,14 @@ ex
 ex
 ex
 ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
 ex
 ex
 ex
@@ -34355,18 +34247,6 @@ ex
 ex
 ex
 ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
 Nv
 Nv
 Nv
@@ -34375,7 +34255,19 @@ Nv
 Nv
 Nv
 Nv
-Nv
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
 ex
 ex
 ex
@@ -34485,17 +34377,6 @@ ex
 ex
 ex
 ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
 Nv
 Nv
 Nv
@@ -34505,7 +34386,18 @@ Nv
 Nv
 Nv
 Nv
-Nv
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
 ex
 ex
 ex
@@ -34609,15 +34501,6 @@ ex
 ex
 Nv
 Nv
-Nv
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
 ex
 ex
 ex
@@ -34636,6 +34519,15 @@ Nv
 Nv
 Nv
 Nv
+Nv
+Nv
+ex
+ex
+ex
+ex
+ex
+ex
+ex
 ex
 ex
 ex
@@ -34739,14 +34631,6 @@ Nv
 Nv
 Nv
 Nv
-Nv
-Nv
-Nv
-Nv
-ex
-ex
-ex
-ex
 ex
 ex
 ex
@@ -34764,6 +34648,14 @@ Nv
 Nv
 Nv
 Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+ex
 ex
 ex
 ex
@@ -34869,14 +34761,6 @@ Nv
 Nv
 Nv
 Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-ex
-ex
-ex
 ex
 ex
 ex
@@ -34894,7 +34778,15 @@ Nv
 Nv
 Nv
 Nv
-ex
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
 ex
 ex
 ex
@@ -35001,13 +34893,6 @@ Nv
 Nv
 Nv
 Nv
-Nv
-Nv
-ex
-ex
-ex
-ex
-ex
 ex
 ex
 ex
@@ -35023,9 +34908,16 @@ Nv
 Nv
 Nv
 Nv
-ex
-ex
-ex
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
 ex
 ex
 ex
@@ -35134,13 +35026,6 @@ Nv
 Nv
 Nv
 ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
 Nv
 Nv
 Nv
@@ -35155,7 +35040,14 @@ Nv
 Nv
 Nv
 Nv
-ex
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
 ex
 ex
 ex
@@ -35263,31 +35155,31 @@ Nv
 Nv
 Nv
 Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
 ex
 ex
-ex
-ex
-ex
-ex
-ex
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
 ex
 ex
 ex
@@ -35392,33 +35284,33 @@ Nv
 Nv
 Nv
 Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
 ex
 ex
 ex
-ex
-ex
-ex
-ex
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
 ex
 ex
 ex
@@ -35522,34 +35414,34 @@ Nv
 Nv
 Nv
 Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
 ex
 ex
-ex
-ex
-ex
-ex
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
 ex
 ex
 ex
@@ -35652,35 +35544,35 @@ Nv
 Nv
 Nv
 Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
 ex
 ex
-ex
-ex
-ex
-ex
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
 ex
 ex
 ex
@@ -35782,36 +35674,36 @@ Nv
 Nv
 Nv
 Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
+Nv
 ex
 ex
-ex
-ex
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
 ex
 ex
 ex
@@ -35940,8 +35832,8 @@ Nv
 Nv
 Nv
 Nv
-Nv
-Nv
+ex
+ex
 ex
 ex
 ex
@@ -36071,7 +35963,7 @@ Nv
 Nv
 Nv
 Nv
-Nv
+ex
 ex
 ex
 ex
@@ -36202,7 +36094,7 @@ Nv
 Nv
 Nv
 Nv
-Nv
+ex
 ex
 ex
 ex
@@ -36332,7 +36224,7 @@ Nv
 Nv
 Nv
 Nv
-Nv
+ex
 ex
 ex
 ex
@@ -36982,7 +36874,7 @@ Nv
 Nv
 Nv
 Nv
-Nv
+ex
 ex
 ex
 ex
@@ -37111,7 +37003,7 @@ Nv
 Nv
 Nv
 Nv
-Nv
+ex
 ex
 ex
 ex
@@ -37239,8 +37131,8 @@ Nv
 Nv
 Nv
 Nv
-Nv
-Nv
+ex
+ex
 ex
 ex
 ex
@@ -37368,7 +37260,7 @@ Nv
 Nv
 Nv
 Nv
-Nv
+ex
 ex
 ex
 ex
@@ -37758,7 +37650,7 @@ Nv
 Nv
 Nv
 Nv
-Nv
+ex
 ex
 ex
 ex
@@ -37888,8 +37780,8 @@ Nv
 Nv
 Nv
 Nv
-Nv
-Nv
+ex
+ex
 ex
 ex
 ex
@@ -38018,8 +37910,8 @@ Nv
 Nv
 Nv
 Nv
-Nv
-Nv
+ex
+ex
 ex
 ex
 ex
@@ -38148,8 +38040,8 @@ Nv
 Nv
 Nv
 Nv
-Nv
-Nv
+ex
+ex
 ex
 ex
 ex
@@ -44920,7 +44812,7 @@ ex
 "}
 (84,1,3) = {"
 ex
-dy
+RB
 RB
 RB
 Nv
@@ -45050,8 +44942,8 @@ ex
 "}
 (85,1,3) = {"
 ex
-dy
-PI
+RB
+RB
 RB
 Nv
 Nv
@@ -45180,7 +45072,7 @@ ex
 "}
 (86,1,3) = {"
 ex
-dy
+RB
 RB
 RB
 Nv
@@ -45311,7 +45203,7 @@ ex
 (87,1,3) = {"
 ex
 ex
-MG
+RB
 Nv
 Nv
 Nv

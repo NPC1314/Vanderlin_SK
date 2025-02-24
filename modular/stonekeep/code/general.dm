@@ -202,6 +202,8 @@
 /obj/machinery/light/rogue/torchholder
 	brightness = 7
 
+/obj/machinery/light/rogue/campfire
+	brightness = 8
 
 // =============================================================================
 // ========================		WEATHER EDITS		============================
@@ -616,6 +618,7 @@
 
 /obj/structure/flora/roguegrass/herb
 	icon = 'modular/stonekeep/icons/pigflora.dmi'
+	alpha = 230
 
 /*	..................   Bear pelt better   ................... */
 /obj/structure/bearpelt

@@ -26,19 +26,14 @@
 	H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 
 	head = /obj/item/clothing/head/roguetown/helmet/leather/hood_ominous
-	shirt = /obj/item/clothing/suit/roguetown/armor/leather/vest
+	armor = /obj/item/clothing/suit/roguetown/armor/cuirass/copperchest
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	belt = /obj/item/storage/belt/rogue/leather/rope
 	beltl = /obj/item/rogueweapon/knife/hunting
-	pants = /obj/item/clothing/under/roguetown/trou/leather
+	pants = /obj/item/clothing/under/roguetown/trou/beltpants
+	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/heavy
 	backr = /obj/item/storage/backpack/rogue/satchel
 	backpack_contents = list(/obj/item/needle/thorn = 1, /obj/item/natural/cloth = 1)
-	var/boots2choose = pickweight(list("Short" = 1, "Sandals" = 1))
-	switch(boots2choose)
-		if("Short")
-			shoes = /obj/item/clothing/shoes/roguetown/shortboots
-		if("Sandals")
-			shoes = /obj/item/clothing/shoes/roguetown/gladiator
 
 	H.change_stat("strength", 2)
 	H.change_stat("constitution", 1)
