@@ -87,6 +87,8 @@
 /obj/item/rogueweapon/flail/sflail
 	icon = 'modular/stonekeep/icons/weapons.dmi'
 
+/obj/item/rogueweapon/knife/cleaver/combat
+	force = DAMAGE_DAGGER+2
 
 /obj/item/rogueweapon/mace/copperbludgeon
 	name = "studded club"

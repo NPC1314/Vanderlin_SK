@@ -17,8 +17,8 @@
 
 /datum/outfit/job/roguetown/bandit/sellsword/pre_equip(mob/living/carbon/human/H)
 	..()
-	H.mind?.adjust_skillrank(/datum/skill/combat/shields, 4, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)
+	H.mind?.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/axesmaces, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
@@ -55,9 +55,11 @@
 			head = /obj/item/clothing/head/roguetown/helmet/kettle/slit
 			mask = /obj/item/clothing/mask/rogue/shepherd/rag
 			neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
+			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
 		if("Former Mercenary") //Mercenary on the wrong side of the law
 			backl= /obj/item/rogueweapon/shield/tower/buckleriron
 			beltr = /obj/item/rogueweapon/sword //steel sword like literally every adventurer gets
 			head = /obj/item/clothing/head/roguetown/helmet/sallet
 			mask = /obj/item/clothing/mask/rogue/facemask
 			neck = /obj/item/clothing/neck/roguetown/coif/cloth
+			H.mind.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)

@@ -60,7 +60,7 @@
 			head = /obj/item/clothing/head/roguetown/roguehood/random/heavy
 			backl= /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow //we really need to make this not a grenade launcher subtype
 			beltr = /obj/item/ammo_holder/quiver/bolts
-			beltl = /obj/item/rogueweapon/knife/dagger/steel
+			beltl = /obj/item/rogueweapon/knife/dagger
 			backpack_contents = list(/obj/item/needle/thorn = 1, /obj/item/natural/cloth = 1, /obj/item/lockpickring/mundane = 1) //rogue gets lockpicks
 			H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
