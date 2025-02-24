@@ -39,10 +39,6 @@
 	backpack_contents = list(/obj/item/needle/thorn = 1, /obj/item/natural/cloth = 1)
 
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
-	H.change_stat("strength", 2)
-	H.change_stat("endurance", 1)
-	H.change_stat("constitution", 1)
-
 	H.change_stat(STATKEY_STR, 2)
 	H.change_stat(STATKEY_END, 1)
 	H.change_stat(STATKEY_CON, 1)
