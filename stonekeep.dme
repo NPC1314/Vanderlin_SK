@@ -1900,6 +1900,7 @@
 #include "modular\stonekeep\code\haiduk_wave.dm"
 #include "modular\stonekeep\code\handsaw_chisel.dm"
 #include "modular\stonekeep\code\kaizoku.dm"
+#include "modular\stonekeep\code\mob.dm"
 #include "modular\stonekeep\code\race.dm"
 #include "modular\stonekeep\code\slapcraft_disabler.dm"
 #include "modular\stonekeep\code\stressevents.dm"
