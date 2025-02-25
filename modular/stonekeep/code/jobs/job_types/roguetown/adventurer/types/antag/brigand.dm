@@ -45,7 +45,7 @@
 	var/armor2choose = pickweight(list("Breastplate" = 1, "Hide" = 2))
 	switch(armor2choose)
 		if("Breastplate")
-			armor = /obj/item/clothing/suit/roguetown/armor/plate/rust
+			armor = /obj/item/clothing/suit/roguetown/armor/cuirass/iron/rust
 			pants = /obj/item/clothing/under/roguetown/trou/leather
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/hardened
 		if("Hide")

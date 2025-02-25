@@ -3331,7 +3331,10 @@
 /turf/open/floor/rogue/cobblerock/alt,
 /area/rogue/outdoors/woods_safe)
 "GW" = (
-/obj/machinery/light/rogue/firebowl/standing,
+/obj/structure/bars,
+/obj/machinery/light/rogue/torchholder{
+	pixel_x = 32
+	},
 /turf/open/floor/rogue/hay,
 /area/rogue/indoors/bandit_lair)
 "GX" = (
@@ -7466,8 +7469,8 @@ Zh
 yR
 QB
 Vl
+Vl
 GW
-Uu
 wL
 Qy
 xt
@@ -7855,7 +7858,7 @@ qs
 vh
 FR
 Am
-xt
+AH
 Qy
 Qy
 Qy
@@ -8634,7 +8637,7 @@ qs
 qs
 qs
 qs
-AH
+xt
 FR
 xt
 PS
@@ -8765,7 +8768,7 @@ Te
 Te
 FR
 uX
-BM
+AH
 uX
 PS
 so
