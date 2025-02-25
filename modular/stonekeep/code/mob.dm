@@ -354,3 +354,21 @@
 	color = "#ffde5a"
 	spawned = list(
 		/mob/living/simple_animal/hostile/retaliate/rogue/wolf = 100)
+
+
+// ======================================================================
+/*	..................   Either Or Spawners   ................... */
+/obj/effect/spawner/roguemap/skel_or_remains
+	icon = 'icons/effects/blood.dmi'
+	icon_state = "remains"
+	probby = 50
+	color = "#ffde5a"
+	spawned = list(
+		/mob/living/simple_animal/hostile/rogue/skeleton = 5,
+		/obj/effect/decal/remains/human/old = 50,
+		/obj/effect/decal/remains/human/old/small = 45,
+		/obj/item/clothing/ring/silver = 1
+		)
+
+
+
