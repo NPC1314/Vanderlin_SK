@@ -59,12 +59,12 @@
 	H.change_stat(STATKEY_INT, -2)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	H.adjust_blindness(-3)
-	var/weapons = list("Steel Axe","Spiked Maxe")
+	var/weapons = list("Steel Axe","Spiked Mace")
 	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	H.set_blindness(0)
 	switch(weapon_choice)
 		if("Steel Axe")
-			backl= /obj/item/rogueweapon/axe/steel
+			beltr= /obj/item/rogueweapon/axe/steel
 		if("Spiked Mace")
 			beltr = /obj/item/rogueweapon/mace/spiked
 
