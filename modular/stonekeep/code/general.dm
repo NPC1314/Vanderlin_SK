@@ -419,6 +419,7 @@
 	. = ..()
 
 /obj/structure/flora/rogueflower/random
+	icon_state = "ppflowers"
 /obj/structure/flora/rogueflower/random/Initialize()
 	icon_state = pick("reedbush", "lavendergrass", "ywflowers", "brflower", "ppflowers")
 	. = ..()
@@ -950,3 +951,7 @@ GLOBAL_LIST_EMPTY(travel_spawn_points)
 	create_travel_tiles(location, travel_id, travel_goes_to_id, required_trait, path)
 */
 
+
+/obj/effect/landmark/start/gravekeeper
+	name = "Gravekeeper"
+	icon_state = "arrow"

@@ -228,5 +228,13 @@
 	icon_state = "chimney"
 
 
+/obj/structure/bars/cemetery/vines
+	icon = 'modular/stonekeep/icons/structure.dmi'
+/obj/structure/bars/cemetery/vines/Initialize()
+	dir = pick(GLOB.cardinals)
+	. = ..()
 
 
+/obj/structure/table/stone_small/gravekeeper
+	name = "body preparation slate"
+	color = "#b4b4b6"

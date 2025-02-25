@@ -364,11 +364,53 @@
 	probby = 50
 	color = "#ffde5a"
 	spawned = list(
-		/mob/living/simple_animal/hostile/rogue/skeleton = 5,
+		/obj/structure/idle_enemy/weak_skelly = 4,
 		/obj/effect/decal/remains/human/old = 50,
 		/obj/effect/decal/remains/human/old/small = 45,
 		/obj/item/clothing/ring/silver = 1
 		)
 
+/*	..................   Catacomb Random   ................... */
+/obj/effect/spawner/roguemap/catacomb_random
+	icon_state = "srat"
+	icon = 'icons/roguetown/mob/monster/rat.dmi'
+	probby = 50
+	color = "#ffde5a"
+	spawned = list(
+		/obj/item/roguecoin/silver = 5,
+		/obj/item/clothing/under/roguetown/trou = 2,
+		/obj/item/flashlight/flare/torch/lantern = 1,
+		/obj/item/natural/worms = 20,
+		/obj/item/reagent_containers/food/snacks/smallrat = 5,
+		/obj/item/reagent_containers/food/snacks/smallrat/dead = 5,
+		/obj/structure/idle_enemy/bigrat = 1,
+		)
 
+/* Ide enemy structures use the new range var in the spawner to only try spawning if a mob containing a mind is inside the
+range. How much processing this saves is unclear */
+/*	..................   Big Rat Spawner   ................... */
+/obj/structure/idle_enemy/bigrat
+/obj/structure/idle_enemy/bigrat/Initialize()
+	. = ..()
+	AddComponent(/datum/component/spawner/bigrat)
+/datum/component/spawner/bigrat
+	mob_types = list(/mob/living/simple_animal/hostile/retaliate/rogue/bigrat)
+	spawn_time = 0
+	spawn_delay = 0
+	max_mobs = 1
+	range = 11
+	spawn_text = ""
 
+/*	..................   Weak Skelly Spawner   ................... */
+/obj/structure/idle_enemy/weak_skelly
+/obj/structure/idle_enemy/weak_skelly/Initialize()
+	. = ..()
+	AddComponent(/datum/component/spawner/weak_skelly)
+/datum/component/spawner/weak_skelly
+//	mob_types = list(/mob/living/carbon/human/species/skeleton/skilled/unarmed)
+	mob_types = list(/mob/living/simple_animal/hostile/rogue/skeleton)
+	spawn_time = 0
+	spawn_delay = 0
+	max_mobs = 1
+	range = 11
+	spawn_text = ""
