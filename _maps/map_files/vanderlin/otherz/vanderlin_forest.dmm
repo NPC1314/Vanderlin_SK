@@ -556,6 +556,10 @@
 "Aj" = (
 /turf/open/water/cleanshallow,
 /area/rogue/outdoors/woods)
+"An" = (
+/obj/structure/fluff/traveltile/bandit,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods)
 "AY" = (
 /obj/structure/fluff/railing/border{
 	dir = 8
@@ -629,6 +633,10 @@
 	icon_state = "horzw"
 	},
 /area/rogue/indoors)
+"Ej" = (
+/obj/machinery/light/rogue/firebowl/cold,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods)
 "EU" = (
 /obj/structure/flora/roguegrass/water,
 /turf/open/water/river{
@@ -61758,7 +61766,7 @@ Rh
 Rh
 Rh
 Sy
-ts
+Ej
 UK
 UK
 UK
@@ -62364,7 +62372,7 @@ Rh
 Rh
 Rh
 Sy
-ts
+An
 ts
 ts
 Sy

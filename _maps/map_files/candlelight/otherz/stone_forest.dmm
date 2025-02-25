@@ -181,6 +181,9 @@
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woods)
+"jD" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/caves)
 "jL" = (
 /obj/structure/fluff/railing/wood,
 /turf/open/transparent/openspace,
@@ -268,6 +271,7 @@
 /obj/effect/decal/cleanable/dirt/cobweb{
 	dir = 1
 	},
+/obj/effect/spawner/roguemap/loot/armor,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/cave/spider)
 "sP" = (
@@ -289,6 +293,10 @@
 /obj/effect/decal/cleanable/blood_neu/random,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/cave/volf)
+"uL" = (
+/obj/effect/decal/remains/human/old,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/cave/spider)
 "uT" = (
 /turf/open/floor/rogue/rooftop/green,
 /area/rogue/outdoors/woods)
@@ -355,6 +363,11 @@
 /obj/machinery/light/rogue/firebowl/cold,
 /turf/open/floor/rogue/grass/mixyel,
 /area/rogue/outdoors/woods)
+"yI" = (
+/obj/effect/decal/remains/bigrat,
+/obj/effect/spawner/roguemap/loot/coin/low,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/cave/spider)
 "yZ" = (
 /obj/structure/flora/rogueflower/fallenleaves,
 /turf/open/floor/rogue/grass/mixyel/under_tree,
@@ -467,12 +480,8 @@
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/woods)
 "Iz" = (
-/obj/structure/spider/cocoon,
-/obj/effect/decal/cleanable/dirt/cobweb{
-	dir = 8
-	},
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/indoors/cave/spider)
+/turf/closed,
+/area/rogue/outdoors/caves)
 "IA" = (
 /obj/structure/flora/roguegrass/herb/random,
 /turf/open/floor/rogue/grass,
@@ -560,7 +569,7 @@
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/woods)
 "OV" = (
-/obj/structure/spider/cocoon,
+/obj/effect/decal/remains/cabbit,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/cave/spider)
 "Pn" = (
@@ -737,6 +746,10 @@
 /obj/structure/toilet,
 /turf/open/floor/rogue/dirt,
 /area/rogue/indoors)
+"ZF" = (
+/obj/machinery/light/rogue/firebowl/cold,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/caves)
 
 (1,1,1) = {"
 ex
@@ -877,11 +890,10 @@ ex
 ex
 ex
 ex
-pT
-pT
-pT
-pT
-pT
+uu
+uu
+uu
+uu
 ex
 ex
 ex
@@ -942,12 +954,13 @@ ex
 ex
 ex
 ex
-pT
+ex
+uu
 Pn
 Pn
 uu
 pT
-pT
+uu
 ex
 ex
 ex
@@ -1006,61 +1019,61 @@ ex
 ex
 ex
 ex
-pT
-pT
+uu
+uu
 iF
-Pn
+pT
+uu
+uu
+uu
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+uu
+uu
+uu
+uu
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+uu
+uu
+uu
 pT
 pT
 pT
-pT
-ex
-ex
-ex
-ex
-ex
-pT
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-pT
-pT
-pT
-pT
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-ex
-pT
-pT
-pT
-pT
-pT
-pT
-pT
-pT
+uu
+uu
 ex
 ex
 ex
@@ -1071,13 +1084,13 @@ ck
 ck
 ck
 ck
-pT
+uu
 pT
 qU
 uu
 CA
 CA
-pT
+uu
 ex
 ex
 ex
@@ -1103,7 +1116,7 @@ al
 GJ
 uu
 uu
-qU
+uu
 ex
 ex
 ex
@@ -1136,25 +1149,25 @@ ex
 ex
 ex
 ex
-pT
+uu
 uu
 CA
+pT
+pT
 iF
 pT
-iF
-pT
-pT
-pT
-pT
-pT
-pT
-pT
-pT
-pT
-pT
-pT
-pT
-pT
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+uu
+uu
+ex
+ex
+uu
 ex
 ex
 ex
@@ -1166,7 +1179,7 @@ pT
 pT
 pT
 pT
-pT
+uu
 ex
 ex
 ex
@@ -1191,7 +1204,7 @@ uu
 iF
 Pn
 pT
-pT
+uu
 ex
 ck
 ck
@@ -1208,7 +1221,7 @@ uu
 CA
 CA
 pT
-pT
+uu
 ex
 ex
 ex
@@ -1234,9 +1247,9 @@ GJ
 uu
 uu
 qU
-pT
-pT
-qU
+uu
+uu
+uu
 uu
 uu
 ex
@@ -1265,25 +1278,25 @@ ex
 ex
 ex
 ex
+uu
 pT
 pT
-CA
 CA
 CA
 uu
 uu
 pT
-pT
-pT
-pT
-pT
-pT
+uu
+uu
+uu
+uu
+uu
 pT
 qU
 uu
 pT
 pT
-pT
+uu
 pT
 CA
 CA
@@ -1297,7 +1310,7 @@ uu
 pT
 ww
 pT
-pT
+uu
 ex
 ex
 ex
@@ -1322,7 +1335,7 @@ Pn
 iF
 pT
 pT
-pT
+uu
 ck
 ck
 ck
@@ -1339,7 +1352,7 @@ uu
 uu
 qU
 pT
-pT
+uu
 ex
 ex
 ex
@@ -1364,7 +1377,7 @@ GJ
 uu
 uu
 qU
-qU
+uu
 qU
 uu
 uu
@@ -1394,10 +1407,10 @@ ex
 ex
 ex
 ex
-pT
-pT
-ww
+ex
 uu
+ww
+pT
 CA
 CA
 CA
@@ -1427,7 +1440,7 @@ CA
 GJ
 uu
 CA
-pT
+uu
 ex
 ex
 ex
@@ -1469,16 +1482,16 @@ uu
 CA
 CA
 uu
-qU
-pT
+uu
+uu
 ex
 ex
 ex
 ex
 ex
-pT
-pT
-pT
+uu
+uu
+uu
 ex
 ex
 ex
@@ -1525,10 +1538,10 @@ ex
 ex
 ex
 ex
-pT
-pT
-qU
-pT
+uu
+uu
+uu
+uu
 CA
 CA
 CA
@@ -1557,7 +1570,7 @@ CA
 uu
 pT
 pT
-pT
+uu
 ex
 ex
 ex
@@ -1601,16 +1614,16 @@ uu
 uu
 uu
 pT
+uu
+uu
+uu
 pT
 pT
-pT
-pT
-pT
-pT
+uu
 qU
 qU
-qU
-qU
+uu
+uu
 ex
 ex
 ex
@@ -1655,10 +1668,10 @@ ex
 ex
 ex
 ex
-pT
-pT
-pT
-pT
+ex
+ex
+uu
+uu
 uu
 CA
 CA
@@ -1688,7 +1701,7 @@ GJ
 uu
 iF
 pT
-pT
+uu
 ex
 ex
 ex
@@ -1739,10 +1752,10 @@ uu
 uu
 uu
 iF
-qU
-qU
-pT
-pT
+uu
+uu
+uu
+uu
 ex
 CA
 uu
@@ -1785,9 +1798,9 @@ ex
 ex
 ex
 ex
-pT
-pT
-pT
+ex
+uu
+uu
 CA
 CA
 CA
@@ -1818,8 +1831,8 @@ qU
 pT
 iF
 iF
-pT
-pT
+uu
+uu
 ex
 ex
 ex
@@ -1871,8 +1884,8 @@ uu
 iF
 qU
 qU
-pT
-pT
+uu
+uu
 pT
 CA
 uu
@@ -1892,7 +1905,7 @@ uu
 uu
 iF
 iF
-pT
+uu
 pT
 pT
 uu
@@ -1915,10 +1928,10 @@ ex
 ex
 ex
 ex
-pT
-pT
+ex
+uu
 vx
-CA
+pT
 CA
 CA
 CA
@@ -1944,14 +1957,14 @@ uu
 CA
 uu
 qU
-pT
+uu
 pT
 oz
 iF
 iF
 pT
-pT
-pT
+uu
+uu
 pT
 pT
 pT
@@ -2020,7 +2033,7 @@ uu
 uu
 qU
 iF
-qU
+uu
 iF
 iF
 pT
@@ -2046,9 +2059,9 @@ ex
 ex
 ex
 ex
-pT
-qU
 uu
+qU
+pT
 uu
 CA
 CA
@@ -2132,7 +2145,7 @@ uu
 uu
 uu
 pT
-pT
+uu
 pT
 pT
 uu
@@ -2148,16 +2161,16 @@ uu
 uu
 uu
 qU
-qU
+uu
 iF
-pT
+uu
 pT
 iF
 iF
 uu
 pT
 pT
-pT
+uu
 ex
 ex
 ex
@@ -2176,9 +2189,9 @@ ex
 ex
 ex
 ex
-pT
-pT
-pT
+ex
+uu
+uu
 uu
 CA
 CA
@@ -2211,7 +2224,7 @@ pT
 iF
 iF
 pT
-pT
+uu
 pT
 pT
 uu
@@ -2253,7 +2266,7 @@ CA
 CA
 uu
 pT
-pT
+uu
 qU
 iF
 pT
@@ -2262,8 +2275,8 @@ uu
 uu
 uu
 pT
-pT
-pT
+uu
+uu
 pT
 uu
 uu
@@ -2278,7 +2291,7 @@ uu
 uu
 uu
 qU
-qU
+uu
 iF
 iF
 qU
@@ -2288,7 +2301,7 @@ uu
 oz
 iF
 qU
-pT
+uu
 ex
 ex
 ex
@@ -2306,8 +2319,8 @@ ex
 ex
 ex
 ex
-pT
-pT
+ex
+uu
 iF
 uu
 CA
@@ -2325,7 +2338,7 @@ CA
 pT
 uu
 pT
-pT
+uu
 qU
 CA
 uu
@@ -2343,14 +2356,14 @@ iF
 qU
 qU
 qU
-pT
+uu
 pT
 pT
 uu
 uu
 pT
 pT
-pT
+uu
 pT
 uu
 uu
@@ -2372,8 +2385,8 @@ iF
 uu
 CA
 uu
-pT
-pT
+uu
+uu
 pT
 pT
 uu
@@ -2392,8 +2405,8 @@ uu
 CA
 CA
 qU
-pT
-pT
+uu
+uu
 pT
 uu
 CA
@@ -2406,7 +2419,7 @@ uu
 uu
 uu
 uu
-qU
+uu
 uu
 uu
 pT
@@ -2419,7 +2432,7 @@ iF
 iF
 iF
 pT
-pT
+uu
 ex
 ex
 ex
@@ -2436,8 +2449,8 @@ ex
 ex
 ex
 ex
-pT
-pT
+ex
+uu
 pT
 qU
 oz
@@ -2503,9 +2516,9 @@ uu
 CA
 CA
 pT
-pT
-pT
-qU
+uu
+uu
+uu
 uu
 CA
 CA
@@ -2521,9 +2534,9 @@ uu
 CA
 CA
 qU
-pT
-pT
-pT
+uu
+uu
+uu
 pT
 uu
 CA
@@ -2549,7 +2562,7 @@ qU
 uu
 uu
 pT
-pT
+uu
 ex
 ex
 ex
@@ -2566,9 +2579,9 @@ ex
 ex
 ex
 ex
+ex
 pT
-pT
-pT
+uu
 qU
 CA
 CA
@@ -2576,7 +2589,7 @@ uu
 uu
 pT
 pT
-pT
+uu
 si
 oz
 iF
@@ -2680,7 +2693,7 @@ CA
 uu
 Xi
 pT
-pT
+uu
 ex
 ex
 ex
@@ -2696,7 +2709,7 @@ ex
 ex
 ex
 ex
-pT
+ex
 pT
 pT
 uu
@@ -2811,7 +2824,7 @@ uu
 uu
 pT
 pT
-pT
+uu
 ex
 ex
 ex
@@ -2826,7 +2839,7 @@ ex
 ex
 ex
 ex
-pT
+ex
 pT
 CA
 uu
@@ -2840,7 +2853,7 @@ oz
 oz
 oz
 pT
-pT
+uu
 pT
 oz
 pT
@@ -2851,7 +2864,7 @@ CA
 uu
 pT
 pT
-pT
+uu
 pT
 uu
 uu
@@ -2956,7 +2969,7 @@ ex
 ex
 ex
 ex
-pT
+ex
 pT
 uu
 uu
@@ -3072,7 +3085,7 @@ CA
 CA
 CA
 pT
-pT
+uu
 ex
 ex
 ex
@@ -3086,7 +3099,7 @@ ex
 ex
 ex
 ex
-pT
+ex
 si
 pT
 CA
@@ -3189,7 +3202,7 @@ oz
 qU
 uu
 qU
-Xi
+uu
 qU
 iF
 Xi
@@ -3216,7 +3229,7 @@ ex
 ex
 ex
 ex
-si
+ex
 Pn
 iF
 CA
@@ -3239,7 +3252,7 @@ uu
 CA
 uu
 pT
-pT
+uu
 pT
 iF
 uu
@@ -3345,8 +3358,8 @@ ex
 ex
 ex
 ex
-pT
-pT
+ex
+ex
 si
 iF
 CA
@@ -3377,8 +3390,8 @@ CA
 CA
 uu
 qU
-qU
-qU
+uu
+uu
 pT
 oz
 pT
@@ -3446,8 +3459,8 @@ iF
 iF
 iF
 iF
-pT
-pT
+uu
+uu
 uu
 CA
 CA
@@ -3460,9 +3473,9 @@ uu
 uu
 uu
 uu
+uu
 pT
-pT
-pT
+uu
 ex
 ex
 ex
@@ -3473,11 +3486,11 @@ ex
 ex
 ex
 ex
+ex
+uu
+uu
 pT
-pT
-pT
-pT
-pT
+uu
 qU
 uu
 CA
@@ -3500,14 +3513,14 @@ CA
 CA
 CA
 pT
+uu
 pT
-pT
 CA
 CA
 CA
 qU
-qU
-qU
+uu
+uu
 qU
 iF
 iF
@@ -3539,7 +3552,7 @@ iF
 Pn
 Pn
 qU
-qU
+uu
 qU
 uu
 uu
@@ -3576,7 +3589,7 @@ pT
 pT
 oz
 pT
-pT
+uu
 pT
 CA
 CA
@@ -3589,9 +3602,9 @@ CA
 uu
 uu
 qU
-pT
-pT
-pT
+uu
+uu
+uu
 ex
 ex
 ex
@@ -3601,8 +3614,8 @@ ex
 (23,1,1) = {"
 ex
 ex
-pT
-qU
+uu
+uu
 pT
 pT
 ww
@@ -3662,7 +3675,7 @@ uu
 uu
 uu
 pT
-pT
+uu
 pT
 uu
 iF
@@ -3682,7 +3695,7 @@ CA
 uu
 si
 pT
-pT
+uu
 qU
 iF
 Bv
@@ -3719,8 +3732,8 @@ uu
 uu
 qU
 qU
-pT
-pT
+uu
+uu
 ex
 ex
 ex
@@ -3730,7 +3743,7 @@ ex
 "}
 (24,1,1) = {"
 ex
-pT
+uu
 pT
 uu
 qU
@@ -3770,7 +3783,7 @@ iF
 iF
 iF
 pT
-pT
+uu
 qU
 ez
 iF
@@ -3812,7 +3825,7 @@ CA
 CA
 uu
 pT
-pT
+uu
 pT
 uu
 uu
@@ -3841,14 +3854,14 @@ oz
 iF
 oz
 qU
-qU
+uu
 qU
 iF
 iF
 uu
 uu
 qU
-qU
+uu
 ex
 ex
 ex
@@ -3860,8 +3873,8 @@ ex
 "}
 (25,1,1) = {"
 ex
+uu
 pT
-CA
 CA
 CA
 uu
@@ -3872,7 +3885,7 @@ CA
 CA
 CA
 pT
-pT
+uu
 pT
 oz
 oz
@@ -3901,7 +3914,7 @@ pT
 iF
 iF
 pT
-qU
+uu
 qU
 uu
 CA
@@ -3976,8 +3989,8 @@ qU
 oz
 iF
 uu
-pT
-pT
+uu
+uu
 ex
 ex
 ex
@@ -3990,7 +4003,7 @@ ex
 "}
 (26,1,1) = {"
 ex
-pT
+uu
 CA
 CA
 CA
@@ -4106,8 +4119,8 @@ uu
 uu
 uu
 uu
-pT
-pT
+uu
+uu
 ex
 ex
 ex
@@ -4120,7 +4133,7 @@ ex
 "}
 (27,1,1) = {"
 ex
-pT
+uu
 pT
 CA
 CA
@@ -4144,7 +4157,7 @@ CA
 CA
 CA
 pT
-pT
+uu
 pT
 iF
 uu
@@ -4237,7 +4250,7 @@ qU
 qU
 oz
 pT
-pT
+uu
 ex
 ex
 ex
@@ -4250,8 +4263,8 @@ ex
 "}
 (28,1,1) = {"
 ex
-pT
-pT
+uu
+uu
 uu
 uu
 uu
@@ -4303,7 +4316,7 @@ qU
 CA
 pT
 pT
-pT
+uu
 pT
 CA
 HZ
@@ -4367,7 +4380,7 @@ iF
 qU
 oz
 pT
-pT
+uu
 ex
 ex
 ex
@@ -4393,7 +4406,7 @@ CA
 CA
 uu
 qU
-pT
+uu
 pT
 iF
 qU
@@ -4513,7 +4526,7 @@ ex
 ex
 ex
 uu
-pT
+uu
 pT
 uu
 uu
@@ -4627,7 +4640,7 @@ uu
 CA
 CA
 pT
-pT
+uu
 ex
 ex
 ex
@@ -4644,8 +4657,8 @@ ex
 ex
 ex
 ex
-pT
-pT
+uu
+uu
 qU
 uu
 uu
@@ -4733,7 +4746,7 @@ uu
 uu
 pT
 pT
-qU
+uu
 uu
 Xi
 iF
@@ -4757,7 +4770,7 @@ iF
 uu
 uu
 pT
-pT
+uu
 ex
 ex
 ex
@@ -4775,7 +4788,7 @@ ex
 ex
 ex
 ex
-pT
+uu
 qU
 oz
 qU
@@ -4862,8 +4875,8 @@ pT
 pT
 uu
 uu
-pT
-pT
+uu
+uu
 qU
 iF
 iF
@@ -4905,7 +4918,7 @@ ex
 ex
 ex
 ex
-pT
+uu
 vx
 iF
 qU
@@ -4939,7 +4952,7 @@ uu
 uu
 uu
 qU
-qU
+uu
 qU
 CA
 CA
@@ -5036,7 +5049,7 @@ ex
 ex
 ex
 ex
-pT
+uu
 uu
 iF
 iF
@@ -5070,7 +5083,7 @@ uu
 uu
 uu
 qU
-qU
+uu
 qU
 CA
 CA
@@ -5115,7 +5128,7 @@ uu
 uu
 uu
 uu
-qU
+uu
 pT
 pT
 iF
@@ -5133,7 +5146,7 @@ uu
 uu
 uu
 qU
-qU
+uu
 pT
 uu
 uu
@@ -5166,7 +5179,7 @@ ex
 ex
 ex
 ex
-pT
+uu
 uu
 uu
 qU
@@ -5254,8 +5267,8 @@ CA
 iF
 iF
 iF
-pT
-pT
+uu
+uu
 qU
 iF
 uu
@@ -5295,7 +5308,7 @@ ex
 ex
 ex
 ex
-pT
+uu
 pT
 pT
 CA
@@ -5378,14 +5391,14 @@ uu
 uu
 CA
 iF
-pT
-pT
+uu
+uu
 CA
 iF
 iF
 pT
 pT
-pT
+uu
 pT
 uu
 Xi
@@ -5423,11 +5436,11 @@ ex
 ex
 ex
 ex
+uu
 pT
 pT
-pT
-pT
-pT
+uu
+uu
 pT
 uu
 CA
@@ -5507,9 +5520,9 @@ uu
 CA
 CA
 CA
-qU
-pT
-pT
+uu
+uu
+uu
 pT
 CA
 iF
@@ -5537,7 +5550,7 @@ uu
 uu
 Xi
 qU
-qU
+uu
 ex
 ex
 ex
@@ -5564,7 +5577,7 @@ CA
 CA
 CA
 qU
-pT
+uu
 pT
 oz
 Xi
@@ -5638,7 +5651,7 @@ iF
 CA
 CA
 CA
-qU
+uu
 qU
 pT
 oz
@@ -5665,8 +5678,8 @@ uu
 uu
 uu
 pT
-qU
-qU
+uu
+uu
 ex
 ex
 ex
@@ -5682,9 +5695,9 @@ ex
 ex
 ex
 ex
-pT
-pT
-pT
+uu
+uu
+uu
 oz
 CA
 CA
@@ -5762,7 +5775,7 @@ GM
 GJ
 uu
 qU
-pT
+uu
 qU
 oz
 CA
@@ -5794,7 +5807,7 @@ iF
 pT
 uu
 pT
-pT
+uu
 ex
 ex
 ex
@@ -5812,7 +5825,7 @@ ex
 ex
 ex
 ex
-pT
+uu
 pT
 si
 iF
@@ -5843,7 +5856,7 @@ uu
 uu
 uu
 qU
-pT
+uu
 qU
 CA
 uu
@@ -5892,39 +5905,39 @@ hj
 GJ
 pT
 pT
-pT
-qU
-CA
-iF
-iF
-uu
-uu
-uu
-uu
-uu
-CA
-CA
-CA
-iF
-uu
 uu
 qU
-pT
-pT
-qU
-oz
-Xi
+CA
 iF
+iF
+uu
+uu
+uu
+uu
+uu
+CA
+CA
+CA
+iF
+uu
+uu
 uu
 uu
 pT
 qU
 oz
+uu
+iF
+uu
+uu
+uu
+qU
+oz
 qU
 qU
 uu
 qU
-pT
+uu
 ex
 ex
 ex
@@ -5972,8 +5985,8 @@ uu
 uu
 uu
 pT
-pT
-pT
+uu
+uu
 pT
 CA
 uu
@@ -6039,7 +6052,7 @@ uu
 qU
 oz
 pT
-pT
+uu
 pT
 oz
 oz
@@ -6047,13 +6060,13 @@ iF
 CA
 CA
 uu
-pT
+uu
 iF
 iF
 qU
 iF
 iF
-qU
+uu
 ex
 ex
 ex
@@ -6071,8 +6084,8 @@ ex
 (42,1,1) = {"
 ex
 ex
-pT
-pT
+uu
+uu
 uu
 uu
 CA
@@ -6155,7 +6168,7 @@ HZ
 nX
 CA
 pT
-qU
+uu
 uu
 qU
 oz
@@ -6169,7 +6182,7 @@ qU
 qU
 oz
 iF
-pT
+uu
 oz
 oz
 CA
@@ -6183,7 +6196,7 @@ iF
 qU
 iF
 iF
-pT
+uu
 ex
 ex
 ex
@@ -6200,8 +6213,8 @@ ex
 "}
 (43,1,1) = {"
 ex
-pT
-pT
+uu
+uu
 pT
 qU
 uu
@@ -6296,8 +6309,8 @@ uu
 uu
 uu
 uu
-qU
-qU
+uu
+uu
 iF
 iF
 oz
@@ -6313,7 +6326,7 @@ iF
 iF
 iF
 pT
-pT
+uu
 ex
 ex
 ex
@@ -6341,7 +6354,7 @@ uu
 uu
 uu
 qU
-pT
+uu
 si
 oz
 CA
@@ -6431,7 +6444,7 @@ iF
 iF
 iF
 qU
-qU
+uu
 uu
 iF
 oz
@@ -6443,7 +6456,7 @@ oz
 iF
 iF
 pT
-pT
+uu
 ex
 ex
 ex
@@ -6461,7 +6474,7 @@ ex
 (45,1,1) = {"
 ex
 ex
-pT
+uu
 pT
 qU
 uu
@@ -6555,7 +6568,7 @@ qU
 iF
 iF
 oz
-pT
+uu
 pT
 pT
 iF
@@ -6574,7 +6587,7 @@ qU
 iF
 iF
 pT
-pT
+uu
 ex
 ex
 ex
@@ -6591,8 +6604,8 @@ ex
 (46,1,1) = {"
 ex
 ex
-pT
-pT
+uu
+uu
 pT
 uu
 uu
@@ -6704,8 +6717,8 @@ qU
 qU
 oz
 pT
-pT
-pT
+uu
+uu
 ex
 ex
 ex
@@ -6721,8 +6734,8 @@ ex
 (47,1,1) = {"
 ex
 ex
-pT
-pT
+uu
+uu
 pT
 pT
 uu
@@ -6808,7 +6821,7 @@ Yv
 nX
 CA
 pT
-pT
+uu
 CA
 CA
 iF
@@ -6819,10 +6832,10 @@ uu
 uu
 uu
 qU
-qU
+uu
 iF
 uu
-qU
+uu
 uu
 iF
 iF
@@ -6830,7 +6843,7 @@ uu
 uu
 oz
 qU
-pT
+uu
 pT
 oz
 iF
@@ -6851,9 +6864,9 @@ ex
 (48,1,1) = {"
 ex
 ex
+uu
 pT
-pT
-pT
+uu
 pT
 uu
 uu
@@ -6862,7 +6875,7 @@ uu
 iF
 iF
 pT
-pT
+uu
 pT
 uu
 uu
@@ -6942,7 +6955,7 @@ pT
 pT
 iF
 iF
-qU
+uu
 uu
 uu
 iF
@@ -7002,7 +7015,7 @@ iF
 uu
 pT
 qU
-pT
+uu
 pT
 HZ
 HZ
@@ -7071,8 +7084,8 @@ CA
 CA
 iF
 iF
-pT
-pT
+uu
+uu
 qU
 qU
 oz
@@ -7093,7 +7106,7 @@ uu
 CA
 CA
 CA
-pT
+uu
 qU
 pT
 iF
@@ -7214,7 +7227,7 @@ iF
 iF
 oz
 pT
-pT
+uu
 qU
 uu
 uu
@@ -7222,7 +7235,7 @@ iF
 uu
 uu
 CA
-pT
+uu
 qU
 qU
 iF
@@ -7241,7 +7254,7 @@ ex
 (51,1,1) = {"
 ex
 ex
-pT
+uu
 pT
 iF
 iF
@@ -7342,8 +7355,8 @@ iF
 uu
 uu
 uu
-pT
-pT
+uu
+uu
 qU
 qU
 oz
@@ -7371,7 +7384,7 @@ ex
 (52,1,1) = {"
 ex
 ex
-pT
+uu
 pT
 qU
 iF
@@ -7389,7 +7402,7 @@ oz
 iF
 iF
 pT
-pT
+uu
 pT
 iF
 iF
@@ -7466,7 +7479,7 @@ iF
 CA
 qU
 qU
-qU
+uu
 oz
 CA
 oz
@@ -7474,7 +7487,7 @@ iF
 iF
 oz
 iF
-qU
+uu
 oz
 oz
 qU
@@ -7491,7 +7504,7 @@ CA
 CA
 uu
 pT
-pT
+uu
 ex
 ex
 ex
@@ -7501,8 +7514,8 @@ ex
 (53,1,1) = {"
 ex
 ex
-pT
-pT
+uu
+uu
 pT
 pT
 CA
@@ -7514,7 +7527,7 @@ qU
 pT
 iF
 qU
-pT
+uu
 pT
 pT
 oz
@@ -7599,7 +7612,7 @@ qU
 qU
 CA
 CA
-qU
+uu
 pT
 qU
 pT
@@ -7607,7 +7620,7 @@ CA
 CA
 oz
 pT
-qU
+uu
 qU
 oz
 oz
@@ -7632,8 +7645,8 @@ ex
 ex
 ex
 ex
-pT
-pT
+uu
+uu
 pT
 uu
 CA
@@ -7752,7 +7765,7 @@ uu
 uu
 uu
 qU
-pT
+uu
 ex
 ex
 ex
@@ -7764,7 +7777,7 @@ ex
 ex
 ex
 pT
-pT
+uu
 pT
 uu
 uu
@@ -7995,7 +8008,7 @@ pT
 iF
 CA
 pT
-pT
+uu
 qU
 uu
 uu
@@ -8004,7 +8017,7 @@ iF
 CA
 CA
 CA
-pT
+uu
 uu
 qU
 iF
@@ -8022,8 +8035,8 @@ ex
 ex
 ex
 ex
-pT
-pT
+uu
+uu
 pT
 oz
 oz
@@ -8152,7 +8165,7 @@ ex
 ex
 ex
 ex
-pT
+uu
 pT
 CA
 uu
@@ -8264,7 +8277,7 @@ CA
 CA
 CA
 uu
-pT
+uu
 pT
 oz
 oz
@@ -8281,9 +8294,9 @@ ex
 (59,1,1) = {"
 ex
 ex
+uu
 pT
-pT
-pT
+uu
 pT
 oz
 qU
@@ -8393,8 +8406,8 @@ uu
 uu
 uu
 iF
-pT
-pT
+uu
+uu
 pT
 oz
 uu
@@ -8410,7 +8423,7 @@ ex
 "}
 (60,1,1) = {"
 ex
-pT
+uu
 pT
 pT
 pT
@@ -8512,19 +8525,19 @@ uu
 CA
 iF
 iF
-pT
+uu
 oz
 pT
 pT
 iF
 CA
-qU
+uu
 qU
 pT
 pT
 oz
 iF
-pT
+uu
 iF
 iF
 uu
@@ -8642,14 +8655,14 @@ CA
 CA
 uu
 qU
-pT
+uu
 iF
 iF
 pT
 CA
 CA
 uu
-pT
+uu
 pT
 oz
 oz
@@ -8772,8 +8785,8 @@ CA
 qU
 qU
 qU
-qU
-pT
+uu
+uu
 oz
 CA
 CA
@@ -8905,7 +8918,7 @@ uu
 pT
 iF
 oz
-pT
+uu
 oz
 pT
 pT
@@ -8923,7 +8936,7 @@ uu
 uu
 qU
 qU
-pT
+uu
 ex
 ex
 ex
@@ -9035,7 +9048,7 @@ CA
 uu
 iF
 iF
-pT
+uu
 oz
 oz
 pT
@@ -9051,7 +9064,7 @@ uu
 uu
 uu
 pT
-qU
+uu
 ex
 ex
 ex
@@ -9165,7 +9178,7 @@ HZ
 CA
 uu
 qU
-pT
+uu
 pT
 oz
 iF
@@ -9560,7 +9573,7 @@ qU
 qU
 qU
 oz
-qU
+uu
 qU
 qU
 iF
@@ -9571,7 +9584,7 @@ CA
 oz
 uu
 pT
-pT
+uu
 ex
 ex
 ex
@@ -10089,7 +10102,7 @@ GJ
 GJ
 oz
 qU
-pT
+uu
 pT
 iF
 pT
@@ -13482,7 +13495,7 @@ ex
 ex
 ex
 ex
-pT
+uu
 iF
 uu
 uu
@@ -13612,7 +13625,7 @@ ex
 ex
 ex
 ex
-pT
+uu
 uu
 oz
 qU
@@ -17515,14 +17528,13 @@ ex
 ex
 ex
 ex
+ex
+ex
+ex
 Nv
 Nv
 Nv
 Nv
-Nv
-Nv
-Nv
-Nv
 ex
 ex
 ex
@@ -17539,8 +17551,9 @@ ex
 ex
 ex
 ex
-ex
-ex
+Iz
+Iz
+Iz
 ex
 ex
 ex
@@ -17644,10 +17657,9 @@ ex
 ex
 ex
 ex
-Nv
-Nv
-Nv
-Nv
+ex
+ex
+ex
 Nv
 Nv
 Nv
@@ -17660,7 +17672,6 @@ ex
 ex
 ex
 ex
-Nv
 ex
 ex
 ex
@@ -17668,9 +17679,11 @@ ex
 ex
 ex
 ex
-RB
-RB
-RB
+ex
+ex
+jD
+jD
+jD
 ex
 ex
 Nv
@@ -17774,21 +17787,9 @@ ex
 ex
 ex
 ex
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
-Nv
+ex
+ex
+ex
 Nv
 Nv
 Nv
@@ -17797,10 +17798,22 @@ Nv
 Nv
 Nv
 ex
-RB
-RB
-RB
-RB
+ex
+ex
+ex
+ex
+ex
+ex
+Nv
+Nv
+Nv
+Nv
+Nv
+ex
+ZF
+jD
+jD
+jD
 ex
 Nv
 Nv
@@ -17903,9 +17916,9 @@ ex
 ex
 ex
 ex
-Nv
-Nv
-Nv
+ex
+ex
+ex
 Nv
 Nv
 Nv
@@ -18034,8 +18047,8 @@ ex
 ex
 ex
 ex
-Nv
-Nv
+ex
+ex
 Nv
 Nv
 Nv
@@ -18165,7 +18178,7 @@ ex
 ex
 ex
 ex
-Nv
+ex
 Nv
 Nv
 Nv
@@ -18295,9 +18308,9 @@ ex
 ex
 ex
 ex
-Nv
-Nv
-Nv
+ex
+ex
+ex
 Nv
 Nv
 Nv
@@ -18425,8 +18438,8 @@ ex
 ex
 ex
 ex
-Nv
-Nv
+ex
+ex
 Nv
 Nv
 Nv
@@ -18555,8 +18568,8 @@ ex
 ex
 ex
 ex
-Nv
-Nv
+ex
+ex
 Nv
 Nv
 Nv
@@ -18685,8 +18698,8 @@ ex
 ex
 ex
 ex
-Nv
-Nv
+ex
+ex
 Nv
 Nv
 Nv
@@ -18816,8 +18829,8 @@ ex
 ex
 ex
 ex
-Nv
-Nv
+ex
+ex
 Nv
 Nv
 Nv
@@ -18946,8 +18959,8 @@ ex
 ex
 ex
 ex
-Nv
-Nv
+ex
+ex
 Nv
 Nv
 Nv
@@ -19076,8 +19089,8 @@ ex
 ex
 ex
 ex
-Nv
-Nv
+ex
+ex
 Nv
 Nv
 Nv
@@ -19207,7 +19220,7 @@ ex
 ex
 ex
 ex
-Nv
+ex
 Nv
 Nv
 Nv
@@ -19337,7 +19350,7 @@ ex
 ex
 ex
 ex
-Nv
+ex
 Nv
 Nv
 Nv
@@ -19466,8 +19479,8 @@ ex
 ex
 ex
 ex
-Nv
-Nv
+ex
+ex
 Nv
 Nv
 Nv
@@ -19596,8 +19609,8 @@ ex
 ex
 ex
 ex
-Nv
-Nv
+ex
+ex
 Nv
 Nv
 Nv
@@ -19726,8 +19739,8 @@ ex
 ex
 ex
 ex
-Nv
-Nv
+ex
+ex
 Nv
 Nv
 Nv
@@ -19853,11 +19866,11 @@ ex
 ex
 ex
 ex
-Nv
-Nv
-Nv
-Nv
-Nv
+ex
+ex
+ex
+ex
+ex
 Nv
 Nv
 Nv
@@ -19983,11 +19996,11 @@ ex
 ex
 ex
 ex
-Nv
-Nv
-Nv
-Nv
-Nv
+ex
+ex
+ex
+ex
+ex
 Nv
 Nv
 Nv
@@ -20111,10 +20124,10 @@ ex
 "}
 (22,1,2) = {"
 ex
-Nv
-Nv
-Nv
-Nv
+ex
+ex
+ex
+ex
 Nv
 Nv
 Nv
@@ -20241,7 +20254,7 @@ ex
 "}
 (23,1,2) = {"
 ex
-Nv
+ex
 Nv
 Nv
 Nv
@@ -21021,7 +21034,7 @@ ex
 "}
 (29,1,2) = {"
 ex
-RB
+ex
 Nv
 Nv
 Nv
@@ -21151,8 +21164,8 @@ ex
 "}
 (30,1,2) = {"
 ex
-RB
-RB
+ZF
+jD
 Nv
 Nv
 Nv
@@ -21281,9 +21294,9 @@ ex
 "}
 (31,1,2) = {"
 ex
-RB
-RB
-RB
+jD
+jD
+jD
 ex
 Nv
 Nv
@@ -21411,9 +21424,9 @@ ex
 "}
 (32,1,2) = {"
 ex
-RB
-RB
-RB
+jD
+jD
+jD
 ex
 ex
 ex
@@ -21541,9 +21554,9 @@ ex
 "}
 (33,1,2) = {"
 ex
-RB
-RB
-RB
+jD
+jD
+jD
 ex
 ex
 ex
@@ -21671,9 +21684,9 @@ ex
 "}
 (34,1,2) = {"
 ex
-ex
-ex
-ex
+Iz
+Iz
+Iz
 ex
 ex
 ex
@@ -24785,7 +24798,7 @@ Nv
 Nv
 Nv
 Nv
-RB
+ZF
 ex
 ex
 "}
@@ -24915,9 +24928,9 @@ Nv
 Nv
 Nv
 Nv
-RB
-RB
-ex
+jD
+jD
+Iz
 "}
 (59,1,2) = {"
 ex
@@ -25045,9 +25058,9 @@ Nv
 Nv
 Nv
 Nv
-RB
-RB
-ex
+jD
+jD
+Iz
 "}
 (60,1,2) = {"
 ex
@@ -25175,9 +25188,9 @@ Nv
 Nv
 Nv
 Nv
-RB
-RB
-ex
+jD
+jD
+Iz
 "}
 (61,1,2) = {"
 ex
@@ -27001,7 +27014,7 @@ ex
 "}
 (75,1,2) = {"
 ex
-RB
+ex
 RB
 RB
 RB
@@ -27131,8 +27144,8 @@ ex
 "}
 (76,1,2) = {"
 ex
-RB
-RB
+ex
+ex
 RB
 RB
 RB
@@ -27261,8 +27274,8 @@ ex
 "}
 (77,1,2) = {"
 ex
-RB
-RB
+ex
+ex
 RB
 RB
 RB
@@ -27391,8 +27404,8 @@ Nv
 "}
 (78,1,2) = {"
 ex
-RB
-RB
+ex
+ZF
 RB
 RB
 RB
@@ -27520,9 +27533,9 @@ Nv
 Nv
 "}
 (79,1,2) = {"
-ex
-RB
-RB
+Iz
+jD
+jD
 RB
 RB
 RB
@@ -27650,9 +27663,9 @@ Nv
 Nv
 "}
 (80,1,2) = {"
-ex
-RB
-RB
+Iz
+jD
+jD
 RB
 RB
 RB
@@ -27780,9 +27793,9 @@ Nv
 ex
 "}
 (81,1,2) = {"
-ex
-RB
-RB
+Iz
+jD
+jD
 RB
 RB
 RB
@@ -27912,7 +27925,7 @@ ex
 (82,1,2) = {"
 ex
 ex
-RB
+jD
 RB
 RB
 RB
@@ -33652,7 +33665,7 @@ Nv
 Nv
 ex
 Yn
-EK
+yI
 ex
 EK
 Qz
@@ -33665,7 +33678,7 @@ gq
 EK
 EK
 Yn
-EK
+uL
 ex
 ex
 ex
@@ -33796,7 +33809,7 @@ Yn
 vr
 ex
 sH
-Iz
+vr
 ex
 ex
 ex

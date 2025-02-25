@@ -4,6 +4,7 @@
 	endTurfX = 128;
 	endTurfY = 128
 	},
+/obj/effect/landmark/map_load_mark/bandit_traveltile,
 /turf/closed,
 /area/rogue/outdoors/woods)
 "c" = (
@@ -13,9 +14,9 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods)
 "d" = (
-/obj/machinery/light/rogue/firebowl/stump,
+/obj/machinery/light/rogue/firebowl/cold,
 /turf/open/floor/rogue/naturalstone,
-/area/rogue/outdoors/woods)
+/area/rogue/outdoors/caves)
 "i" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/spider/hairy,
 /turf/open/floor/rogue/naturalstone,
@@ -47,6 +48,9 @@
 	dir = 4
 	},
 /area/rogue/outdoors/woods)
+"p" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/caves)
 "t" = (
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods)
@@ -145,7 +149,10 @@
 "Y" = (
 /obj/structure/fluff/traveltile/bandit,
 /turf/open/floor/rogue/naturalstone,
-/area/rogue/outdoors/woods)
+/area/rogue/outdoors/caves)
+"Z" = (
+/turf/closed,
+/area/rogue/outdoors/caves)
 
 (1,1,1) = {"
 N
@@ -283,14 +290,13 @@ N
 N
 N
 N
+N
+N
+N
 n
 n
 n
 n
-n
-n
-n
-n
 N
 N
 N
@@ -307,8 +313,9 @@ N
 N
 N
 N
-N
-N
+Z
+Z
+Z
 N
 N
 N
@@ -412,10 +419,9 @@ N
 N
 N
 N
-n
-n
-n
-n
+N
+N
+N
 n
 n
 n
@@ -428,7 +434,8 @@ N
 N
 N
 N
-n
+N
+N
 N
 N
 N
@@ -512,7 +519,7 @@ n
 n
 n
 n
-N
+n
 N
 N
 N
@@ -542,6 +549,9 @@ N
 N
 N
 N
+N
+N
+N
 n
 n
 n
@@ -549,16 +559,13 @@ n
 n
 n
 n
-n
-n
-n
-n
-n
-n
-n
-n
-n
-n
+N
+N
+N
+N
+N
+N
+N
 n
 n
 n
@@ -566,9 +573,9 @@ n
 n
 N
 d
-u
-u
-u
+p
+p
+p
 N
 n
 n
@@ -642,7 +649,7 @@ n
 n
 n
 n
-N
+n
 n
 n
 n
@@ -671,9 +678,9 @@ N
 N
 N
 N
-n
-n
-n
+N
+N
+N
 n
 n
 n
@@ -802,8 +809,8 @@ N
 N
 N
 N
-n
-n
+N
+N
 n
 n
 n
@@ -933,7 +940,7 @@ N
 N
 N
 N
-n
+N
 n
 n
 n
@@ -1063,9 +1070,9 @@ N
 N
 N
 N
-n
-n
-n
+N
+N
+N
 n
 n
 n
@@ -1193,8 +1200,8 @@ N
 N
 N
 N
-n
-n
+N
+N
 n
 n
 n
@@ -1323,8 +1330,8 @@ N
 N
 N
 N
-n
-n
+N
+N
 n
 n
 n
@@ -1453,8 +1460,8 @@ N
 N
 N
 N
-n
-n
+N
+N
 n
 n
 n
@@ -1584,8 +1591,8 @@ N
 N
 N
 N
-n
-n
+N
+N
 n
 n
 n
@@ -1714,8 +1721,8 @@ N
 N
 N
 N
-n
-n
+N
+N
 n
 n
 n
@@ -1844,8 +1851,8 @@ N
 N
 N
 N
-n
-n
+N
+N
 n
 n
 n
@@ -1975,7 +1982,7 @@ N
 N
 N
 N
-n
+N
 n
 n
 n
@@ -2105,7 +2112,7 @@ N
 N
 N
 N
-n
+N
 n
 n
 n
@@ -2234,8 +2241,8 @@ N
 N
 N
 N
-n
-n
+N
+N
 n
 n
 n
@@ -2364,8 +2371,8 @@ N
 N
 N
 N
-n
-n
+N
+N
 n
 n
 n
@@ -2494,8 +2501,8 @@ N
 N
 N
 N
-n
-n
+N
+N
 n
 n
 n
@@ -2621,11 +2628,11 @@ N
 N
 N
 N
-n
-n
-n
-n
-n
+N
+N
+N
+N
+N
 n
 n
 n
@@ -2751,11 +2758,11 @@ N
 N
 N
 N
-n
-n
-n
-n
-n
+N
+N
+N
+N
+N
 n
 n
 n
@@ -2879,10 +2886,10 @@ N
 "}
 (22,1,1) = {"
 N
-n
-n
-n
-n
+N
+N
+N
+N
 n
 n
 n
@@ -3009,7 +3016,7 @@ N
 "}
 (23,1,1) = {"
 N
-n
+N
 n
 n
 n
@@ -3789,7 +3796,7 @@ N
 "}
 (29,1,1) = {"
 N
-u
+N
 n
 n
 n
@@ -3919,8 +3926,8 @@ N
 "}
 (30,1,1) = {"
 N
-u
-u
+d
+p
 n
 n
 n
@@ -4049,9 +4056,9 @@ N
 "}
 (31,1,1) = {"
 N
-u
-u
-u
+p
+p
+p
 N
 n
 n
@@ -4179,9 +4186,9 @@ N
 "}
 (32,1,1) = {"
 N
-u
-u
-u
+p
+p
+p
 N
 N
 N
@@ -4309,9 +4316,9 @@ N
 "}
 (33,1,1) = {"
 N
-u
-u
-u
+p
+p
+p
 N
 N
 N
@@ -4439,9 +4446,9 @@ N
 "}
 (34,1,1) = {"
 N
-N
-N
-N
+Z
+Z
+Z
 N
 N
 N
@@ -7553,7 +7560,7 @@ n
 n
 n
 n
-u
+d
 N
 N
 "}
@@ -7683,9 +7690,9 @@ n
 n
 n
 n
-u
-u
-N
+p
+p
+Z
 "}
 (59,1,1) = {"
 N
@@ -7813,9 +7820,9 @@ n
 n
 n
 n
-u
-u
-N
+p
+p
+Z
 "}
 (60,1,1) = {"
 N
@@ -7943,9 +7950,9 @@ n
 n
 n
 n
-u
-u
-N
+p
+p
+Z
 "}
 (61,1,1) = {"
 N
@@ -9769,7 +9776,7 @@ N
 "}
 (75,1,1) = {"
 N
-u
+N
 u
 u
 u
@@ -9899,8 +9906,8 @@ N
 "}
 (76,1,1) = {"
 N
-u
-u
+N
+N
 u
 u
 u
@@ -10029,8 +10036,8 @@ N
 "}
 (77,1,1) = {"
 N
-u
-u
+N
+N
 u
 u
 u
@@ -10159,8 +10166,8 @@ n
 "}
 (78,1,1) = {"
 N
-u
-u
+N
+d
 u
 u
 u
@@ -10288,9 +10295,9 @@ n
 n
 "}
 (79,1,1) = {"
-N
-u
-u
+Z
+p
+p
 u
 u
 u
@@ -10418,9 +10425,9 @@ n
 n
 "}
 (80,1,1) = {"
-N
-u
-u
+Z
+p
+p
 u
 u
 u
@@ -10548,9 +10555,9 @@ n
 N
 "}
 (81,1,1) = {"
-N
-u
-u
+Z
+p
+p
 u
 u
 u
@@ -10680,7 +10687,7 @@ N
 (82,1,1) = {"
 N
 N
-u
+p
 u
 u
 u

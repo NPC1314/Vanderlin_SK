@@ -195,6 +195,9 @@
 
 /obj/machinery/light/rogue/firebowl
 	brightness = 10
+/obj/machinery/light/rogue/firebowl/Initialize()
+	. = ..()
+	light_outer_range =  8
 
 /obj/machinery/light/rogue/wallfire
 	brightness = 9
@@ -204,6 +207,23 @@
 
 /obj/machinery/light/rogue/campfire
 	brightness = 8
+/obj/machinery/light/rogue/campfire/Initialize()
+	. = ..()
+	light_outer_range =  6
+
+
+/obj/machinery/light/rogue/torchholder/empty
+	lacks_torch = TRUE
+	pixel_y = 32
+
+/obj/machinery/light/rogue/torchholder/cold
+	unlit_torch = TRUE
+	pixel_y = 32
+
+/obj/machinery/light/rogue/firebowl/cold/Initialize(mapload)
+	. = ..()
+	sleep(10)
+	extinguish()
 
 // =============================================================================
 // ========================		WEATHER EDITS		============================
@@ -588,6 +608,9 @@
 /obj/structure/flora/rogueflower/fallenleaves
 	icon_state = "leaves"
 	alpha = 200
+/obj/structure/flora/rogueflower/fallenleaves/Crossed(mob/living/L)
+	. = ..()
+	playsound(L.loc, "plantcross", 50, FALSE, -1)
 
 /obj/structure/flora/rogueflower/reedbush
 	icon_state = "reedbush"
@@ -1045,8 +1068,36 @@
 /obj/structure/bed/rogue/sleepingbag
 	icon = 'modular/stonekeep/icons/structure.dmi'
 
+/mob/living/simple_animal/pet/cat/rogue
+	TOTALSTR = 2
+	botched_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/mince/beef = 1)
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/flayedcat = 1)
+	perfect_butcher_results = list(/obj/item/reagent_containers/food/snacks/flayedcat = 1)
 
+/obj/item/reagent_containers/food/snacks/flayedcat
+	name = "flayed cat"
+	desc = ""
+	icon_state = "flayedcat"
+	list_reagents = list(/datum/reagent/consumable/nutriment = SNACK_POOR)
+	foodtype = RAW
+	w_class = WEIGHT_CLASS_SMALL
+	eat_effect = /datum/status_effect/debuff/uncookedfood
+	fried_type = /obj/item/reagent_containers/food/snacks/rogue/friedcat
+	cooked_smell = /datum/pollutant/food/fried_rat
+	sellprice = 0
+	rotprocess = SHELFLIFE_SHORT
 
+/obj/item/reagent_containers/food/snacks/rogue/friedcat
+	name = "fried cat"
+	icon_state = "cookedcat"
+	bitesize = 2
+	list_reagents = list(/datum/reagent/consumable/nutriment = SNACK_DECENT)
+	w_class = WEIGHT_CLASS_SMALL
+	tastes = list("burnt flesh" = 1)
+	rotprocess = SHELFLIFE_DECENT
+	sellprice = 0
+
+/*	could not get this to work. Randomiszes where travel tiles appear, from BS/RW branch, see their map for examples.
 GLOBAL_LIST_EMPTY(travel_tile_locations)
 
 /obj/effect/landmark/travel_tile_location
@@ -1107,3 +1158,89 @@ GLOBAL_LIST_EMPTY(travel_spawn_points)
 		log_world("Unable to find spot for random travel transition: [travel_id] [travel_goes_to_id]")
 		return
 	create_travel_tiles(location, travel_id, travel_goes_to_id, required_trait, path)
+*/
+
+// ===================================================================================
+/datum/intent/simple/trollsmash
+	name = "trollsmash"
+	icon_state = "instrike"
+	attack_verb = list("hammer-punches", "smashes", "headbutts", "rams")
+	animname = "blank22"
+	blade_class = BCLASS_BLUNT
+	hitsound = "punch_hard"
+	chargetime = 0
+	penfactor = 13
+	swingdelay = 4 SECONDS
+	candodge = TRUE
+	canparry = FALSE
+
+
+/mob/living/simple_animal/hostile/retaliate/rogue/troll
+	base_intents = list(/datum/intent/simple/trollrip, /datum/intent/simple/trollsmash)
+
+/mob/living/simple_animal/hostile/retaliate/rogue/trollbog
+	base_intents = list(/datum/intent/simple/trollsmash, /datum/intent/simple/trollrip)
+
+/mob/living/simple_animal/hostile/retaliate/rogue/wolf
+	base_intents = list(/datum/intent/simple/critterbite)
+
+/mob/living/simple_animal/hostile/retaliate/rogue/bigrat
+	base_intents = list(/datum/intent/simple/critterbite)
+
+/mob/living/simple_animal/hostile/retaliate/rogue/spider
+	base_intents = list(/datum/intent/simple/bite)
+
+/datum/intent/simple/trollrip
+	name = "trollrip"
+	icon_state = "instrike"
+	attack_verb = list("claws", "gnashes", "viciously bites")
+	animname = "blank22"
+	blade_class = BCLASS_CHOP
+	hitsound = "smallslash"
+	chargetime = 0
+	penfactor = 20
+	swingdelay = 2 SECONDS
+	candodge = TRUE
+	canparry = TRUE
+
+/datum/intent/simple/critterbite
+	name = "bite"
+	icon_state = "instrike"
+	attack_verb = list("bites")
+	animname = "blank22"
+	blade_class = BCLASS_CUT
+	hitsound = "smallslash"
+	chargetime = 0
+	penfactor = 5
+	swingdelay = 1.5 SECONDS
+	candodge = TRUE
+	canparry = TRUE
+
+/datum/intent/simple/claw_strong
+	name = "claw"
+	icon_state = "inclaw"
+	attack_verb = list("slashes", "claws")
+	animname = "blank22"
+	blade_class = BCLASS_CUT
+	hitsound = "smallslash"
+	chargetime = 0
+	penfactor = 5
+	swingdelay = 2 SECONDS
+	candodge = TRUE
+	canparry = TRUE
+	miss_text = "slashes the air!"
+
+/datum/intent/simple/claw_quick
+	name = "claw"
+	icon_state = "inclaw"
+	attack_verb = list("slashes", "claws")
+	animname = "blank22"
+	blade_class = BCLASS_CUT
+	hitsound = "smallslash"
+	chargetime = 0
+	penfactor = 3
+	swingdelay = 1 SECONDS
+	candodge = TRUE
+	canparry = TRUE
+	miss_text = "slashes the air!"
+
