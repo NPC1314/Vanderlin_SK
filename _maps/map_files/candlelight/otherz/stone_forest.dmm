@@ -148,6 +148,10 @@
 	},
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/woods)
+"ix" = (
+/obj/structure/fluff/signage,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
 "iF" = (
 /turf/open/floor/rogue/grass/mixyel,
 /area/rogue/outdoors/woods)
@@ -172,7 +176,7 @@
 	},
 /area/rogue/outdoors/woods)
 "iV" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/saiga,
+/obj/effect/spawner/roguemap/maybe_saiga,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/woods)
 "jx" = (
@@ -226,6 +230,9 @@
 /obj/effect/decal/remains/human/old/small,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/cave/volf)
+"mG" = (
+/turf/open/water,
+/area/rogue/outdoors/woods)
 "nf" = (
 /obj/structure/flora/roguegrass/water,
 /turf/open/water/river{
@@ -247,6 +254,10 @@
 /area/rogue/outdoors/woods)
 "oz" = (
 /turf/open/floor/rogue/grass/mixyel/under_tree,
+/area/rogue/outdoors/woods)
+"pF" = (
+/obj/effect/spawner/roguemap/maybe_saiga,
+/turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woods)
 "pT" = (
 /obj/structure/flora/newtree,
@@ -396,6 +407,10 @@
 "BE" = (
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/indoors)
+"Ct" = (
+/obj/structure/fluff/signage,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
 "CA" = (
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/woods)
@@ -414,9 +429,9 @@
 /turf/open/water/river,
 /area/rogue/outdoors/woods)
 "DM" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/wolf,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/indoors/cave/volf)
+/obj/effect/spawner/roguemap/maybe_saiga,
+/turf/open/floor/rogue/grass/yel,
+/area/rogue/outdoors/woods)
 "Ec" = (
 /obj/structure/fluff/traveltile{
 	aportalgoesto = "candlelight-forest";
@@ -427,6 +442,10 @@
 "Ek" = (
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors)
+"Er" = (
+/obj/effect/spawner/roguemap/maybe_cabbit,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods)
 "Es" = (
 /obj/item/ash{
 	pixel_x = -6
@@ -568,6 +587,10 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/woods)
+"OR" = (
+/obj/effect/spawner/roguemap/maybe_volf,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/cave/volf)
 "OV" = (
 /obj/effect/decal/remains/cabbit,
 /turf/open/floor/rogue/naturalstone,
@@ -592,6 +615,10 @@
 /obj/item/reagent_containers/glass/bucket/pot/copper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors)
+"Qy" = (
+/obj/effect/spawner/roguemap/maybe_cabbit,
+/turf/open/floor/rogue/grass/yel,
+/area/rogue/outdoors/woods)
 "Qz" = (
 /obj/structure/spider/stickyweb,
 /turf/open/floor/rogue/naturalstone,
@@ -1078,13 +1105,13 @@ ex
 ex
 ex
 ex
-ck
-ck
-ck
-ck
-ck
-ck
-uu
+CA
+CA
+CA
+CA
+CA
+CA
+CA
 pT
 qU
 uu
@@ -1206,15 +1233,15 @@ Pn
 pT
 uu
 ex
-ck
-ck
-ck
-ck
-ck
-ck
-ck
-ck
-ck
+CA
+CA
+CA
+CA
+CA
+CA
+CA
+CA
+CA
 qU
 uu
 uu
@@ -1336,14 +1363,14 @@ iF
 pT
 pT
 uu
-ck
-ck
-ck
-ck
-ck
-ck
-ck
-iF
+CA
+CA
+CA
+CA
+CA
+CA
+CA
+CA
 uu
 iF
 CA
@@ -1467,12 +1494,12 @@ CA
 pT
 uu
 uu
-ck
-ck
-ck
-ck
-ck
-ck
+uu
+uu
+CA
+CA
+uu
+uu
 Pn
 iF
 qU
@@ -1598,10 +1625,10 @@ pT
 uu
 uu
 CA
-ck
-ck
-ck
-ck
+uu
+uu
+uu
+qU
 iF
 Pn
 iF
@@ -1729,10 +1756,10 @@ uu
 uu
 uu
 iF
-ck
-ck
-ck
-ck
+uu
+uu
+uu
+uu
 iF
 iF
 qU
@@ -1860,9 +1887,9 @@ uu
 qU
 iF
 Pn
-ck
-ck
-ck
+uu
+uu
+uu
 iF
 uu
 Xi
@@ -1990,8 +2017,8 @@ iF
 iF
 iF
 Pn
-ck
-ck
+uu
+uu
 uu
 CA
 CA
@@ -5639,7 +5666,7 @@ nX
 CA
 CA
 FJ
-GJ
+Ct
 al
 al
 GJ
@@ -6206,7 +6233,7 @@ ex
 ex
 sP
 uJ
-JN
+OR
 mw
 ex
 ex
@@ -6334,8 +6361,8 @@ ex
 ex
 ex
 ex
+OR
 JN
-DM
 JN
 dM
 ex
@@ -6967,7 +6994,7 @@ uu
 Xi
 oz
 uu
-uu
+pF
 iF
 iF
 uu
@@ -8196,7 +8223,7 @@ qU
 qU
 ez
 iF
-Pn
+DM
 Pn
 HR
 iF
@@ -12011,8 +12038,8 @@ uu
 iF
 uu
 uu
-uu
-iF
+ck
+ck
 uu
 uu
 uu
@@ -12140,13 +12167,13 @@ uu
 iF
 uu
 uu
-uu
-iF
-Pn
+ck
+ck
+ck
 ck
 uu
-iF
-Pn
+ck
+ck
 iF
 iF
 Pn
@@ -12271,12 +12298,12 @@ iF
 iF
 ck
 ck
-uu
 ck
 ck
 ck
-iF
-Pn
+ck
+ck
+ck
 iF
 iF
 Pn
@@ -12405,8 +12432,8 @@ ck
 ck
 ck
 ck
-iF
-Pn
+ck
+ck
 Pn
 iF
 Pn
@@ -12535,9 +12562,9 @@ ck
 ck
 ck
 ck
-Pn
-Pn
-iF
+ck
+ck
+ck
 Pn
 Pn
 iF
@@ -12666,8 +12693,8 @@ ck
 ck
 ck
 ck
-iF
-CA
+ck
+ck
 iF
 iF
 Pn
@@ -12796,8 +12823,8 @@ ck
 ck
 ck
 ck
-uu
-CA
+ck
+ck
 iF
 Pn
 Pn
@@ -12925,9 +12952,9 @@ ck
 ck
 ck
 ck
-Pn
-iF
-CA
+ck
+ck
+ck
 uu
 iF
 Pn
@@ -13054,10 +13081,10 @@ ck
 ck
 ck
 ck
-uu
-iF
-uu
-uu
+ck
+ck
+ck
+ck
 CA
 iF
 Pn
@@ -13184,10 +13211,10 @@ ck
 ck
 ck
 ck
+ck
 uu
-uu
-uu
-uu
+ck
+ck
 CA
 CA
 iF
@@ -13312,8 +13339,8 @@ iF
 ck
 ck
 ck
-uu
-uu
+ck
+ck
 uu
 uu
 iF
@@ -13440,10 +13467,10 @@ GJ
 uu
 iF
 uu
-uu
-uu
-iF
-uu
+ck
+ck
+ck
+ck
 uu
 iF
 Pn
@@ -13570,9 +13597,9 @@ GJ
 uu
 iF
 uu
-iF
-iF
-Pn
+ck
+ck
+ck
 iF
 iF
 Pn
@@ -13592,7 +13619,7 @@ iF
 iF
 uu
 CA
-CA
+Er
 CA
 iF
 CA
@@ -14547,7 +14574,7 @@ HZ
 HZ
 HZ
 HZ
-HZ
+mG
 HZ
 CA
 CA
@@ -14571,7 +14598,7 @@ iF
 uu
 iF
 iF
-uu
+pF
 uu
 qU
 uu
@@ -14644,7 +14671,7 @@ iF
 iF
 Pn
 Pn
-Pn
+Qy
 Pn
 Pn
 iF
@@ -14674,10 +14701,10 @@ CA
 CA
 HZ
 HZ
-HZ
-HZ
-HZ
-HZ
+mG
+mG
+mG
+mG
 HZ
 HZ
 HZ
@@ -14803,13 +14830,13 @@ CA
 CA
 HZ
 HZ
-HZ
-HZ
-HZ
-HZ
-HZ
-HZ
-HZ
+mG
+mG
+mG
+mG
+mG
+mG
+mG
 HZ
 HZ
 CA
@@ -14932,15 +14959,15 @@ iF
 CA
 HZ
 HZ
-HZ
-HZ
-HZ
-HZ
-HZ
-HZ
-HZ
-HZ
-HZ
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
 HZ
 CA
 uu
@@ -15062,15 +15089,15 @@ uu
 xg
 HZ
 HZ
-HZ
-HZ
-HZ
-HZ
-HZ
-HZ
-HZ
-HZ
-HZ
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
 HZ
 CA
 uu
@@ -15192,15 +15219,15 @@ uu
 CA
 HZ
 HZ
-HZ
-HZ
-HZ
-HZ
-HZ
-HZ
-HZ
-HZ
-HZ
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
 HZ
 pT
 uu
@@ -15322,14 +15349,14 @@ uu
 CA
 CA
 HZ
-HZ
-HZ
-HZ
-HZ
-HZ
-HZ
-HZ
-HZ
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
 HZ
 HZ
 CA
@@ -15453,11 +15480,11 @@ iF
 CA
 HZ
 HZ
-HZ
-HZ
-HZ
-HZ
-HZ
+mG
+mG
+mG
+mG
+mG
 HZ
 HZ
 HZ
@@ -15584,9 +15611,9 @@ CA
 CA
 HZ
 HZ
-HZ
-HZ
-HZ
+mG
+mG
+mG
 HZ
 HZ
 CA
@@ -16977,7 +17004,7 @@ uu
 uu
 WQ
 uu
-uu
+ix
 GJ
 al
 al
