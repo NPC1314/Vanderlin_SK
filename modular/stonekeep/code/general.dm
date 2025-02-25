@@ -222,7 +222,7 @@
 
 /obj/machinery/light/rogue/firebowl/cold/Initialize(mapload)
 	. = ..()
-	sleep(10)
+//	sleep(10)		cant sleep in init guh
 	extinguish()
 
 // =============================================================================
