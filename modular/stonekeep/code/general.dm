@@ -197,7 +197,7 @@
 	brightness = 10
 /obj/machinery/light/rogue/firebowl/Initialize()
 	. = ..()
-	light_outer_range =  8
+	light_outer_range =  9
 
 /obj/machinery/light/rogue/wallfire
 	brightness = 9
@@ -222,8 +222,7 @@
 
 /obj/machinery/light/rogue/firebowl/cold/Initialize(mapload)
 	. = ..()
-//	sleep(10)		cant sleep in init guh
-	extinguish()
+	addtimer(CALLBACK(src, PROC_REF(extinguish)), 10)
 
 // =============================================================================
 // ========================		WEATHER EDITS		============================

@@ -922,7 +922,7 @@
 								I = new /obj/item/rogueweapon/polearm/woodstaff/quarterstaff/steel(user.loc)
 						if(5)
 							if(HAS_TRAIT(user, TRAIT_DODGEEXPERT))
-								I = new /obj/item/clothing/under/roguetown/trou/leather/advanced(user.loc)
+								I = new /obj/item/clothing/under/roguetown/leather/heavy(user.loc)
 							if(HAS_TRAIT(user, TRAIT_MEDIUMARMOR))
 								I = new /obj/item/clothing/wrists/roguetown/bracers(user.loc)
 							if(HAS_TRAIT(user, TRAIT_HEAVYARMOR))

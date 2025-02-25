@@ -1615,6 +1615,10 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors)
+"jb" = (
+/obj/machinery/light/rogue/firebowl/stump,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods_safe)
 "ji" = (
 /obj/structure/fake_door{
 	density = 1
@@ -2949,7 +2953,7 @@
 "AI" = (
 /obj/structure/fluff/railing/fence,
 /obj/structure/fluff/railing/fence,
-/turf/open/floor/rogue/dirt/road,
+/turf/open/floor/rogue/grass/mixyel,
 /area/rogue/outdoors/woods_safe)
 "AU" = (
 /turf/closed/mineral/rogue/bedrock,
@@ -3129,7 +3133,7 @@
 /area/rogue)
 "Dz" = (
 /obj/machinery/tanningrack,
-/turf/open/floor/rogue/dirt/road,
+/turf/open/floor/rogue/grass/mixyel,
 /area/rogue/outdoors/woods_safe)
 "Ed" = (
 /obj/item/grown/log/tree/stick,
@@ -3148,7 +3152,7 @@
 /obj/structure/closet/crate/chest/old_crate,
 /obj/item/reagent_containers/powder/salt,
 /obj/item/reagent_containers/powder/salt,
-/turf/open/floor/rogue/dirt/road,
+/turf/open/floor/rogue/grass/mixyel,
 /area/rogue/outdoors/woods_safe)
 "Eo" = (
 /turf/open/floor/rogue/twig,
@@ -4552,8 +4556,8 @@
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/bandit_lair)
 "WE" = (
-/obj/structure/fluff/statue/tdummy,
-/turf/open/floor/rogue/dirt/road,
+/obj/machinery/light/rogue/firebowl/stump,
+/turf/open/floor/rogue/grass/mixyel,
 /area/rogue/outdoors/woods_safe)
 "WF" = (
 /obj/structure/toilet,
@@ -4604,8 +4608,8 @@
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/bandit_lair)
 "Xx" = (
-/obj/machinery/light/rogue/firebowl/stump,
-/turf/open/floor/rogue/dirt,
+/obj/structure/fluff/statue/tdummy,
+/turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods_safe)
 "XC" = (
 /obj/effect/proc_holder/spell/invoked/heal,
@@ -5526,8 +5530,8 @@ cm
 Te
 Te
 Te
-Sy
-Sy
+iK
+iK
 Sy
 so
 Te
@@ -5637,7 +5641,7 @@ Sy
 Sy
 Te
 Te
-uX
+Te
 so
 yR
 TD
@@ -5655,8 +5659,8 @@ mv
 Te
 Te
 Te
-Te
-Te
+Qy
+Qy
 Sn
 Sy
 Sy
@@ -5766,8 +5770,8 @@ Sy
 Sy
 Sy
 Te
-uX
-ge
+Te
+Te
 Te
 yR
 dl
@@ -5785,9 +5789,9 @@ Oc
 dG
 Te
 Te
-Te
-Te
-Sn
+Qy
+Qy
+BL
 so
 bz
 bz
@@ -5916,8 +5920,8 @@ Te
 Te
 Te
 Te
-Te
-Sn
+Qy
+BL
 so
 Sy
 bz
@@ -6047,7 +6051,7 @@ yR
 cw
 Te
 Te
-Sn
+BL
 so
 so
 Sy
@@ -6177,7 +6181,7 @@ fV
 yR
 Te
 Te
-Sn
+BL
 Qy
 so
 xt
@@ -6436,8 +6440,8 @@ lV
 lV
 Rw
 Te
+We
 Te
-Xx
 Qy
 BL
 Qy
@@ -6566,7 +6570,7 @@ Zh
 Jo
 yR
 Te
-We
+jb
 Te
 Qy
 BL
@@ -6816,7 +6820,7 @@ yR
 cw
 Dz
 Ek
-Yv
+WE
 QE
 QE
 QE
@@ -6944,8 +6948,8 @@ yP
 Ch
 GX
 Uu
-xt
-xt
+Qy
+Qy
 xt
 QE
 QE
@@ -7345,9 +7349,9 @@ PS
 PS
 Qy
 Qy
-xt
-WE
-xt
+Qy
+Qy
+Qy
 Qy
 Sn
 Te
@@ -7474,11 +7478,11 @@ xt
 Qy
 Qy
 xt
+Yv
 xt
-xt
-xt
-xt
-xt
+Qy
+Qy
+Qy
 Sn
 FR
 so
@@ -7601,14 +7605,14 @@ QE
 Hs
 QE
 xt
+Qy
 xt
 xt
 xt
 xt
-xt
-xt
-Yv
-xt
+Qy
+Qy
+Qy
 Sn
 Te
 so
@@ -7717,9 +7721,9 @@ ge
 Te
 FR
 FR
-xt
-xt
-xt
+Te
+Te
+Te
 Qy
 PS
 PS
@@ -7731,15 +7735,15 @@ xt
 xt
 xt
 xt
+Qy
+xt
+xt
+Xx
 xt
 xt
 Qy
 Qy
-Qy
-xt
-Qy
-xt
-Sn
+BL
 so
 so
 xt
@@ -7861,15 +7865,15 @@ QE
 xt
 xt
 Qy
-Te
-Te
-Qy
-Qy
-Qy
 Qy
 Qy
 xt
-Sn
+xt
+xt
+xt
+Qy
+Te
+BL
 so
 so
 so
@@ -7988,18 +7992,18 @@ QE
 QE
 xt
 xt
+xt
+PS
 Yv
-PS
-PS
-Qy
-Te
-Qy
-Qy
-Qy
 Qy
 Qy
 xt
-Sn
+xt
+xt
+Qy
+Qy
+Te
+BL
 so
 Sy
 bz
@@ -8123,13 +8127,13 @@ JQ
 yR
 Qy
 Te
+Qy
+Qy
+Qy
+Qy
+Qy
 Te
-Qy
-Qy
-Qy
-Qy
-Te
-Sn
+BL
 so
 Sy
 bz
@@ -8259,7 +8263,7 @@ Te
 Qy
 Te
 We
-Sn
+BL
 so
 Sy
 bz
@@ -8389,7 +8393,7 @@ Te
 Te
 Te
 ge
-Sn
+BL
 xt
 Sy
 bz
