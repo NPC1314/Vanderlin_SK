@@ -955,3 +955,7 @@ GLOBAL_LIST_EMPTY(travel_spawn_points)
 /obj/effect/landmark/start/gravekeeper
 	name = "Gravekeeper"
 	icon_state = "arrow"
+
+/obj/structure/handcart/corpse
+	name = "corpse cart"
+	color = "#b4b4b6"

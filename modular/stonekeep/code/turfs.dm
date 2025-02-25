@@ -46,7 +46,8 @@
 	icon_state = "cobblerock_red"
 	neighborlay = "cobblerock_red"
 
-
+/turf/open/floor/rogue/blocks/carved
+	icon_state = "carvedstone"
 
 /turf/open/floor/rogue/cobblerock/cardinal_smooth(adjacencies)
 	roguesmooth(adjacencies)
@@ -183,7 +184,8 @@
 	dir = pick(GLOB.cardinals)
 	. = ..()
 
-
+// ======================================================================
+/*	..................   Map Generators   ................... */
 /datum/mapGenerator/forest
 	modules = list(/datum/mapGeneratorModule/ambushing,/datum/mapGeneratorModule/forestgrassturf,/datum/mapGeneratorModule/forest,/datum/mapGeneratorModule/forestroad,/datum/mapGeneratorModule/forestgrass,/datum/mapGeneratorModule/forestswampwaterturf,/datum/mapGeneratorModule/forestwaterturf, /datum/mapGeneratorModule/forest_undertree)
 
@@ -237,6 +239,9 @@
 							/obj/item/grown/log/tree/stick = 3,
 							/obj/structure/flora/rogueflower/fallenleaves = 30)
 
+
+// ======================================================================
+/*	..................   Areas   ................... */
 /area/rogue/indoors/cave/volf
 	name = "volf cave"
 	icon_state = "cave"
@@ -245,8 +250,12 @@
 	name = "spider cave"
 	icon_state = "cave"
 
+/area/rogue/outdoors/town/amphitheatre
+	name = "town (amphitheatre)"
 
-/*	..................   Bandit Traveltile   ................... */ // This is so shit but cant be arsed to make the RW One work
+
+// ======================================================================
+/*	..................   Bandit Traveltile Landmark   ................... */ // This is so shit but cant be arsed to make the RW One work
 /obj/effect/landmark/map_load_mark/bandit_traveltile
 	name = "Bandit_travel"
 	templates = list( "bandit_tile1","bandit_tile2","bandit_tile3","bandit_tile4"  )
