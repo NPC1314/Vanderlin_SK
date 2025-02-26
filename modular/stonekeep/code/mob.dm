@@ -333,7 +333,7 @@
 	icon = 'icons/roguetown/mob/monster/saiga.dmi'
 	icon_state = "saiga"
 	probby = 50
-	color = "#ffde5a"
+	color = "#ff00d9"
 	spawned = list(
 		/mob/living/simple_animal/hostile/retaliate/rogue/saiga = 40,
 		/mob/living/simple_animal/hostile/retaliate/rogue/saigabuck = 50,
@@ -343,7 +343,7 @@
 	icon = 'icons/roguetown/mob/cabbit.dmi'
 	icon_state = "cabbit"
 	probby = 50
-	color = "#ffde5a"
+	color = "#ff00d9"
 	spawned = list(
 		/mob/living/simple_animal/pet/cat/rogue/cabbit = 100)
 
@@ -351,7 +351,7 @@
 	icon = 'icons/roguetown/mob/monster/vol.dmi'
 	icon_state = "vv"
 	probby = 50
-	color = "#ffde5a"
+	color = "#ff00d9"
 	spawned = list(
 		/mob/living/simple_animal/hostile/retaliate/rogue/wolf = 100)
 
@@ -362,7 +362,7 @@
 	icon = 'icons/effects/blood.dmi'
 	icon_state = "remains"
 	probby = 50
-	color = "#ffde5a"
+	color = "#ffce0b"
 	spawned = list(
 		/obj/structure/idle_enemy/weak_skelly = 4,
 		/obj/effect/decal/remains/human/old = 50,
@@ -375,7 +375,7 @@
 	icon_state = "srat"
 	icon = 'icons/roguetown/mob/monster/rat.dmi'
 	probby = 50
-	color = "#ffde5a"
+	color = "#ffce0b"
 	spawned = list(
 		/obj/item/roguecoin/silver = 5,
 		/obj/item/clothing/under/roguetown/trou = 2,
