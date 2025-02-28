@@ -17,6 +17,7 @@
 	icon = 'modular/stonekeep/icons/structure.dmi'
 
 
+
 // =================================================================================
 /*----------------\
 | Lighting tweaks |
@@ -364,3 +365,5 @@
 
 /obj/structure/mineral_door/swing_door/horizontal
 	icon = 'modular/stonekeep/icons/structure.dmi'
+
+
