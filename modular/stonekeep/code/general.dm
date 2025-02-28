@@ -968,3 +968,8 @@ GLOBAL_LIST_EMPTY(travel_spawn_points)
 				/mob/living/carbon/human/species/goblin/skilled/ambush = 5,
 				/mob/living/simple_animal/pet/cat/rogue/cabbit = 10)
 	first_time_text = "STONEHILL VALLEY"
+
+
+/obj/item/key/spooky_village
+	icon_state = "rustkey"
+	lockid = "spooky_village"
