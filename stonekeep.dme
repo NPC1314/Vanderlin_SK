@@ -1903,6 +1903,7 @@
 #include "modular\stonekeep\code\mob.dm"
 #include "modular\stonekeep\code\race.dm"
 #include "modular\stonekeep\code\slapcraft_disabler.dm"
+#include "modular\stonekeep\code\stonekeep_carbons.dm"
 #include "modular\stonekeep\code\stressevents.dm"
 #include "modular\stonekeep\code\structures.dm"
 #include "modular\stonekeep\code\turfs.dm"

@@ -186,44 +186,6 @@
 	icon_state = ""
 
 
-
-// =================================================================================
-/*----------------\
-| Lighting tweaks |
-\----------------*/
-// base was 8, 5 for torches
-
-/obj/machinery/light/rogue/firebowl
-	brightness = 10
-/obj/machinery/light/rogue/firebowl/Initialize()
-	. = ..()
-	light_outer_range =  9
-
-/obj/machinery/light/rogue/wallfire
-	brightness = 9
-
-/obj/machinery/light/rogue/torchholder
-	brightness = 7
-
-/obj/machinery/light/rogue/campfire
-	brightness = 8
-/obj/machinery/light/rogue/campfire/Initialize()
-	. = ..()
-	light_outer_range =  6
-
-
-/obj/machinery/light/rogue/torchholder/empty
-	lacks_torch = TRUE
-	pixel_y = 32
-
-/obj/machinery/light/rogue/torchholder/cold
-	unlit_torch = TRUE
-	pixel_y = 32
-
-/obj/machinery/light/rogue/firebowl/cold/Initialize(mapload)
-	. = ..()
-	addtimer(CALLBACK(src, PROC_REF(extinguish)), 10)
-
 // =============================================================================
 // ========================		WEATHER EDITS		============================
 
@@ -959,3 +921,49 @@ GLOBAL_LIST_EMPTY(travel_spawn_points)
 /obj/structure/handcart/corpse
 	name = "corpse cart"
 	color = "#b4b4b6"
+
+
+
+
+/area/rogue/outdoors/rtfield/plague_district
+	ambush_mobs = list(/mob/living/carbon/human/species/human/northern/bum/skilled/madman = 50, /mob/living/simple_animal/hostile/rogue/skeleton = 50)
+	first_time_text = "PLAGUE DISTRICT"
+	color = "#d4da75"
+	name = "plague district"
+	ambush_types = list(
+				/turf/open/floor/rogue/cobblerock)
+
+/area/rogue/outdoors/rtfield/outlaw
+	ambush_mobs = list(/mob/living/carbon/human/species/human/northern/bum/skilled/outlaw = 50)
+	name = "outlaw hideout"
+	color = "#e9baa3"
+	first_time_text = null
+
+/area/rogue/outdoors/rtfield/boggish
+	ambush_mobs = list(/mob/living/carbon/human/species/goblin/skilled/ambush/sea = 50)
+	name = "bog approaches"
+	color = "#7db36e"
+	first_time_text = null
+
+/area/rogue/outdoors/rtfield/woodish
+	ambush_mobs = list(/mob/living/simple_animal/hostile/retaliate/rogue/wolf = 50)
+	name = "woods approaches"
+	color = "#7db36e"
+	first_time_text = null
+
+/area/rogue/outdoors/rtfield/spooky		// haunts ambush and dug down hidden treasure
+	ambush_mobs = list(/mob/living/simple_animal/hostile/rogue/haunt = 50)
+	name = "spooky place"
+	color = "#9294d3"
+	first_time_text = null
+
+/area/rogue/outdoors/rtfield/hamlet
+	name = "hamlet surroundings"
+	ambush_times = list("night","dusk")
+	ambush_types = list(
+				/turf/open/floor/rogue/dirt)
+	ambush_mobs = list(
+				/mob/living/simple_animal/hostile/retaliate/rogue/wolf = 60,
+				/mob/living/carbon/human/species/goblin/skilled/ambush = 5,
+				/mob/living/simple_animal/pet/cat/rogue/cabbit = 10)
+	first_time_text = "STONEHILL VALLEY"

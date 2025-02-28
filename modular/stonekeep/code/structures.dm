@@ -16,10 +16,56 @@
 /obj/structure/rack/rogue/shelf
 	icon = 'modular/stonekeep/icons/structure.dmi'
 
+
+// =================================================================================
+/*----------------\
+| Lighting tweaks |
+\----------------*/
+// base was 8, 5 for torches
+
+/obj/machinery/light/rogue/firebowl
+	brightness = 10
+/obj/machinery/light/rogue/firebowl/Initialize()
+	. = ..()
+	light_outer_range =  9
+
+/obj/machinery/light/rogue/wallfire
+	brightness = 9
+
+/obj/machinery/light/rogue/torchholder
+	brightness = 7
+
+/obj/machinery/light/rogue/campfire
+	brightness = 8
+/obj/machinery/light/rogue/campfire/Initialize()
+	. = ..()
+	light_outer_range =  6
+
+
+/obj/machinery/light/rogue/torchholder/empty
+	lacks_torch = TRUE
+	pixel_y = 32
+
+/obj/machinery/light/rogue/torchholder/cold
+	unlit_torch = TRUE
+	pixel_y = 32
+
+/obj/machinery/light/rogue/firebowl/cold/Initialize(mapload)
+	. = ..()
+	addtimer(CALLBACK(src, PROC_REF(extinguish)), 10)
+
+/obj/machinery/light/rogue/wallfire/candle/open	// starts cold, light it when open is the idea.
+	name = "open candle"
+	icon = 'modular/stonekeep/icons/structure.dmi'
+	icon_state = "storecandle1"
+	base_state = "storecandle"
+/obj/machinery/light/rogue/wallfire/candle/open/Initialize(mapload)
+	. = ..()
+	addtimer(CALLBACK(src, PROC_REF(extinguish)), 10)
+
 /obj/machinery/light/rogue/firebowl/standing/lamp
 	name = "standing lamp"
 	icon = 'modular/stonekeep/icons/structure.dmi'
-
 
 // =================================================================================
 /*-------\
@@ -40,19 +86,44 @@
 
 /obj/structure/table/wood/nice/decorated
 	icon = 'modular/stonekeep/icons/tables.dmi'
-
+	icon_state = "tablefine"
 /obj/structure/table/wood/nice/decorated_alt
 	icon = 'modular/stonekeep/icons/tables.dmi'
+	icon_state = "tablefine2"
 
-/obj/structure/table/wood/large_new // modify with varedit for yellow, blue, red
+/obj/structure/table/wood/large_new
 	icon = 'modular/stonekeep/icons/tables.dmi'
+/obj/structure/table/wood/large_new/red
+	icon_state = "largetable"
+/obj/structure/table/wood/large_new/blue
+	icon_state = "largetable_alt2"
+/obj/structure/table/wood/large_new/yellow
+	icon_state = "largetable_alt"
 /obj/structure/table/wood/large/corner_new
 	icon = 'modular/stonekeep/icons/tables.dmi'
+/obj/structure/table/wood/large/corner_new/red
+	icon_state = "largetable"
+/obj/structure/table/wood/large/corner_new/blue
+	icon_state = "largetable_alt2"
+/obj/structure/table/wood/large/corner_new/yellow
+	icon_state = "largetable_alt"
 
 
 /obj/structure/table/church // modify with varedit for church_end
-	icon = 'modular/stonekeep/icons/structure.dmi'
+
+
+
+/obj/structure/table/church
+	name = "altar"
+	icon = 'modular/stonekeep/icons/tables.dmi'
+	icon_state = "church_r"
+	debris = list(/obj/item/natural/stoneblock = 1)
+
+/obj/structure/table/church/m
 	icon_state = "church_mid"
+
+/obj/structure/table/church/left
+	icon_state = "church_l"
 
 /obj/structure/table/stone
 	name = "stone table"
@@ -92,10 +163,18 @@
 		dir = EAST
 	. = ..()
 
-/obj/item/sleepingbag
-	icon = 'modular/stonekeep/icons/structure.dmi'
-/obj/structure/bed/rogue/sleepingbag
-	icon = 'modular/stonekeep/icons/structure.dmi'
+/obj/structure/table/wood/long
+	name = "table"
+	desc = ""
+	icon = 'modular/stonekeep/icons/tables.dmi'
+	icon_state = "longtable"
+	max_integrity = 100
+	smooth = 0
+	climb_offset = 8
+
+/obj/structure/fluff/walldeco/customflag
+	name = "royal flag"
+
 
 // Temple pillars. Default is offset to north
 /obj/structure/fluff/walldeco/pillar
@@ -234,7 +313,54 @@
 	dir = pick(GLOB.cardinals)
 	. = ..()
 
-
 /obj/structure/table/stone_small/gravekeeper
 	name = "body preparation slate"
 	color = "#b4b4b6"
+
+/obj/structure/giantfur
+	layer = BELOW_OPEN_DOOR_LAYER
+
+
+// ===================================================================================
+/*	..................   Random crap for moats  ................... */
+/obj/effect/spawner/roguemap/moat_debris
+	icon_state = "clodpile"
+	icon = 'icons/roguetown/items/natural.dmi'
+	probby = 50
+	color = "#ff82ec"
+	spawned = list(
+		/obj/item/natural/dirtclod = 10,
+		/obj/structure/fluff/clodpile = 5,
+		/obj/item/reagent_containers/food/snacks/smallrat = 3,
+		/obj/item/reagent_containers/food/snacks/smallrat/dead = 2,
+		/obj/item/natural/worms/leech = 2,
+		/obj/item/reagent_containers/food/snacks/rotten/meat = 1,
+		/obj/structure/idle_enemy/bigrat = 1,
+		/obj/structure/kneestingers = 1)
+
+// ===================================================================================
+/*	..................   Metal bars (weakened or normal?)  ................... */
+/obj/effect/spawner/roguemap/metal_bars
+	icon = 'icons/roguetown/misc/structure.dmi'
+	icon_state = "bars"
+	probby = 100
+	color = "#ff00d9"
+	spawned = list(
+		/obj/structure/bars/weakened = 30,
+		/obj/structure/bars = 70,
+		)
+
+/obj/structure/bars/weakened
+	desc = "Iron bars made to keep things in or out. These one looks pretty rusty."
+	max_integrity = INTEGRITY_POOR
+	color = "#edc9c9"
+
+/obj/effect/decal/stonehedge_corner
+	name = "stone hedge"
+	desc = ""
+	icon = 'icons/roguetown/misc/railing.dmi'
+	icon_state = "stone_decorn"
+	mouse_opacity = 0
+
+/obj/structure/mineral_door/swing_door/horizontal
+	icon = 'modular/stonekeep/icons/structure.dmi'
