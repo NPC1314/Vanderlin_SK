@@ -1904,6 +1904,7 @@
 #include "modular\stonekeep\code\race.dm"
 #include "modular\stonekeep\code\roguemapgen.dm"
 #include "modular\stonekeep\code\slapcraft_disabler.dm"
+#include "modular\stonekeep\code\stonehamlet_assets.dm"
 #include "modular\stonekeep\code\stonekeep_carbons.dm"
 #include "modular\stonekeep\code\stressevents.dm"
 #include "modular\stonekeep\code\structures.dm"

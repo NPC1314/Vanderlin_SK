@@ -121,6 +121,7 @@
 	debris = list(/obj/item/natural/stoneblock = 1)
 
 /obj/structure/table/church/m
+	icon = 'modular/stonekeep/icons/tables.dmi'
 	icon_state = "church_mid"
 
 /obj/structure/table/church/left
@@ -321,40 +322,6 @@
 /obj/structure/giantfur
 	layer = BELOW_OPEN_DOOR_LAYER
 
-
-// ===================================================================================
-/*	..................   Random crap for moats  ................... */
-/obj/effect/spawner/roguemap/moat_debris
-	icon_state = "clodpile"
-	icon = 'icons/roguetown/items/natural.dmi'
-	probby = 50
-	color = "#ff82ec"
-	spawned = list(
-		/obj/item/natural/dirtclod = 10,
-		/obj/structure/fluff/clodpile = 5,
-		/obj/item/reagent_containers/food/snacks/smallrat = 3,
-		/obj/item/reagent_containers/food/snacks/smallrat/dead = 2,
-		/obj/item/natural/worms/leech = 2,
-		/obj/item/reagent_containers/food/snacks/rotten/meat = 1,
-		/obj/structure/idle_enemy/bigrat = 1,
-		/obj/structure/kneestingers = 1)
-
-// ===================================================================================
-/*	..................   Metal bars (weakened or normal?)  ................... */
-/obj/effect/spawner/roguemap/metal_bars
-	icon = 'icons/roguetown/misc/structure.dmi'
-	icon_state = "bars"
-	probby = 100
-	color = "#ff00d9"
-	spawned = list(
-		/obj/structure/bars/weakened = 30,
-		/obj/structure/bars = 70,
-		)
-
-/obj/structure/bars/weakened
-	desc = "Iron bars made to keep things in or out. These one looks pretty rusty."
-	max_integrity = INTEGRITY_POOR
-	color = "#edc9c9"
 
 /obj/effect/decal/stonehedge_corner
 	name = "stone hedge"

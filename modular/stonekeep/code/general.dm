@@ -289,23 +289,6 @@
 	icon_state = "tracks"
 
 
-
-// ==============================================================
-/*	..................   Various mapping aides   ................... */
-/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/broken
-	desc = "A long shirt of maille, this one is made for a short man it seems."
-/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/broken/Initialize()
-	. = ..()
-	obj_break()
-
-/obj/item/clothing/suit/roguetown/armor/chainmail/battered
-	desc = "A good quality haubergon, but weakened by many blows."
-	max_integrity = INTEGRITY_STANDARD
-/*
-/obj/structure/roguethrone/statues
-	icon = 'modular/Mapping/icons/96x96.dmi
-*/
-
 /*	..................   Misc   ................... */
 /obj/item/roguestatue/gnome	// for the wizards tower
 	name = "petrified gnome"
@@ -348,25 +331,6 @@
 	icon_state = "wallskull"
 
 
-/*	..................   Dwarf Underdweller Corpse   ................... */
-/obj/effect/mob_spawn/human/corpse/damaged/underdweller
-	icon = 'icons/effects/blood.dmi'
-	icon_state = "remains"
-	color = "#aa9b00"
-	mob_type = /mob/living/carbon/human/species/dwarf/mountain
-	mob_name = "Dwarf Underdweller"
-	name = "Dwarf Underdweller"
-	hairstyle = "Miner"
-	facial_hairstyle = "Pick"
-	outfit = /datum/outfit/deadunderdweller
-
-/datum/outfit/deadunderdweller
-	armor = /obj/item/clothing/suit/roguetown/armor/cuirass/iron
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/sailor/red
-	pants = /obj/item/clothing/under/roguetown/trou/leather
-	shoes = /obj/item/clothing/shoes/roguetown/simpleshoes/buckle
-	backl = /obj/item/storage/backpack/rogue/backpack
-	head = /obj/item/clothing/head/roguetown/helmet/leather/minershelm
 
 
 // =============================================================================
@@ -441,41 +405,6 @@
 	name = "Herbal Soap"
 	cost = 20
 	contains = /obj/item/soap
-
-
-// =============================================================================
-// ============================		LANDMARKS	================================
-
-/*	..................   Dwarf Outpost   ................... */
-/obj/effect/landmark/map_load_mark/dwarf_outpost
-	name = "Dwarf Outpost"
-	templates = list( "Dwarf_Outpost_1","Dwarf_Outpost_2" )
-
-/datum/map_template/dwarf_outpost_i
-	name = "Dwarf Outpost Orc"
-	id = "Dwarf_Outpost_1"
-	mappath = "_maps/map_files/templates/dwarf_outpost/Dwarf_Outpost_1.dmm"
-
-/datum/map_template/dwarf_outpost_ii
-	name = "Dwarf Outpost Beastmen"
-	id = "Dwarf_Outpost_2"
-	mappath = "_maps/map_files/templates/dwarf_outpost/Dwarf_Outpost_2.dmm"
-
-
-/*	..................   Roadblock   ................... */
-/obj/effect/landmark/map_load_mark/hamlet_roadblock
-	name = "Roadblock"
-	templates = list( "roadblock_1","roadblock_2" )
-
-/datum/map_template/roadblock_i
-	name = "Roadblock"
-	id = "roadblock_1"
-	mappath = "_maps/map_files/templates/stonehamlet/roadblock_1.dmm"
-
-/datum/map_template/roadblock_ii
-	name = "No roadblock"
-	id = "roadblock_2"
-	mappath = "_maps/map_files/templates/stonehamlet/roadblock_2.dmm"
 
 
 // =============================================================================
@@ -923,53 +852,3 @@ GLOBAL_LIST_EMPTY(travel_spawn_points)
 	name = "corpse cart"
 	color = "#b4b4b6"
 
-
-
-
-/area/rogue/outdoors/rtfield/plague_district
-	ambush_mobs = list(/mob/living/carbon/human/species/human/northern/bum/skilled/madman = 50, /mob/living/simple_animal/hostile/rogue/skeleton = 50)
-	first_time_text = "PLAGUE DISTRICT"
-	color = "#d4da75"
-	name = "plague district"
-	ambush_types = list(
-				/turf/open/floor/rogue/cobblerock)
-
-/area/rogue/outdoors/rtfield/outlaw
-	ambush_mobs = list(/mob/living/carbon/human/species/human/northern/bum/skilled/outlaw = 50)
-	name = "outlaw hideout"
-	color = "#e9baa3"
-	first_time_text = null
-
-/area/rogue/outdoors/rtfield/boggish
-	ambush_mobs = list(/mob/living/carbon/human/species/goblin/skilled/ambush/sea = 50)
-	name = "bog approaches"
-	color = "#7db36e"
-	first_time_text = null
-
-/area/rogue/outdoors/rtfield/woodish
-	ambush_mobs = list(/mob/living/simple_animal/hostile/retaliate/rogue/wolf = 50)
-	name = "woods approaches"
-	color = "#7db36e"
-	first_time_text = null
-
-/area/rogue/outdoors/rtfield/spooky		// haunts ambush and dug down hidden treasure
-	ambush_mobs = list(/mob/living/simple_animal/hostile/rogue/haunt = 50)
-	name = "spooky place"
-	color = "#9294d3"
-	first_time_text = null
-
-/area/rogue/outdoors/rtfield/hamlet
-	name = "hamlet surroundings"
-	ambush_times = list("night","dusk")
-	ambush_types = list(
-				/turf/open/floor/rogue/dirt)
-	ambush_mobs = list(
-				/mob/living/simple_animal/hostile/retaliate/rogue/wolf = 60,
-				/mob/living/carbon/human/species/goblin/skilled/ambush = 5,
-				/mob/living/simple_animal/pet/cat/rogue/cabbit = 10)
-	first_time_text = "STONEHILL VALLEY"
-
-
-/obj/item/key/spooky_village
-	icon_state = "rustkey"
-	lockid = "spooky_village"
